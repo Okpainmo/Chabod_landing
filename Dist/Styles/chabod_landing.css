@@ -1,0 +1,58 @@
+:root {
+  --custom-color: #894d9c;
+  --nav-link: grey;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+nav {
+  height: 50px;
+}
+
+nav .social-icons-case {
+  margin-right: 15px;
+}
+
+nav .navbar-brand {
+  color: var(--custom-color) !important;
+  margin-left: 25px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav .icon {
+  display: inline-block;
+  padding: 0 10px;
+  color: var(--custom-color);
+  font-size: 17px;
+}
+
+nav ul {
+  margin-left: auto;
+}
+
+nav ul li {
+  padding: 0 15px;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+nav ul li:hover {
+  background-color: var(--custom-color);
+  -webkit-transition: background-color 0.8s ease;
+  transition: background-color 0.8s ease;
+}
+
+nav ul li:hover a {
+  color: white !important;
+}
+
+nav ul li a {
+  color: var(--nav-link) !important;
+  /* padding: 0 5px !important; */
+}
+/*# sourceMappingURL=chabod_landing.css.map */
