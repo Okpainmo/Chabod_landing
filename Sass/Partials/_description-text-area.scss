@@ -1,0 +1,34 @@
+@use "./custom-variables";
+
+.description-text-area {
+  width: 45%;
+  h1 {
+    margin-top: 50px;
+    font-size: 50px;
+    span {
+      color: var(--custom-color);
+    }
+  }
+  p {
+    color: var(--grey);
+    font-size: 18px;
+  }
+  .dta-buttons a {
+    padding: 10px 15px;
+    border-radius: 5px;
+    &:hover {
+      transform: scale(1.09);
+      transition: transform 0.7s ease;
+    }
+  }
+  .dta-buttons a:first-child {
+    background-color: var(--custom-color);
+    color: white;
+  }
+  .dta-buttons a:last-child {
+    --custom-shade: #d7c9dc;
+    background-color: var(--custom-shade);
+    color: var(--custom-color);
+    margin-left: 10px;
+  }
+}

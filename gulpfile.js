@@ -1,38 +1,38 @@
-'use strict';
+"use strict";
 
 // variables
-const gulp = require('gulp');
-const sass = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
-// const sassPartialsImported = require('gulp-sass-partials-imported');
-// const browserSync = require('browser-sync').create();
-
-sass.compiler = require('sass');
+const gulp = require("gulp");
+const sass = require("gulp-sass")(require("sass"));
+const autoprefixer = require("gulp-autoprefixer");
 
 // custom-hello task
-gulp.task('hello', function (done) {
-    console.log('hello from gulp');
-    done();
-    });
+gulp.task("hello", function (done) {
+  console.log("hello from gulp");
+  done();
+});
 
-//sass task with autoprefixer
-gulp.task('sass', function () {
-    return gulp.src('Gulp/Chabod-styles/Chabod-scss/**/*.scss')
-      .pipe(sass().on('error', sass.logError))
-      .pipe(autoprefixer({
-        cascade: false
-    }))
-      .pipe(gulp.dest('Gulp/Chabod-styles/Chabod-css'));
-  });
+// sass task
+function buildStyles() {
+  return gulp
+    .src("Sass/**/*.scss")
+    .pipe(sass().on("error", sass.logError))
+    .pipe(gulp.dest("Dist/Styles/chabod_landing.css"));
+}
 
-// gulp.task('task-name', function () {   
-//     return gulp.src('source-files')  //Get source files
-//             .pipe(aGulpPlugin())     //Send it through a gulp plugin
-//             .pipe(gulp.dest('destination'))  //Output to destination
-//     })
+exports.buildStyles = buildStyles;
 
+// autoprefixer task
+exports.default = () =>
+  gulp
+    .src("Sass/**/*scss")
+    .pipe(
+      autoprefixer({
+        cascade: false,
+      })
+    )
+    .pipe(gulp.dest("Dist/Styles/chabod_landing.css"));
 
 // watch task
-gulp.task('watch', function() {
-    gulp.watch('Gulp/Chabod-styles/Chabod-scss/**/*.scss', gulp.series('sass'));
-})
+gulp.task("watch", function () {
+  gulp.watch("Sass/**/*.scss", gulp.series("buildStyles"));
+});
