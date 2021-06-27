@@ -1,6 +1,6 @@
 :root {
   --custom-color: #894d9c;
-  --nav-link: grey;
+  --grey: grey;
 }
 
 body {
@@ -8,22 +8,32 @@ body {
   margin: 0;
   font-family: "Nunito", sans-serif;
 }
+.details-area {
+  display: flex;
+  padding-top: 100px;
+}
+
+// Nav
 nav {
   height: 50px;
   .social-icons-case {
-    margin-right: 15px;
-  }
-  .navbar-brand {
-    color: var(--custom-color) !important;
-    margin-left: 25px;
-    font-weight: bold;
-    font-size: 20px;
+    margin-right: 55px;
   }
   .icon {
     display: inline-block;
     padding: 0 10px;
     color: var(--custom-color);
     font-size: 17px;
+    .fab:hover {
+      transform: scale(1.2);
+      transition: transform 0.7s ease;
+    }
+  }
+  .navbar-brand {
+    color: var(--custom-color) !important;
+    margin-left: 75px;
+    font-weight: bold;
+    font-size: 20px;
   }
   ul {
     margin-left: auto;
@@ -40,8 +50,51 @@ nav {
       }
     }
     li a {
-      color: var(--nav-link) !important;
+      color: var(--grey) !important;
       /* padding: 0 5px !important; */
     }
+  }
+}
+// Nav
+// Description-text
+.description-text-area {
+  width: 45%;
+  h1 {
+    margin-top: 50px;
+    font-size: 50px;
+    span {
+      color: var(--custom-color);
+    }
+  }
+  p {
+    color: var(--grey);
+    font-size: 18px;
+  }
+  .dta-buttons a {
+    padding: 10px 15px;
+    border-radius: 5px;
+    &:hover {
+      transform: scale(1.09);
+      transition: transform 0.7s ease;
+    }
+  }
+  .dta-buttons a:first-child {
+    background-color: var(--custom-color);
+    color: white;
+  }
+  .dta-buttons a:last-child {
+    --custom-shade: #d7c9dc;
+    background-color: var(--custom-shade);
+    color: var(--custom-color);
+    margin-left: 10px;
+  }
+}
+
+//Illustration
+.illustration-area {
+  width: 55%;
+  img {
+    width: 100%;
+    height: 300px;
   }
 }
