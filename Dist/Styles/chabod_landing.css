@@ -1,0 +1,165 @@
+:root {
+  --custom-color: #894d9c;
+  --grey: grey;
+  --trans-bg: transparent;
+}
+
+nav {
+  padding: 1.5rem 0 !important;
+}
+nav .buy-btn-case {
+  margin-right: 85px;
+}
+nav .buy-btn-case a {
+  padding: 8px 25px;
+  border-radius: 5px;
+  background-color: var(--custom-color);
+  color: white;
+}
+nav .buy-btn-case a:hover {
+  transform: scale(1.09);
+  transition: transform 0.7s ease;
+}
+nav .navbar-brand {
+  color: var(--custom-color) !important;
+  margin-left: 105px;
+  font-weight: bold;
+  font-size: 20px;
+}
+nav ul {
+  margin-left: auto;
+}
+nav ul li {
+  padding: 0 15px;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+nav ul li:hover {
+  background-color: var(--custom-color);
+  transition: background-color 0.8s ease;
+}
+nav ul li:hover a {
+  color: white !important;
+}
+nav ul li a {
+  color: var(--grey) !important;
+  /* padding: 0 5px !important; */
+}
+
+.description-text-area {
+  width: 45%;
+}
+.description-text-area h1 {
+  font-size: 55px;
+}
+.description-text-area h1 span {
+  color: var(--custom-color);
+}
+.description-text-area p {
+  color: var(--grey);
+  font-size: 18px;
+}
+.description-text-area .dta-buttons a {
+  margin-top: 20px;
+  padding: 13px 25px;
+  border-radius: 5px;
+}
+.description-text-area .dta-buttons a:hover {
+  transform: scale(1.09);
+  transition: transform 0.7s ease;
+}
+.description-text-area .dta-buttons a:first-child {
+  background-color: var(--custom-color);
+  color: white;
+}
+.description-text-area .dta-buttons a:last-child {
+  --custom-shade: #d7c9dc;
+  background-color: var(--custom-shade);
+  color: var(--custom-color);
+  margin-left: 20px;
+}
+
+.illustration-area {
+  width: 55%;
+  margin-top: 20px;
+}
+.illustration-area img {
+  width: 100%;
+  height: 300px;
+}
+
+.card {
+  border: 0;
+  text-align: center;
+}
+.card .card-text {
+  color: var(--grey);
+}
+.card .card-title {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.highlights .highlight-icon {
+  font-size: 35px;
+  color: var(--custom-color);
+}
+.highlights .top-features {
+  min-height: 300px;
+}
+.highlights .other-features {
+  min-height: 300px;
+  background-color: #f3f3f7;
+  padding: 60px;
+}
+.highlights .other-features .card {
+  background-color: var(--trans-bg);
+}
+.highlights .other-features h3 {
+  text-align: center;
+  margin: 0;
+  display: block;
+}
+.highlights .other-features h3.add {
+  color: #267aa2;
+  margin-bottom: 20px;
+}
+.highlights .other-features .follow-up-text {
+  color: var(--grey);
+  font-size: 18px;
+  text-align: center;
+  width: 75%;
+  margin: 20px auto 40px auto;
+}
+.highlights .other-features ul {
+  list-style-type: none;
+  padding: 0;
+}
+.highlights .other-features li {
+  margin-top: 20px;
+}
+.highlights .other-features span {
+  display: inline-block;
+  padding-left: 10px;
+  font-size: 17px;
+  color: #267aa2;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.primary-view {
+  height: 100vh;
+}
+
+.details-area {
+  display: flex;
+  padding-top: 80px;
+}
+
+.custom-color {
+  color: var(--custom-color);
+}

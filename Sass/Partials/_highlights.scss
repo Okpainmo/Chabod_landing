@@ -1,0 +1,62 @@
+@use "./custom-variables";
+
+// sass variables
+$highlight-shade: #f3f3f7;
+$highlight-custom: #267aa2;
+.card {
+  border: 0;
+  text-align: center;
+  .card-text {
+    color: var(--grey);
+  }
+  .card-title {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+}
+.highlights {
+  .highlight-icon {
+    font-size: 35px;
+    color: var(--custom-color);
+  }
+  .top-features {
+    min-height: 300px;
+  }
+  .other-features {
+    min-height: 300px;
+    background-color: $highlight-shade;
+    padding: 60px;
+    .card {
+      background-color: var(--trans-bg);
+    }
+    h3 {
+      text-align: center;
+      margin: 0;
+      display: block;
+    }
+    h3.add {
+      color: $highlight-custom;
+      margin-bottom: 20px;
+    }
+    .follow-up-text {
+      color: var(--grey);
+      font-size: 18px;
+      text-align: center;
+      width: 75%;
+      margin: 20px auto 40px auto;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-top: 20px;
+    }
+    span {
+      display: inline-block;
+      padding-left: 10px;
+      font-size: 17px;
+      color: $highlight-custom;
+    }
+  }
+}

@@ -4,16 +4,20 @@
 @use "./Partials/illustration-area";
 @use "./Partials/footer";
 @use "./Partials/custom-variables";
+@use "./Partials/highlights";
 
 body {
   padding: 0;
   margin: 0;
   font-family: "Nunito", sans-serif;
 }
+.primary-view {
+  height: 100vh;
+}
 .details-area {
   display: flex;
-  padding-top: 100px;
+  padding-top: 80px;
 }
-.testing .again {
-  font-weight: bold;
+.custom-color {
+  color: var(--custom-color);
 }

@@ -1,23 +1,36 @@
 @use "./custom-variables";
 
 nav {
-  height: 50px;
-  .social-icons-case {
-    margin-right: 55px;
-  }
-  .icon {
-    display: inline-block;
-    padding: 0 10px;
-    color: var(--custom-color);
-    font-size: 17px;
-    .fab:hover {
-      transform: scale(1.2);
+  padding: 1.5rem 0 !important;
+  .buy-btn-case {
+    margin-right: 85px;
+    a {
+      padding: 8px 25px;
+      border-radius: 5px;
+      background-color: var(--custom-color);
+      color: white;
+    }
+    a:hover {
+      transform: scale(1.09);
       transition: transform 0.7s ease;
     }
   }
+  // .social-icons-case {
+  //   margin-right: 85px;
+  // }
+  // .icon {
+  //   display: inline-block;
+  //   padding: 0 10px;
+  //   color: var(--custom-color);
+  //   font-size: 17px;
+  //   .fab:hover {
+  //     transform: scale(1.2);
+  //     transition: transform 0.7s ease;
+  //   }
+  // }
   .navbar-brand {
     color: var(--custom-color) !important;
-    margin-left: 75px;
+    margin-left: 105px;
     font-weight: bold;
     font-size: 20px;
   }

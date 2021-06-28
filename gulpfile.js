@@ -16,7 +16,7 @@ function buildStyles() {
   return gulp
     .src("Sass/**/*.scss")
     .pipe(sass().on("error", sass.logError))
-    .pipe(gulp.dest("Dist/Styles/chabod_landing.css"));
+    .pipe(gulp.dest("Dist/Styles"));
 }
 
 exports.buildStyles = buildStyles;
@@ -24,13 +24,13 @@ exports.buildStyles = buildStyles;
 // autoprefixer task
 exports.default = () =>
   gulp
-    .src("Sass/**/*scss")
+    .src("Sass/**/*.scss")
     .pipe(
       autoprefixer({
         cascade: false,
       })
     )
-    .pipe(gulp.dest("Dist/Styles/chabod_landing.css"));
+    .pipe(gulp.dest("Dist/Styles"));
 
 // watch task
 gulp.task("watch", function () {
