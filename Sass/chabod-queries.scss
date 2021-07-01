@@ -55,6 +55,12 @@
     .my-container {
       height: 550px;
       width: 90%;
+      .card-body {
+        padding-top: 30px;
+      }
+      .card-title {
+        margin-bottom: 10px;
+      }
       .col-lg-6:first-child {
         border-top-right-radius: 10px;
         border-bottom-left-radius: 0;
@@ -110,13 +116,19 @@
     .card-body {
       padding: 0 1rem;
     }
+    .card-title {
+      margin-top: 10px;
+    }
+    .mb-50 {
+      margin-bottom: 50px;
+    }
     // ul {
     //   margin-bottom: 0;
     // }
-  }
-  .carousel-array .card-title {
-    font-size: 26px;
-    margin-bottom: 10px;
+    .carousel-array .card-title {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -148,9 +160,9 @@
           height: 250px;
         }
         .carousel-item {
-          .card-title {
-            font-size: 24px;
-          }
+          // .card-title {
+          //   font-size: 22px;
+          // }
           .card-text {
             font-size: 17px;
           }
@@ -177,12 +189,12 @@
         padding: 0 10px;
       }
       .my-container {
-        height: 450px;
+        height: 470px;
         .col-lg-6:first-child {
           height: 200px;
         }
         .col-lg-6:last-child {
-          height: 250px;
+          height: 270px;
         }
       }
     }

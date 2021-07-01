@@ -50,6 +50,12 @@
     height: 550px;
     width: 90%;
   }
+  .highlights .carousel-array .my-container .card-body {
+    padding-top: 30px;
+  }
+  .highlights .carousel-array .my-container .card-title {
+    margin-bottom: 10px;
+  }
   .highlights .carousel-array .my-container .col-lg-6:first-child {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 0;
@@ -100,8 +106,13 @@
   .highlights .card-body {
     padding: 0 1rem;
   }
-
-  .carousel-array .card-title {
+  .highlights .card-title {
+    margin-top: 10px;
+  }
+  .highlights .mb-50 {
+    margin-bottom: 50px;
+  }
+  .highlights .carousel-array .card-title {
     font-size: 26px;
     margin-bottom: 10px;
   }
@@ -130,9 +141,6 @@
   .highlights .carousel-array .my-container .col-lg-6:last-child {
     height: 250px;
   }
-  .highlights .carousel-array .my-container .carousel-item .card-title {
-    font-size: 24px;
-  }
   .highlights .carousel-array .my-container .carousel-item .card-text {
     font-size: 17px;
   }
@@ -157,13 +165,13 @@
     padding: 0 10px;
   }
   .highlights .carousel-array .my-container {
-    height: 450px;
+    height: 470px;
   }
   .highlights .carousel-array .my-container .col-lg-6:first-child {
     height: 200px;
   }
   .highlights .carousel-array .my-container .col-lg-6:last-child {
-    height: 250px;
+    height: 270px;
   }
 
   .banner-details-area .description-text-area .dta-buttons a {
