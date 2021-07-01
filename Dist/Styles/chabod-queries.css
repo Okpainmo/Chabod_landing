@@ -1,0 +1,175 @@
+@media screen and (max-width: 1200px) {
+  nav .navbar-brand {
+    margin-left: 15px;
+  }
+  nav .buy-btn-case {
+    margin-right: 20px;
+  }
+
+  .description-text-area h1 {
+    font-size: 45px;
+  }
+
+  .highlights .other-features {
+    padding: 60px 20px;
+  }
+
+  .primary-view {
+    min-height: 500px;
+  }
+}
+@media screen and (max-width: 991px) {
+  nav .navbar-toggler {
+    border: none;
+  }
+  nav .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  nav .navbar-collapse {
+    text-align: center;
+  }
+  nav .navbar-collapse .buy-btn-case {
+    margin-right: 0;
+  }
+  nav .navbar-collapse .buy-btn-case a {
+    padding: 8px 100px;
+  }
+
+  .banner-details-area {
+    max-width: 90%;
+  }
+
+  .description-text-area h1 {
+    font-size: 40px;
+  }
+  .description-text-area .dta-buttons a {
+    padding: 10px 15px;
+  }
+
+  .highlights .carousel-array .my-container {
+    height: 550px;
+    width: 90%;
+  }
+  .highlights .carousel-array .my-container .col-lg-6:first-child {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    height: 300px;
+  }
+  .highlights .carousel-array .my-container .col-lg-6:last-child {
+    height: 250px;
+  }
+
+  footer {
+    padding: 20px 0;
+    text-align: center;
+  }
+  footer .col-lg-6 {
+    padding: 30px 100px 0;
+  }
+  footer .col-lg-3 {
+    padding: 0 30px 30px;
+  }
+  footer .col-lg-3 ul {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 811px) {
+  .banner-details-area {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 60px;
+  }
+  .banner-details-area .description-text-area {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .banner-details-area .illustration-area {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .highlights .top-features {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .highlights .col {
+    margin-top: 0;
+  }
+  .highlights .card-body {
+    padding: 0 1rem;
+  }
+
+  .carousel-array .card-title {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 535px) {
+  .primary-view nav .navbar-brand {
+    margin-left: 0;
+  }
+  .primary-view nav .navbar-toggler {
+    padding-right: 0;
+  }
+
+  .highlights .follow-up-text {
+    width: 95%;
+  }
+  .highlights .carousel-array {
+    padding: 30px 0;
+  }
+  .highlights .carousel-array .my-container {
+    height: 480px;
+    width: 95%;
+  }
+  .highlights .carousel-array .my-container .col-lg-6:first-child {
+    height: 230px;
+  }
+  .highlights .carousel-array .my-container .col-lg-6:last-child {
+    height: 250px;
+  }
+  .highlights .carousel-array .my-container .carousel-item .card-title {
+    font-size: 24px;
+  }
+  .highlights .carousel-array .my-container .carousel-item .card-text {
+    font-size: 17px;
+  }
+
+  .banner-details-area {
+    padding-top: 40px;
+  }
+
+  footer {
+    padding: 20px 0;
+    text-align: center;
+  }
+  footer .col-lg-6 {
+    padding: 30px 30px 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .highlights .carousel-array {
+    padding: 0;
+  }
+  .highlights .carousel-array h3 {
+    padding: 0 10px;
+  }
+  .highlights .carousel-array .my-container {
+    height: 450px;
+  }
+  .highlights .carousel-array .my-container .col-lg-6:first-child {
+    height: 200px;
+  }
+  .highlights .carousel-array .my-container .col-lg-6:last-child {
+    height: 250px;
+  }
+
+  .banner-details-area .description-text-area .dta-buttons a {
+    display: block;
+  }
+  .banner-details-area .description-text-area .dta-buttons a:last-child {
+    margin-left: 0;
+  }
+}

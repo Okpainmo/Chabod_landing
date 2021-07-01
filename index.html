@@ -15,7 +15,8 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="Dist/Styles/chabod_landing.css" />
+    <link rel="stylesheet" href="Dist/Styles/chabod-landing.css" />
+    <link rel="stylesheet" href="Dist/Styles/chabod-queries.css" />
     <script
       src="https://kit.fontawesome.com/7d4093f05b.js"
       crossorigin="anonymous"
@@ -23,7 +24,7 @@
     <title>Get Chabod</title>
   </head>
   <body>
-    <div class="primary-view">
+    <section class="primary-view">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Chabod</a>
@@ -47,7 +48,9 @@
                 <a class="nav-link" href="#">Buy Now</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Documentation</a>
+                <a class="nav-link" href="./Dist/documentation.html"
+                  >Documentation</a
+                >
               </li>
             </ul>
             <div class="buy-btn-case">
@@ -67,7 +70,7 @@
           </div>
         </div>
       </nav>
-      <section class="container details-area">
+      <section class="container banner-details-area">
         <div class="description-text-area">
           <h1>Tell the world what you do with <span>Chabod</span>.</h1>
           <p class="follow-up-text">
@@ -86,9 +89,9 @@
           <img src="Dist/Images/seller.svg" alt="seller-illustration" />
         </div>
       </section>
-    </div>
+    </section>
     <section class="highlights">
-      <div class="container top-features">
+      <section class="container top-features">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100">
@@ -127,8 +130,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="container-fluid other-features">
+      </section>
+      <section class="container-fluid other-features">
         <h3>A great tool built With all these cool features</h3>
         <h3 class="add">to help you sell better</h3>
         <div class="follow-up-text">
@@ -225,8 +228,165 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="carousel-array container-fluid">
+        <h3>Loaded with so much awesomeness</h3>
+        <h3 class="add">to bring your clients right to your door step.</h3>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="my-carousel-content">
+                <div class="my-container">
+                  <div class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <span class="highlight-icon fas fa-heart"></span>
+                          <h5 class="card-title">Google Maps</h5>
+                          <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ratione similique veniam eligendi hic porro?
+                            Voluptatibus?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="my-carousel-content">
+                <div class="my-container">
+                  <div class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <span class="highlight-icon fas fa-heart"></span>
+                          <h5 class="card-title">Collect Form Data</h5>
+                          <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ratione similique veniam eligendi hic porro?
+                            Voluptatibus?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="my-carousel-content">
+                <div class="my-container">
+                  <div class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <span class="highlight-icon fas fa-heart"></span>
+                          <h5 class="card-title">Beautiful design</h5>
+                          <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ratione similique veniam eligendi hic porro?
+                            Voluptatibus?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
     </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Chabod</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+              dolor et, facilis quos rerum voluptatum suscipit ex commodi nihil
+              molestias facere accusamus ad, quo dolore?
+              <a href="./Dist/documentation.html">Read more...</a>
+            </p>
+            <p>
+              Built with so much <span class="fas fa-heart"></span> by
+              <a href="https://ajokpainmo.netlify.app">A.J Okpainmo.</a>
+            </p>
+            <div class="social-icons-case">
+              <div class="icon">
+                <span class="fab fa-twitter"></span>
+              </div>
+              <div class="icon">
+                <span class="fab fa-instagram"></span>
+              </div>
+              <div class="icon">
+                <span class="fab fa-linkedin"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 text-center">
+            <ul>
+              <li><a href="#">Getting started</a></li>
+              <li><a href="#">Gulp setup</a></li>
+              <li><a href="#">Bonus hosting offer</a></li>
+              <li><a href="#">Developer site</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

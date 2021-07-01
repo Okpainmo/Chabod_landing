@@ -3,6 +3,7 @@
 // sass variables
 $highlight-shade: #f3f3f7;
 $highlight-custom: #267aa2;
+
 .card {
   border: 0;
   text-align: center;
@@ -22,28 +23,28 @@ $highlight-custom: #267aa2;
   .top-features {
     min-height: 300px;
   }
+  h3 {
+    text-align: center;
+    margin: 0;
+    display: block;
+  }
+  h3.add {
+    color: $highlight-custom;
+    margin-bottom: 20px;
+  }
+  .follow-up-text {
+    color: var(--grey);
+    font-size: 18px;
+    text-align: center;
+    width: 75%;
+    margin: 20px auto 40px auto;
+  }
   .other-features {
     min-height: 300px;
     background-color: $highlight-shade;
     padding: 60px;
     .card {
       background-color: var(--trans-bg);
-    }
-    h3 {
-      text-align: center;
-      margin: 0;
-      display: block;
-    }
-    h3.add {
-      color: $highlight-custom;
-      margin-bottom: 20px;
-    }
-    .follow-up-text {
-      color: var(--grey);
-      font-size: 18px;
-      text-align: center;
-      width: 75%;
-      margin: 20px auto 40px auto;
     }
     ul {
       list-style-type: none;
@@ -57,6 +58,45 @@ $highlight-custom: #267aa2;
       padding-left: 10px;
       font-size: 17px;
       color: $highlight-custom;
+    }
+  }
+  .carousel-array {
+    min-height: 300px;
+    margin-top: 50px;
+    padding: 60px;
+    .my-carousel-content {
+      width: 100%;
+      // border-radius: 20px;
+      // background-color: var(--grey);
+    }
+    .my-container {
+      height: 320px;
+      width: 80%;
+      margin: 10px auto;
+    }
+    .row {
+      border-radius: 10px;
+      box-shadow: 0 0 15px 1px hsl(0, 2%, 89%) !important;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+    .card-body {
+      padding-top: 70px;
+      color: black;
+      font-size: 18px;
+    }
+    .card-title {
+      color: green;
+      font-size: 30px;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+    .col-lg-6:first-child {
+      background-size: cover;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      background-image: url(../../Dist/Images/pix-2z.jpg);
     }
   }
 }

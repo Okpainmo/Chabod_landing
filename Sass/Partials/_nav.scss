@@ -1,7 +1,15 @@
 @use "./custom-variables";
 
+.doc-nav {
+  padding: 10px 0 !important;
+  box-shadow: 0 0 15px 1px hsl(0, 2%, 89%) !important;
+}
+
 nav {
   padding: 1.5rem 0 !important;
+  .active {
+    color: var(--custom-color) !important;
+  }
   .buy-btn-case {
     margin-right: 85px;
     a {
@@ -13,24 +21,12 @@ nav {
     a:hover {
       transform: scale(1.09);
       transition: transform 0.7s ease;
+      color: white;
     }
   }
-  // .social-icons-case {
-  //   margin-right: 85px;
-  // }
-  // .icon {
-  //   display: inline-block;
-  //   padding: 0 10px;
-  //   color: var(--custom-color);
-  //   font-size: 17px;
-  //   .fab:hover {
-  //     transform: scale(1.2);
-  //     transition: transform 0.7s ease;
-  //   }
-  // }
   .navbar-brand {
     color: var(--custom-color) !important;
-    margin-left: 105px;
+    margin-left: 85px;
     font-weight: bold;
     font-size: 20px;
   }

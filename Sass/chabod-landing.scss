@@ -1,22 +1,14 @@
-@use "./Partials/chabod-queries";
 @use "./Partials/nav";
-@use "./Partials/description-text-area";
-@use "./Partials/illustration-area";
+@use "./Partials/lead-banner";
 @use "./Partials/footer";
 @use "./Partials/custom-variables";
 @use "./Partials/highlights";
+@use "./Partials/documentation";
 
 body {
   padding: 0;
   margin: 0;
   font-family: "Nunito", sans-serif;
-}
-.primary-view {
-  height: 100vh;
-}
-.details-area {
-  display: flex;
-  padding-top: 80px;
 }
 .custom-color {
   color: var(--custom-color);

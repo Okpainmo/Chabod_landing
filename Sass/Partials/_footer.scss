@@ -1,0 +1,45 @@
+@use "./custom-variables";
+@use "./highlights";
+
+$footer-color: #58485d;
+
+footer {
+  min-height: 300px;
+  background-color: highlights.$highlight-shade;
+  color: $footer-color;
+  padding: 60px 0;
+  width: 100%;
+  a {
+    color: var(--custom-color);
+    text-decoration: none;
+    &:hover {
+      color: ($footer-color);
+    }
+  }
+  .row {
+    justify-content: space-between;
+  }
+  .col-lg-6 {
+    padding: 30px 50px;
+  }
+  .col-lg-3 {
+    padding: 30px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 30px 20px 0;
+    li {
+      padding: 3px 0;
+    }
+  }
+  .icon {
+    display: inline-block;
+    padding-right: 20px;
+    color: var(--custom-color);
+    font-size: 17px;
+    .fab:hover {
+      transform: scale(1.2);
+      transition: transform 0.7s ease;
+    }
+  }
+}
