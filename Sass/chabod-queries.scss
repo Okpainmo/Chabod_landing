@@ -135,11 +135,18 @@
 @media screen and (max-width: 535px) {
   .primary-view {
     nav {
+      padding: 0.5rem 0 !important;
       .navbar-brand {
         margin-left: 0;
       }
       .navbar-toggler {
         padding-right: 0;
+      }
+    }
+    .banner-details-area {
+      padding-top: 20px;
+      .illustration-area {
+        margin-bottom: 30px;
       }
     }
   }
@@ -170,9 +177,6 @@
       }
     }
   }
-  .banner-details-area {
-    padding-top: 40px;
-  }
   footer {
     padding: 20px 0;
     text-align: center;
@@ -187,6 +191,9 @@
       padding: 0;
       h3 {
         padding: 0 10px;
+      }
+      .card-title {
+        font-size: 22px;
       }
       .my-container {
         height: 470px;

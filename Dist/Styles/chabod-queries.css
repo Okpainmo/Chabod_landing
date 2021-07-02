@@ -118,11 +118,20 @@
   }
 }
 @media screen and (max-width: 535px) {
+  .primary-view nav {
+    padding: 0.5rem 0 !important;
+  }
   .primary-view nav .navbar-brand {
     margin-left: 0;
   }
   .primary-view nav .navbar-toggler {
     padding-right: 0;
+  }
+  .primary-view .banner-details-area {
+    padding-top: 20px;
+  }
+  .primary-view .banner-details-area .illustration-area {
+    margin-bottom: 30px;
   }
 
   .highlights .follow-up-text {
@@ -145,10 +154,6 @@
     font-size: 17px;
   }
 
-  .banner-details-area {
-    padding-top: 40px;
-  }
-
   footer {
     padding: 20px 0;
     text-align: center;
@@ -163,6 +168,9 @@
   }
   .highlights .carousel-array h3 {
     padding: 0 10px;
+  }
+  .highlights .carousel-array .card-title {
+    font-size: 22px;
   }
   .highlights .carousel-array .my-container {
     height: 470px;
