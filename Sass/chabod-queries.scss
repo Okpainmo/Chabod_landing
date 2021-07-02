@@ -1,5 +1,6 @@
 @media screen and (max-width: 1200px) {
-  nav {
+  nav,
+  .doc-nav {
     .navbar-brand {
       margin-left: 15px;
     }
@@ -20,10 +21,19 @@
   .primary-view {
     min-height: 500px;
   }
+  .main-doc-field {
+    .main-doc-content {
+      margin: 20px auto 30px 30px;
+    }
+    .page-content {
+      right: 50px;
+    }
+  }
 }
 
 @media screen and (max-width: 991px) {
-  nav {
+  nav,
+  .doc-nav {
     .navbar-toggler {
       border: none;
       &:focus {
@@ -34,6 +44,7 @@
       text-align: center;
       .buy-btn-case {
         margin-right: 0;
+        margin-bottom: 30px;
         a {
           padding: 8px 100px;
         }
@@ -84,8 +95,21 @@
       }
     }
   }
+  .main-doc-field {
+    .page-content {
+      right: 85px;
+      top: calc(100vh - 270px);
+    }
+    .main-doc-content {
+      width: 70%;
+      padding: 0;
+      margin: 20px auto 30px;
+      .mobile-only {
+        display: block;
+      }
+    }
+  }
 }
-
 @media screen and (max-width: 811px) {
   .banner-details-area {
     display: flex;
@@ -130,12 +154,18 @@
       margin-bottom: 10px;
     }
   }
+  .main-doc-field {
+    .main-doc-content {
+      width: 75%;
+    }
+  }
 }
 
 @media screen and (max-width: 535px) {
-  .primary-view {
+  .primary-view,
+  .doc-header {
     nav {
-      padding: 0.5rem 0 !important;
+      padding: 0.3rem 0 !important;
       .navbar-brand {
         margin-left: 0;
       }
@@ -150,7 +180,9 @@
       }
     }
   }
-
+  .top-offset {
+    margin-top: 48.4px;
+  }
   .highlights {
     .follow-up-text {
       width: 95%;
@@ -182,6 +214,13 @@
     text-align: center;
     .col-lg-6 {
       padding: 30px 30px 0;
+    }
+  }
+  .main-doc-field {
+    .main-doc-content {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
     }
   }
 }

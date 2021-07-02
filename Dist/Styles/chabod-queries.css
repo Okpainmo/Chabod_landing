@@ -1,8 +1,10 @@
 @media screen and (max-width: 1200px) {
-  nav .navbar-brand {
+  nav .navbar-brand,
+.doc-nav .navbar-brand {
     margin-left: 15px;
   }
-  nav .buy-btn-case {
+  nav .buy-btn-case,
+.doc-nav .buy-btn-case {
     margin-right: 20px;
   }
 
@@ -17,21 +19,34 @@
   .primary-view {
     min-height: 500px;
   }
+
+  .main-doc-field .main-doc-content {
+    margin: 20px auto 30px 30px;
+  }
+  .main-doc-field .page-content {
+    right: 50px;
+  }
 }
 @media screen and (max-width: 991px) {
-  nav .navbar-toggler {
+  nav .navbar-toggler,
+.doc-nav .navbar-toggler {
     border: none;
   }
-  nav .navbar-toggler:focus {
+  nav .navbar-toggler:focus,
+.doc-nav .navbar-toggler:focus {
     box-shadow: none;
   }
-  nav .navbar-collapse {
+  nav .navbar-collapse,
+.doc-nav .navbar-collapse {
     text-align: center;
   }
-  nav .navbar-collapse .buy-btn-case {
+  nav .navbar-collapse .buy-btn-case,
+.doc-nav .navbar-collapse .buy-btn-case {
     margin-right: 0;
+    margin-bottom: 30px;
   }
-  nav .navbar-collapse .buy-btn-case a {
+  nav .navbar-collapse .buy-btn-case a,
+.doc-nav .navbar-collapse .buy-btn-case a {
     padding: 8px 100px;
   }
 
@@ -78,6 +93,19 @@
   footer .col-lg-3 ul {
     padding: 0 20px;
   }
+
+  .main-doc-field .page-content {
+    right: 85px;
+    top: calc(100vh - 270px);
+  }
+  .main-doc-field .main-doc-content {
+    width: 70%;
+    padding: 0;
+    margin: 20px auto 30px;
+  }
+  .main-doc-field .main-doc-content .mobile-only {
+    display: block;
+  }
 }
 @media screen and (max-width: 811px) {
   .banner-details-area {
@@ -116,22 +144,35 @@
     font-size: 26px;
     margin-bottom: 10px;
   }
+
+  .main-doc-field .main-doc-content {
+    width: 75%;
+  }
 }
 @media screen and (max-width: 535px) {
-  .primary-view nav {
-    padding: 0.5rem 0 !important;
+  .primary-view nav,
+.doc-header nav {
+    padding: 0.3rem 0 !important;
   }
-  .primary-view nav .navbar-brand {
+  .primary-view nav .navbar-brand,
+.doc-header nav .navbar-brand {
     margin-left: 0;
   }
-  .primary-view nav .navbar-toggler {
+  .primary-view nav .navbar-toggler,
+.doc-header nav .navbar-toggler {
     padding-right: 0;
   }
-  .primary-view .banner-details-area {
+  .primary-view .banner-details-area,
+.doc-header .banner-details-area {
     padding-top: 20px;
   }
-  .primary-view .banner-details-area .illustration-area {
+  .primary-view .banner-details-area .illustration-area,
+.doc-header .banner-details-area .illustration-area {
     margin-bottom: 30px;
+  }
+
+  .top-offset {
+    margin-top: 48.4px;
   }
 
   .highlights .follow-up-text {
@@ -160,6 +201,12 @@
   }
   footer .col-lg-6 {
     padding: 30px 30px 0;
+  }
+
+  .main-doc-field .main-doc-content {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
   }
 }
 @media screen and (max-width: 400px) {
