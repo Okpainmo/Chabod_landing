@@ -104,7 +104,7 @@
     margin: 20px auto 30px;
   }
   .main-doc-field .main-doc-content .mobile-only {
-    display: block;
+    display: none;
   }
 }
 @media screen and (max-width: 811px) {
