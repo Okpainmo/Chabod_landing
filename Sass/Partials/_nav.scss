@@ -10,20 +10,6 @@ nav {
   .active {
     color: var(--custom-color) !important;
   }
-  .buy-btn-case {
-    margin-right: 85px;
-    a {
-      padding: 8px 25px;
-      border-radius: 5px;
-      background-color: var(--custom-color);
-      color: white;
-    }
-    a:hover {
-      transform: scale(1.09);
-      transition: transform 0.7s ease;
-      color: white;
-    }
-  }
   .navbar-brand {
     color: var(--custom-color) !important;
     margin-left: 85px;
@@ -31,7 +17,7 @@ nav {
     font-size: 20px;
   }
   ul {
-    margin-left: auto;
+    margin-left: 0;
     li {
       padding: 0 15px;
       margin: 0 10px;

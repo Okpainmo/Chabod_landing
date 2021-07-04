@@ -19,7 +19,7 @@
     }
   }
   .primary-view {
-    min-height: 500px;
+    min-height: 520px;
   }
   .main-doc-field {
     .main-doc-content {
@@ -94,6 +94,9 @@
         padding: 0 20px;
       }
     }
+    .icon {
+      padding: 0 10px;
+    }
   }
   .main-doc-field {
     .page-content {
@@ -104,10 +107,10 @@
       width: 70%;
       padding: 0;
       margin: 20px auto 30px;
-      .mobile-only {
-        display: none;
-      }
     }
+  }
+  .mobile-only {
+    display: inline-block;
   }
 }
 @media screen and (max-width: 811px) {

@@ -13,6 +13,9 @@ body {
 .custom-color {
   color: var(--custom-color);
 }
+.bold {
+  font-weight: bold;
+}
 .float-button {
   width: 60px;
   height: 60px;
@@ -22,4 +25,38 @@ body {
   bottom: 20px;
   right: 20px;
   background-color: var(--custom-color);
+}
+@keyframes translator {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.animate {
+  animation-name: translator;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.mobile-only {
+  display: none;
+}
+.buy-btn-case {
+  margin-right: 85px;
+  a {
+    padding: 8px 25px;
+    border-radius: 5px;
+    background-color: var(--custom-color);
+    color: white;
+  }
+  a:hover {
+    transform: scale(1.09);
+    transition: transform 0.7s ease;
+    color: white;
+  }
 }

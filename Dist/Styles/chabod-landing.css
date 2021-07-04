@@ -16,20 +16,6 @@ nav {
 nav .active {
   color: var(--custom-color) !important;
 }
-nav .buy-btn-case {
-  margin-right: 85px;
-}
-nav .buy-btn-case a {
-  padding: 8px 25px;
-  border-radius: 5px;
-  background-color: var(--custom-color);
-  color: white;
-}
-nav .buy-btn-case a:hover {
-  transform: scale(1.09);
-  transition: transform 0.7s ease;
-  color: white;
-}
 nav .navbar-brand {
   color: var(--custom-color) !important;
   margin-left: 85px;
@@ -37,7 +23,7 @@ nav .navbar-brand {
   font-size: 20px;
 }
 nav ul {
-  margin-left: auto;
+  margin-left: 0;
 }
 nav ul li {
   padding: 0 15px;
@@ -198,6 +184,21 @@ nav ul li a {
   border-bottom-left-radius: 10px;
   background-image: url(../../Dist/Images/pix-2z.jpg);
 }
+.highlights .last-preview-btn {
+  text-align: center;
+  margin: 20px 0 30px;
+}
+.highlights .last-preview-btn a {
+  padding: 12px 30px;
+  background-color: var(--custom-color);
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.highlights .last-preview-btn a:hover {
+  transform: scale(1.09);
+  transition: transform 0.7s ease;
+}
 
 footer {
   min-height: 300px;
@@ -229,15 +230,21 @@ footer ul {
 footer ul li {
   padding: 3px 0;
 }
-footer .icon {
+footer .social-icons-case {
+  margin-bottom: 20px;
+}
+footer .social-icons-case .icon {
   display: inline-block;
   padding-right: 20px;
   color: var(--custom-color);
   font-size: 17px;
 }
-footer .icon .fab:hover {
+footer .social-icons-case .icon .fab:hover {
   transform: scale(1.2);
   transition: transform 0.7s ease;
+}
+footer .buy-btn-case {
+  margin: 15px 0;
 }
 
 .top-offset {
@@ -308,6 +315,10 @@ body {
   color: var(--custom-color);
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .float-button {
   width: 60px;
   height: 60px;
@@ -317,4 +328,41 @@ body {
   bottom: 20px;
   right: 20px;
   background-color: var(--custom-color);
+}
+
+@keyframes translator {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.animate {
+  animation-name: translator;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.buy-btn-case {
+  margin-right: 85px;
+}
+.buy-btn-case a {
+  padding: 8px 25px;
+  border-radius: 5px;
+  background-color: var(--custom-color);
+  color: white;
+}
+.buy-btn-case a:hover {
+  transform: scale(1.09);
+  transition: transform 0.7s ease;
+  color: white;
 }

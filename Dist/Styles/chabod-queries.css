@@ -17,7 +17,7 @@
   }
 
   .primary-view {
-    min-height: 500px;
+    min-height: 520px;
   }
 
   .main-doc-field .main-doc-content {
@@ -93,6 +93,9 @@
   footer .col-lg-3 ul {
     padding: 0 20px;
   }
+  footer .icon {
+    padding: 0 10px;
+  }
 
   .main-doc-field .page-content {
     right: 85px;
@@ -103,8 +106,9 @@
     padding: 0;
     margin: 20px auto 30px;
   }
-  .main-doc-field .main-doc-content .mobile-only {
-    display: none;
+
+  .mobile-only {
+    display: inline-block;
   }
 }
 @media screen and (max-width: 811px) {

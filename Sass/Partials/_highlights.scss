@@ -99,4 +99,19 @@ $highlight-custom: #267aa2;
       background-image: url(../../Dist/Images/pix-2z.jpg);
     }
   }
+  .last-preview-btn {
+    text-align: center;
+    margin: 20px 0 30px;
+    a {
+      padding: 12px 30px;
+      background-color: var(--custom-color);
+      color: white;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+    a:hover {
+      transform: scale(1.09);
+      transition: transform 0.7s ease;
+    }
+  }
 }
