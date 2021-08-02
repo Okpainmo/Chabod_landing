@@ -6,10 +6,10 @@
 .main-doc-field {
   .doc-banner {
     width: 100%;
-    background-image: url(../../Dist/Images/pix-2z.jpg);
+    // background-image: url(../../Dist/Images/pix-2z.jpg);
   }
   .doc-banner-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to right, black, grey);
     padding: 10px 20px;
     color: white;
     text-align: center;

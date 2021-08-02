@@ -47,7 +47,8 @@
   }
   nav .navbar-collapse .buy-btn-case a,
 .doc-nav .navbar-collapse .buy-btn-case a {
-    padding: 8px 100px;
+    min-width: 300px;
+    padding: 8px 20px;
   }
 
   .banner-details-area {
