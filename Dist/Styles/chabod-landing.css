@@ -18,7 +18,7 @@ nav .active {
 }
 nav .navbar-brand {
   color: var(--custom-color) !important;
-  margin-left: 85px;
+  margin-left: 30px;
   font-weight: bold;
   font-size: 20px;
 }
@@ -103,9 +103,17 @@ nav ul li a {
   font-size: 20px;
 }
 
-.highlights .highlight-icon {
-  font-size: 35px;
-  color: var(--custom-color);
+.highlights .about-theme {
+  width: 55%;
+  min-height: 100px;
+  padding: 20px 0;
+  margin: 20px auto 40px;
+  color: var(--grey);
+  font-size: 17px;
+  text-align: center;
+}
+.highlights .about-theme span {
+  font-size: 18px;
 }
 .highlights .top-features {
   min-height: 300px;
@@ -115,21 +123,24 @@ nav ul li a {
   margin: 0;
   display: block;
 }
-.highlights h3.add {
+.highlights h3.extra {
   color: #267aa2;
   margin-bottom: 20px;
 }
-.highlights .follow-up-text {
+.highlights .other-features {
+  min-height: 300px;
+  background-color: #f3f3f7;
+  padding: 60px;
+}
+.highlights .other-features .follow-up-text {
   color: var(--grey);
   font-size: 18px;
   text-align: center;
   width: 75%;
   margin: 20px auto 40px auto;
 }
-.highlights .other-features {
-  min-height: 300px;
-  background-color: #f3f3f7;
-  padding: 60px;
+.highlights .other-features .follow-up-text span {
+  padding: 0;
 }
 .highlights .other-features .card {
   background-color: var(--trans-bg);
@@ -139,21 +150,39 @@ nav ul li a {
   padding: 0;
 }
 .highlights .other-features li {
-  margin-top: 20px;
+  margin-top: 10px;
+}
+.highlights .other-features .features-listing span {
+  display: block;
+  padding: 5px 10px;
 }
 .highlights .other-features span {
-  display: inline-block;
-  padding: 0 10px;
   font-size: 17px;
   color: #267aa2;
+}
+.highlights .highlight-icon {
+  font-size: 35px;
+  color: var(--custom-color);
 }
 .highlights .carousel-array {
   min-height: 300px;
   margin-top: 50px;
   padding: 60px;
 }
-.highlights .carousel-array .my-carousel-content {
-  width: 100%;
+.highlights .carousel-array .carousel-icon {
+  font-size: 35px;
+}
+.highlights .carousel-array .carousel-item:nth-child(1) .my-carousel-content .carousel-icon,
+.highlights .carousel-array .carousel-item:nth-child(1) .my-carousel-content .card-title {
+  color: green;
+}
+.highlights .carousel-array .carousel-item:nth-child(2) .my-carousel-content .carousel-icon,
+.highlights .carousel-array .carousel-item:nth-child(2) .my-carousel-content .card-title {
+  color: #267aa2;
+}
+.highlights .carousel-array .carousel-item:nth-child(3) .my-carousel-content .carousel-icon,
+.highlights .carousel-array .carousel-item:nth-child(3) .my-carousel-content .card-title {
+  color: var(--custom-color);
 }
 .highlights .carousel-array .my-container {
   height: 320px;
@@ -201,10 +230,10 @@ nav ul li a {
 }
 
 footer {
-  min-height: 300px;
+  min-height: 250px;
   background-color: #f3f3f7;
   color: #58485d;
-  padding: 60px 0;
+  padding: 30px 0;
   width: 100%;
 }
 footer a {
@@ -356,7 +385,7 @@ body {
 }
 
 .buy-btn-case {
-  margin-right: 85px;
+  margin-right: 30px;
 }
 .buy-btn-case a {
   padding: 8px 25px;
