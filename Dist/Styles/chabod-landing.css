@@ -23,7 +23,7 @@ nav .navbar-brand {
   font-size: 20px;
 }
 nav ul {
-  margin-left: 0;
+  margin-left: 15px;
 }
 nav ul li {
   padding: 0 15px;
@@ -345,6 +345,11 @@ body {
 
 .custom-color {
   color: var(--custom-color);
+}
+
+.custom-link {
+  color: var(--custom-color);
+  text-decoration: none;
 }
 
 .bold {

@@ -37,6 +37,9 @@
 @media screen and (max-width: 991px) {
   nav,
   .doc-nav {
+    ul {
+      margin-left: 0;
+    }
     .navbar-toggler {
       border: none;
       &:focus {

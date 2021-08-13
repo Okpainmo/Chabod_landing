@@ -31,6 +31,10 @@
   }
 }
 @media screen and (max-width: 991px) {
+  nav ul,
+.doc-nav ul {
+    margin-left: 0;
+  }
   nav .navbar-toggler,
 .doc-nav .navbar-toggler {
     border: none;
