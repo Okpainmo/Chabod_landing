@@ -3,20 +3,31 @@
 .top-offset {
   margin-top: 60px;
 }
-.main-doc-field {
-  .doc-banner {
+.bonus-package {
+  .bonus-banner {
     width: 100%;
-    // background-image: url(../../Dist/Images/pix-2z.jpg);
-  }
-  .doc-banner-overlay {
-    background-image: linear-gradient(to right, black, grey);
-    padding: 10px 20px;
-    color: white;
-    text-align: center;
-    h2 {
-      margin: 0;
+    height: 300px;
+    margin: 15px auto 50px;
+    img {
+      width: inherit;
+      height: inherit;
     }
   }
+}
+.main-doc-field {
+  // .doc-banner {
+  //   width: 100%;
+  //   // background-image: url(../../Dist/Images/pix-2z.jpg);
+  // }
+  // .doc-banner-overlay {
+  //   background-image: linear-gradient(to right, black, grey);
+  //   padding: 10px 20px;
+  //   color: white;
+  //   text-align: center;
+  //   h2 {
+  //     margin: 0;
+  //   }
+  // }
   .page-content {
     padding: 20px;
     width: 300px;
@@ -53,6 +64,10 @@
     }
   }
   .main-doc-content {
+    padding-top: 50px;
+    .section-content {
+      margin-bottom: 40px;
+    }
     width: 60%;
     margin: 20px auto 30px 70px;
     padding: 20px;

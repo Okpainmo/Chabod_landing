@@ -280,18 +280,16 @@ footer .buy-btn-case {
   margin-top: 60px;
 }
 
-.main-doc-field .doc-banner {
+.bonus-package .bonus-banner {
   width: 100%;
+  height: 300px;
+  margin: 15px auto 50px;
 }
-.main-doc-field .doc-banner-overlay {
-  background-image: linear-gradient(to right, black, grey);
-  padding: 10px 20px;
-  color: white;
-  text-align: center;
+.bonus-package .bonus-banner img {
+  width: inherit;
+  height: inherit;
 }
-.main-doc-field .doc-banner-overlay h2 {
-  margin: 0;
-}
+
 .main-doc-field .page-content {
   padding: 20px;
   width: 300px;
@@ -328,9 +326,13 @@ footer .buy-btn-case {
   margin-right: 7px;
 }
 .main-doc-field .main-doc-content {
+  padding-top: 50px;
   width: 60%;
   margin: 20px auto 30px 70px;
   padding: 20px;
+}
+.main-doc-field .main-doc-content .section-content {
+  margin-bottom: 40px;
 }
 
 body {

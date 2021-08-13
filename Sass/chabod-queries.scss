@@ -123,8 +123,7 @@
       top: calc(100vh - 270px);
     }
     .main-doc-content {
-      width: 70%;
-      padding: 0;
+      width: 80%;
       margin: 20px auto 30px;
     }
   }
@@ -267,6 +266,11 @@
       padding: 10px;
     }
   }
+  .bonus-package {
+    .bonus-banner {
+      margin: 15px auto 30px;
+    }
+  }
 }
 @media screen and (max-width: 400px) {
   .highlights {
@@ -297,6 +301,11 @@
           height: 270px;
         }
       }
+    }
+  }
+  .bonus-package {
+    .bonus-banner {
+      margin: 15px auto 0px;
     }
   }
   .banner-details-area {
