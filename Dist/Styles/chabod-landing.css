@@ -326,10 +326,13 @@ footer .buy-btn-case {
   margin-right: 7px;
 }
 .main-doc-field .main-doc-content {
-  padding-top: 50px;
   width: 60%;
   margin: 20px auto 30px 70px;
   padding: 20px;
+  padding-top: 50px;
+}
+.main-doc-field .main-doc-content .doc-section-header {
+  text-transform: capitalize;
 }
 .main-doc-field .main-doc-content .section-content {
   margin-bottom: 40px;

@@ -108,10 +108,10 @@
             <p>
               Chabod is an amazing portfolio website template built with the
               bootstrap framework. Chabod comes with 6 different sections to
-              help sellers show their professional profile. While remaining as
+              help sellers show their professional profile, while remaining as
               engaging as possible. Chabod is a simple single page static
-              website, with pop-up features like a project story panel for
-              sharing project stories and a blog panel for displaying blog
+              website, with pop-up features like: a project story pop-up for
+              sharing project stories, and a blog pop-up for displaying blog
               stories.
             </p>
           </div>
@@ -125,10 +125,31 @@
               a hand an them and customize Chabod into the portfolio website of
               your dream.
             </p>
+            <p>
+              Chabod is a straight forward portfolio website template. It's very
+              well built and thus, leaves out the stress of needing to know how
+              to use any of its components like paddings, margins, buttons and
+              etcetera. <br />
+              The only components that you might wish to know about, is the
+              colour components. <br />
+              Chabod comes with a black, white, and grey color build. This
+              simple colour pallete adds greatly to it's simplicity.
+              <br />
+              All color configurations can be found in the config partial of
+              both the light and dark modes - that is, the
+              <i>"light-mode-config.scss" </i> &nbsp; file and the
+              <i>"dark-mode-config.scss" </i>
+              &nbsp; file).
+            </p>
+            <p>
+              Refer to the
+              <a href="#" class="custom-link">colours section below</a> for more
+              on handling colours in Chabod.
+            </p>
           </div>
         </div>
         <div class="doc-section">
-          <h3 class="doc-section-header">Chabod build Stack/Tools.</h3>
+          <h3 class="doc-section-header">Chabod build Tools/Stack.</h3>
           <div class="section-content">
             <p>Chabod is built with the following tools:</p>
             <div>
@@ -137,11 +158,175 @@
                 <li>CSS.</li>
                 <li>SASS.</li>
                 <li>Bootstrap 5.</li>
-                <li>Vanilla Javascript</li>
-                <li>Ts Particles and</li>
+                <li>Ts Particles</li>
+                <li>Vanilla Javascript and</li>
                 <li>Gulp Js</li>
               </ul>
             </div>
+          </div>
+        </div>
+        <div class="doc-section">
+          <h3 class="doc-section-header">
+            Setting up your development environment.
+          </h3>
+          <div class="section-content">
+            <p>
+              Setting up your development environment to handle Chabod is pretty
+              simple. Just lay a hand on any code editor of you choice like VS
+              Code or Atom, open up the Chabod folder in the code editor, and we
+              are good to go.
+            </p>
+          </div>
+        </div>
+        <div class="doc-section">
+          <h3 class="doc-section-header">HTML.</h3>
+          <div class="section-content">
+            <p>
+              Chabod is built with regular Html5 markup. Chabod is also built
+              with Bootstrap 5. This means a good knowledge of the Bootstrap
+              framework will help greatly in handling and customizing Chabod
+              HTML.
+            </p>
+          </div>
+        </div>
+        <div class="doc-section">
+          <h3 class="doc-section-header">CSS and SASS.</h3>
+          <div class="section-content">
+            <p>
+              Chabod is built with SASS. SASS stand for "syntactically awesome
+              stylesheet". SASS is a CSS preprocessor - it is a tool that
+              provides a better and more cool way to write styles. SASS styles
+              cannot be understood by your browser, as a result, SASS styles are
+              processed into regular CSS which the browser understands. It is
+              the CSS file that are then linked to in all the head section of
+              the HTML files contained in Chabod.
+            </p>
+            <p>
+              The SASS styling in this template follows the component based
+              styling system, this means that each section of Chabod is styled
+              seperately thanks to SASS partials. This means all the 6 different
+              sections of Chabod are styled seperately in different files called
+              partials. These seperations make further development and
+              maintenance to be much easier compared to working directly with
+              the jammed CSS files directly.
+            </p>
+            <p>
+              Feel free to work directly with the CSS files if you do not know
+              how to work with SASS yet. You can find all the CSS files inside
+              the "Styles" folder that is inside the "Dist" folder in Chabod.
+            </p>
+            <p>
+              There are different ways to process SASS into CSS. But in this
+              template, SASS is processed into CSS using Gulp.Js. Refer to the
+              <a href="#" class="custom-link">Gulp.Js section</a> below for more
+              on SASS compilation/processing. You do not need to bother a bit
+              about SASS if Gulp is completely set up. So just set up Gulp, and
+              go on with writing SASS - Gulp will automatically do the
+              processing as configured in the "gulp.js" script.
+            </p>
+            <p>
+              But please, always remember to run the "gulp watch" command in
+              your command line interface or Terminal, to ensure that gulp is
+              watching for changes in any SASS files, so that it can
+              compile/process it into regular CSS. If you fail to do so, SASS
+              will not compile/process into CSS and thus your changes will not
+              be effected.
+            </p>
+            <p>
+              You can find all the main SASS files and SASS partials in the
+              "Sass" folder that is inside Chabod.
+            </p>
+          </div>
+        </div>
+        <!-- <div class="doc-section">
+          <h3 class="doc-section-header">Bootstrap.</h3>
+          <div class="section-content">
+            <p>
+              Chabod is built with the Bootstrap 5 framework. Bootstrap is a
+              very popular HTML, CSS and Javascript framework it is very easy to
+              set up. All the HTML files in Chabod contains CDN links to the
+              Bootstrap framework for Bootstrap styles and all relevant scripts
+              to get Bootstrap running.
+            </p>
+            <p>
+              This means that, as long as you are connected to the internet, you
+              can just go ahead with customizing Chabod without needing any
+              setup for Bootstrap.
+            </p>
+            <p>
+              If you prefer working offline with local bootstrap files, then go
+              ahead and do the necessary downloads and linking to all the
+              necessary files locally. The Bootstrap getting started page should
+              have all the download link to the files that you can work with
+              locally. So feel free to refer to the Bootstrap getting started
+              page for All
+            </p>
+            <p>
+              But please, always remember to run the "gulp watch" command in
+              your command line interface or Terminal, to ensure that gulp is
+              watching for changes in any SASS files, so that it can
+              compile/process it into regular CSS. If you fail to do so, SASS
+              will not compile/process into CSS and thus your changes will not
+              be effected.
+            </p>
+            <p>
+              You can find all the main SASS files and SASS partials in the
+              "Sass" folder that is inside Chabod.
+            </p>
+          </div>
+        </div> -->
+        <div class="doc-section">
+          <h3 class="doc-section-header">Bootstrap.</h3>
+          <div class="section-content">
+            <p>
+              Chabod is built with the Bootstrap 5 framework. Bootstrap is a
+              very popular HTML, CSS and Javascript framework it is very easy to
+              set up. All the HTML files in Chabod contains CDN links to the
+              Bootstrap framework for Bootstrap styles and all relevant scripts
+              to get Bootstrap running.
+            </p>
+            <p>
+              This means that, as long as you are connected to the internet, you
+              can just go ahead with customizing Chabod without needing any
+              setup for Bootstrap.
+            </p>
+            <p>
+              If you prefer working offline with local bootstrap files, then go
+              ahead and do the necessary downloads and linking to all the
+              necessary files locally. The
+              <a href="#" class="custom-link">Bootstrap getting started</a> page
+              should have all the download links to the files that you can work
+              with locally. So feel free to refer to the Bootstrap getting
+              started page for all you will need to set up Bootstrap for local
+              development.
+            </p>
+          </div>
+        </div>
+        <div class="doc-section">
+          <h3 class="doc-section-header">Ts Particles.</h3>
+          <div class="section-content">
+            <p>
+              Chabod is built with the Bootstrap 5 framework. Bootstrap is a
+              very popular HTML, CSS and Javascript framework it is very easy to
+              set up. All the HTML files in Chabod contains CDN links to the
+              Bootstrap framework for Bootstrap styles and all relevant scripts
+              to get Bootstrap running.
+            </p>
+            <p>
+              This means that, as long as you are connected to the internet, you
+              can just go ahead with customizing Chabod without needing any
+              setup for Bootstrap.
+            </p>
+            <p>
+              If you prefer working offline with local bootstrap files, then go
+              ahead and do the necessary downloads and linking to all the
+              necessary files locally. The
+              <a href="#" class="custom-link">Bootstrap getting started</a> page
+              should have all the download links to the files that you can work
+              with locally. So feel free to refer to the Bootstrap getting
+              started page for all you will need to set up Bootstrap for local
+              development.
+            </p>
           </div>
         </div>
         <div class="float-button">

@@ -64,12 +64,15 @@
     }
   }
   .main-doc-content {
-    padding-top: 50px;
-    .section-content {
-      margin-bottom: 40px;
-    }
     width: 60%;
     margin: 20px auto 30px 70px;
     padding: 20px;
+    padding-top: 50px;
+    .doc-section-header {
+      text-transform: capitalize;
+    }
+    .section-content {
+      margin-bottom: 40px;
+    }
   }
 }
