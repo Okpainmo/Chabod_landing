@@ -182,10 +182,9 @@
           <h3 class="doc-section-header">HTML.</h3>
           <div class="section-content">
             <p>
-              Chabod is built with regular Html5 markup. Chabod is also built
-              with Bootstrap 5. This means a good knowledge of the Bootstrap
-              framework will help greatly in handling and customizing Chabod
-              HTML.
+              Chabod is built with regular Html5 markup and Bootstrap 5. This
+              means a good knowledge of the Bootstrap framework will help
+              greatly in handling and customizing Chabod HTML.
             </p>
           </div>
         </div>
@@ -198,22 +197,23 @@
               provides a better and more cool way to write styles. SASS styles
               cannot be understood by your browser, as a result, SASS styles are
               processed into regular CSS which the browser understands. It is
-              the CSS file that are then linked to in all the head section of
-              the HTML files contained in Chabod.
+              the processed SASS styles(CSS files) that are linked to in all the
+              head section of the HTML files contained in Chabod.
             </p>
             <p>
               The SASS styling in this template follows the component based
-              styling system, this means that each section of Chabod is styled
-              seperately thanks to SASS partials. This means all the 6 different
-              sections of Chabod are styled seperately in different files called
-              partials. These seperations make further development and
-              maintenance to be much easier compared to working directly with
-              the jammed CSS files directly.
+              styling system, this means each section of Chabod is styled
+              seperately thanks to SASS partials. This simply implies that all
+              the 6 different sections of Chabod are styled seperately in
+              different files called partials. These seperations make further
+              development and maintenance to be much easier compared to working
+              directly with the jammed CSS files directly.
             </p>
             <p>
-              Feel free to work directly with the CSS files if you do not know
-              how to work with SASS yet. You can find all the CSS files inside
-              the "Styles" folder that is inside the "Dist" folder in Chabod.
+              Feel free to work directly with the CSS files directly if you do
+              not know how to work with SASS yet. You can find all the CSS files
+              inside the "Styles" folder that is contained the "Dist" folder in
+              Chabod.
             </p>
             <p>
               There are different ways to process SASS into CSS. But in this
@@ -225,12 +225,12 @@
               processing as configured in the "gulp.js" script.
             </p>
             <p>
-              But please, always remember to run the "gulp watch" command in
-              your command line interface or Terminal, to ensure that gulp is
-              watching for changes in any SASS files, so that it can
-              compile/process it into regular CSS. If you fail to do so, SASS
-              will not compile/process into CSS and thus your changes will not
-              be effected.
+              But please, always remember to run the <i>"gulp watch"</i> command
+              in your command line interface or Terminal, to ensure that gulp is
+              watching for changes in any SASS files, so that it can process it
+              into regular CSS. If you fail to do so, SASS will not
+              compile/process into CSS and thus your changes will not be
+              effected.
             </p>
             <p>
               You can find all the main SASS files and SASS partials in the
@@ -306,27 +306,64 @@
           <h3 class="doc-section-header">Ts Particles.</h3>
           <div class="section-content">
             <p>
-              Chabod is built with the Bootstrap 5 framework. Bootstrap is a
-              very popular HTML, CSS and Javascript framework it is very easy to
-              set up. All the HTML files in Chabod contains CDN links to the
-              Bootstrap framework for Bootstrap styles and all relevant scripts
-              to get Bootstrap running.
+              Ts particles is a Javascript tool for creating particle effects in
+              websites. The moving particle effect on the home section of Chabod
+              is done by ts particles. Ts particles is a github fork of a
+              similar javascript tool called particles.js.
             </p>
             <p>
-              This means that, as long as you are connected to the internet, you
-              can just go ahead with customizing Chabod without needing any
-              setup for Bootstrap.
+              With Chabod, you do not need any set up for ts particles. it's all
+              set up already. Both the light and dark modes of Chabod contains
+              customized configurations for ts particles.
             </p>
             <p>
-              If you prefer working offline with local bootstrap files, then go
-              ahead and do the necessary downloads and linking to all the
-              necessary files locally. The
-              <a href="#" class="custom-link">Bootstrap getting started</a> page
-              should have all the download links to the files that you can work
-              with locally. So feel free to refer to the Bootstrap getting
-              started page for all you will need to set up Bootstrap for local
-              development.
+              The particles effect on Chabod can be changed and customized to
+              produce different particle effects of your choice. Refer to the
+              <a href="#" class="custom-link">ts particles website</a> for how
+              to go about that.
+              <a href="#" class="custom-link">This tutorial</a> might also be of
+              great help.
             </p>
+          </div>
+        </div>
+        <div class="doc-section">
+          <h3 class="doc-section-header">Gulp.Js.</h3>
+          <div class="section-content">
+            <p>
+              Gulp is a popular javascript tool for automating different
+              development tasks like creating a live server, processing SASS,
+              CSS auto-prefixing, etc
+            </p>
+            <p>
+              In this template, Gulp is used in SASS compilation and CSS
+              auto-prefixing.
+            </p>
+            <p>
+              Chabod comes with a gulp js script. That leaves you with no
+              special Gulp.js script to write. All you'll need to do in to
+              install gulp and all the required dependencies (gulp-sass, sass,
+              and gulp auto-prefixer)
+            </p>
+            <p>
+              Follow these simple steps to get your Gulp.js all set up and
+              functioning.
+            </p>
+            <ul>
+              <li>
+                Install gulp on your PC (You'll need to have node.js installed
+                first).
+              </li>
+              <li>
+                Initialize NPM in you project folder (the Chabod folder) by
+                running the <i>npm init</i> command in the command line or
+                terminal.
+              </li>
+              <li>
+                Then run the following command on the command line or Terminal
+                to install all the required dependencies to get gulp all set for
+                compiling SASS and auto prefixing CSS.
+              </li>
+            </ul>
           </div>
         </div>
         <div class="float-button">
