@@ -8,10 +8,9 @@ https://getchabod.netlify.app
 ## About Chabod 7.0
 
 > Getchabod is the landing page of the chabod theme (Chabod 7.0).
-> it has a simple but very neat design - a cool UI.
+> It has a simple but very neat design - a cool UI.
 
-> It's the launch site for Chabod. It contains the documentation and other important details about the
-> template(Chabod 7.0)
+> It's the launch site for Chabod. It contains the documentation and other important details about Chabod 7.0.
 
 ## Project Stack/Build Tools
 
