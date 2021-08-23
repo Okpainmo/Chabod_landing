@@ -292,10 +292,10 @@ footer .buy-btn-case {
 
 .main-doc-field .page-content {
   padding: 20px;
-  width: 300px;
+  min-width: 300px;
   border-radius: 5px;
   position: fixed;
-  top: 70px;
+  top: 80px;
   border-bottom: 2px solid var(--custom-color);
   background-color: white;
   right: 90px;
@@ -316,9 +316,12 @@ footer .buy-btn-case {
   padding: 0;
   list-style-type: none;
 }
+.main-doc-field .page-content ul li {
+  padding: 3px 0;
+}
 .main-doc-field .page-content ul li::before {
   content: "";
-  background-color: var(--custom-color);
+  background-color: var(--grey);
   width: 5px;
   height: 5px;
   border-radius: 100%;
@@ -355,6 +358,15 @@ body {
 .custom-link {
   color: var(--custom-color);
   text-decoration: none;
+}
+.custom-link:hover {
+  color: var(--grey);
+  transition: color 0.75s ease;
+}
+
+.code {
+  font-style: italic;
+  color: red;
 }
 
 .bold {

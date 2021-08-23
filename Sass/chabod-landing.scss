@@ -19,6 +19,14 @@ body {
 .custom-link {
   color: var(--custom-color);
   text-decoration: none;
+  &:hover {
+    color: var(--grey);
+    transition: color 0.75s ease;
+  }
+}
+.code {
+  font-style: italic;
+  color: red;
 }
 .bold {
   font-weight: bold;
