@@ -402,10 +402,6 @@ body {
   animation-timing-function: ease-in-out;
 }
 
-.mobile-only {
-  display: none;
-}
-
 .buy-btn-case {
   margin-right: 30px;
 }
