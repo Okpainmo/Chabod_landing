@@ -341,6 +341,18 @@ footer .buy-btn-case {
   margin-bottom: 40px;
 }
 
+.chabod-gallery {
+  padding: 20px 0 0;
+  margin: 30px 0 0;
+}
+.chabod-gallery .row .card {
+  margin-bottom: 30px;
+  box-shadow: 0 32px 20px -20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.06);
+}
+.chabod-gallery .row .card img {
+  width: 100%;
+}
+
 body {
   padding: 0;
   margin: 0;
