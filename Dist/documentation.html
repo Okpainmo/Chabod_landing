@@ -28,9 +28,7 @@
   </head>
   <body>
     <header class="doc-header">
-      <nav
-        class="navbar navbar-expand-lg navbar-light doc-nav fixed-top bg-white"
-      >
+      <nav class="navbar navbar-expand-lg navbar-light doc-nav bg-white">
         <div class="container-fluid">
           <a class="navbar-brand mont-font" href="../index.html">Chabod</a>
           <button
@@ -46,6 +44,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://chabodtheme.netlify.app"
                   >Demo</a
@@ -73,43 +74,38 @@
         </div>
       </nav>
     </header>
-    <section class="main-doc-field top-offset">
-      <!-- <div class="doc-banner">
-        <div class="doc-banner-overlay">
-          <h2>Chabod Documentation</h2>
-        </div>
-      </div> -->
+    <section class="main-doc-field">
       <aside class="page-content mobile-only">
         <h5 class="mont-font">Page Content</h5>
         <ul>
           <a href="#top" class="custom-link">
             <li>Introduction</li>
           </a>
-          <a href="#to-first-scrool-section" class="custom-link">
+          <a href="#to-about-section" class="custom-link">
             <li>About Chabod.</li>
           </a>
-          <a href="#to-first-scrool-section" class="custom-link">
+          <a href="#to-getting-started-section" class="custom-link">
             <li>Getting Started.</li>
           </a>
-          <a href="#to-second-scrool-section" class="custom-link">
+          <a href="#to-build-section" class="custom-link">
             <li>Chabod Build Stack/Build Tools.</li>
           </a>
-          <a href="#to-second-scrool-section" class="custom-link">
+          <a href="#to-setup-section" class="custom-link">
             <li>Setting Up Dev Environment</li>
           </a>
-          <a href="to-html-section" class="custom-link">
+          <a href="#to-html-section" class="custom-link">
             <li>HTML</li>
           </a>
-          <a href="to-style-section" class="custom-link">
+          <a href="#to-style-section" class="custom-link">
             <li>CSS And SASS</li>
           </a>
-          <a href="to-bootstrap-section" class="custom-link">
+          <a href="#to-bootstrap-section" class="custom-link">
             <li>Bootstrap</li>
           </a>
-          <a href="to-particles-section" class="custom-link">
+          <a href="#to-particles-section" class="custom-link">
             <li>Ts particles</li> </a
-          ><a href="to-gulp-section" class="custom-link"> <li>Gulp.js</li> </a
-          ><a href="to-colours-section" class="custom-link">
+          ><a href="#to-gulp-section" class="custom-link"> <li>Gulp.js</li> </a
+          ><a href="#to-colours-section" class="custom-link">
             <li>Colours</li>
           </a>
         </ul>
@@ -129,7 +125,7 @@
             </p>
           </div>
         </div>
-        <div class="doc-section">
+        <div class="doc-section" id="to-about-section">
           <h3 class="doc-section-header">About Chabod.</h3>
           <div class="section-content">
             <p>
@@ -142,11 +138,8 @@
               stories.
             </p>
           </div>
-          <div id="to-second-scrool-section">
-            <!-- getting-started-section-anchor -->
-          </div>
         </div>
-        <div class="doc-section">
+        <div class="doc-section" id="to-getting-started-section">
           <h3 class="doc-section-header">Getting Started.</h3>
           <div class="section-content">
             <p>
@@ -178,7 +171,7 @@
             </p>
           </div>
         </div>
-        <div class="doc-section">
+        <div class="doc-section" id="to-build-section">
           <h3 class="doc-section-header">Chabod build Tools/Stack.</h3>
           <div class="section-content">
             <p>Chabod is built with the following tools:</p>
@@ -195,7 +188,7 @@
             </div>
           </div>
         </div>
-        <div class="doc-section">
+        <div class="doc-section" id="to-setup-section">
           <h3 class="doc-section-header">
             Setting up your development environment.
           </h3>
@@ -208,7 +201,7 @@
             </p>
           </div>
         </div>
-        <div class="doc-section">
+        <div class="doc-section" id="to-html-section">
           <h3 class="doc-section-header">HTML.</h3>
           <div class="section-content">
             <p>
@@ -218,7 +211,7 @@
             </p>
           </div>
         </div>
-        <div class="doc-section">
+        <div class="doc-section" id="to-style-section">
           <h3 class="doc-section-header">CSS and SASS.</h3>
           <div class="section-content">
             <p>
@@ -233,11 +226,11 @@
             <p>
               The SASS styling in this template follows the component based
               styling system, this means each section of Chabod is styled
-              seperately thanks to SASS partials. This simply implies that all
-              the 6 different sections of Chabod are styled seperately in
-              different files called partials. These seperations make further
-              development and maintenance to be much easier compared to working
-              directly with the jammed CSS files directly.
+              seperately thanks to SASS partials - all the 6 different sections
+              of Chabod are styled seperately in different files called
+              partials. These seperations make further development and
+              maintenance to be much easier compared to working directly with
+              the jammed CSS files directly.
             </p>
             <p>
               Feel free to work directly with the CSS files directly if you do
@@ -305,13 +298,13 @@
             </p>
           </div>
         </div> -->
-        <div class="doc-section">
+        <div class="doc-section" id="to-bootstrap-section">
           <h3 class="doc-section-header">Bootstrap.</h3>
           <div class="section-content">
             <p>
               Chabod is built with the Bootstrap 5 framework. Bootstrap is a
-              very popular HTML, CSS and Javascript framework it is very easy to
-              set up. All the HTML files in Chabod contains CDN links to the
+              very popular HTML, CSS and Javascript framework. It is very easy
+              to set up. All the HTML files in Chabod contains CDN links to the
               Bootstrap framework for Bootstrap styles and all relevant scripts
               to get Bootstrap running.
             </p>
@@ -332,7 +325,7 @@
             </p>
           </div>
         </div>
-        <div class="doc-section">
+        <div class="doc-section" id="to-particles-section">
           <h3 class="doc-section-header">Ts Particles.</h3>
           <div class="section-content">
             <p>
@@ -356,7 +349,7 @@
             </p>
           </div>
         </div>
-        <div class="doc-section">
+        <div class="doc-section" id="to-gulp-section">
           <h3 class="doc-section-header">Gulp.Js.</h3>
           <div class="section-content">
             <p>
@@ -404,7 +397,7 @@
             </p>
           </div>
         </div>
-        <div class="doc-section">
+        <div class="doc-section" id="to-colours-section">
           <h3 class="doc-section-header">Colours</h3>
           <div class="section-content">
             <p>

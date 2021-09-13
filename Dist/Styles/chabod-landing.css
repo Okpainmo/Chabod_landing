@@ -209,9 +209,9 @@ nav ul li a {
 }
 .highlights .carousel-array .col-lg-6:first-child {
   background-size: cover;
+  background-position: center;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  background-image: url(../../Dist/Images/pix-2z.jpg);
 }
 .highlights .last-preview-btn {
   text-align: center;
@@ -233,6 +233,8 @@ footer {
   min-height: 250px;
   background-color: #f3f3f7;
   color: #58485d;
+  position: relative;
+  z-index: 5000;
   padding: 30px 0;
   width: 100%;
 }
@@ -330,9 +332,9 @@ footer .buy-btn-case {
 }
 .main-doc-field .main-doc-content {
   width: 60%;
-  margin: 20px auto 30px 70px;
+  margin: 0 auto 30px 70px;
   padding: 20px;
-  padding-top: 50px;
+  position: relative;
 }
 .main-doc-field .main-doc-content .doc-section-header {
   text-transform: capitalize;
@@ -346,7 +348,7 @@ footer .buy-btn-case {
   margin: 30px 0 0;
 }
 .chabod-gallery .row .card {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   box-shadow: 0 32px 20px -20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.06);
 }
 .chabod-gallery .row .card img {
