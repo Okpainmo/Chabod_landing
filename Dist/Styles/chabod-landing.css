@@ -213,6 +213,9 @@ nav ul li a {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+.highlights .carousel-array .col-lg-6:last-child {
+  box-shadow: 0 0 15px 1px #e4e2e2 !important;
+}
 .highlights .last-preview-btn {
   text-align: center;
   margin: 20px 0 30px;
@@ -338,6 +341,7 @@ footer .buy-btn-case {
 }
 .main-doc-field .main-doc-content .doc-section-header {
   text-transform: capitalize;
+  color: var(--grey);
 }
 .main-doc-field .main-doc-content .section-content {
   margin-bottom: 40px;
@@ -353,6 +357,10 @@ footer .buy-btn-case {
 }
 .chabod-gallery .row .card img {
   width: 100%;
+}
+.chabod-gallery .row .card img:hover {
+  transform: scale(1.07);
+  transition: transform 0.75s ease;
 }
 
 body {
