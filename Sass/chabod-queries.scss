@@ -97,8 +97,7 @@
         }
         .col-lg-6:last-child {
           height: 250px;
-          border-left: none;
-          border-top: 1px solid var(--grey);
+          box-shadow: 0 0 15px 1px hsl(0, 2%, 89%) !important;
         }
       }
     }

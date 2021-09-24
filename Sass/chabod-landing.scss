@@ -5,6 +5,7 @@
 @use "./Partials/highlights";
 @use "./Partials/documentation";
 @use "./Partials/chabod-gallery";
+@use "./Partials/purchase-modal";
 
 body {
   padding: 0;
@@ -64,13 +65,13 @@ body {
 // }
 .buy-btn-case {
   margin-right: 30px;
-  a {
+  button {
     padding: 8px 25px;
     border-radius: 5px;
     background-color: var(--custom-color);
     color: white;
   }
-  a:hover {
+  button:hover {
     transform: scale(1.09);
     transition: transform 0.7s ease;
     color: white;

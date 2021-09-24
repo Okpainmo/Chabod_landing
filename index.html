@@ -24,9 +24,54 @@
       src="https://kit.fontawesome.com/7d4093f05b.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Dist/Images/chabod_real-logo.png"
+    />
+
     <title>Get Chabod</title>
   </head>
   <body>
+    <!--Sales Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="sales-modal-content">
+              <h3 class="sales-header mont-font">Buy Chabod on</h3>
+              <div class="sales-platform envato">
+                Envato <span class="envato-green">(Theme Forest)</span>
+              </div>
+              <h4>Or</h4>
+              <div class="sales-platform selar">Selar</div>
+              <div class="buy-recommendation">
+                <p>
+                  Recommendation: Use Selar if you are buying from Nigeria or
+                  any other African country
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <header class="primary-view">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
@@ -69,22 +114,18 @@
               </li>
             </ul>
             <div class="buy-btn-case">
-              <a href="#" class="btn custom-color">
+              <!-- Button trigger modal -->
+
+              <button
+                type="button"
+                class="btn custom-color"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
                 <span>Buy Now</span>
                 <i class="fas fa-shopping-cart" style="padding-left: 10px"></i>
-              </a>
+              </button>
             </div>
-            <!-- <div class="social-icons-case">
-              <div class="icon">
-                <span class="fab fa-twitter"></span>
-              </div>
-              <div class="icon">
-                <span class="fab fa-instagram"></span>
-              </div>
-              <div class="icon">
-                <span class="fab fa-linkedin"></span>
-              </div>
-            </div> -->
           </div>
         </div>
       </nav>
@@ -433,7 +474,7 @@
                           <span class="carousel-icon fas fa-newspaper"></span>
                           <h5 class="card-title">An in-built blog</h5>
                           <p class="card-text">
-                            Tell the world more on how pro you are by sharing
+                            Tell the world more on how pro you are, by sharing
                             blog stories on topics in your niche - right inside
                             <span class="custom-color">Chabod</span>.
                           </p>
@@ -499,10 +540,15 @@
               </div>
             </div>
             <div class="buy-btn-case">
-              <a href="#" class="btn custom-color">
+              <button
+                type="button"
+                class="btn custom-color"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
                 <span>Buy Now</span>
                 <i class="fas fa-shopping-cart" style="padding-left: 10px"></i>
-              </a>
+              </button>
             </div>
           </div>
           <div class="col-lg-3 text-center">

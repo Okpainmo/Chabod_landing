@@ -52,7 +52,7 @@ nav ul li a {
 
 .banner-details-area {
   display: flex;
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 .description-text-area {
@@ -367,6 +367,42 @@ footer .buy-btn-case {
   transition: transform 0.75s ease;
 }
 
+.modal {
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.modal .sales-modal-content {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 0;
+}
+.modal .sales-modal-content h4 {
+  color: gray;
+}
+.modal .sales-modal-content .sales-platform {
+  margin: 20px auto;
+  font-size: 18px;
+  padding: 12px 15px;
+  box-shadow: 0 0 24px -13px gray;
+  background-color: white;
+  border-radius: 30px;
+  min-width: 235px;
+}
+.modal .sales-modal-content .buy-recommendation {
+  padding: 20px 10px;
+}
+.modal .sales-modal-content .modal-header {
+  border-bottom: 0;
+}
+.modal .sales-modal-content .envato-green {
+  color: green;
+}
+.modal .sales-modal-content .selar {
+  color: blue;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -431,13 +467,13 @@ body {
 .buy-btn-case {
   margin-right: 30px;
 }
-.buy-btn-case a {
+.buy-btn-case button {
   padding: 8px 25px;
   border-radius: 5px;
   background-color: var(--custom-color);
   color: white;
 }
-.buy-btn-case a:hover {
+.buy-btn-case button:hover {
   transform: scale(1.09);
   transition: transform 0.7s ease;
   color: white;
