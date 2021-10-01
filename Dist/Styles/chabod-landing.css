@@ -10,9 +10,13 @@
   box-shadow: 0 0 15px 1px #e4e2e2 !important;
 }
 
+.fixed-top {
+  z-index: 10000 !important;
+}
+
 nav {
   background-color: rgba(255, 255, 255, 0.95);
-  padding: 1.5rem 0 !important;
+  padding: 0.8rem 0 !important;
 }
 nav .top-offset {
   margin-top: 50px;
@@ -110,8 +114,8 @@ nav ul li a {
 .highlights .about-theme {
   width: 55%;
   min-height: 100px;
-  padding: 20px 0;
-  margin: 20px auto 40px;
+  padding: 0 0 30px;
+  margin: 0 auto 70px;
   color: var(--grey);
   font-size: 17px;
   text-align: center;
