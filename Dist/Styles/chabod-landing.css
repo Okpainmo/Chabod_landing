@@ -375,6 +375,9 @@ footer .buy-btn-case {
   z-index: 10000;
   background-color: rgba(0, 0, 0, 0.75);
 }
+.modal .modal-header {
+  border-bottom: 0;
+}
 .modal .sales-modal-content {
   color: black;
   display: flex;
@@ -389,16 +392,13 @@ footer .buy-btn-case {
   margin: 20px auto;
   font-size: 18px;
   padding: 12px 15px;
-  box-shadow: 0 0 24px -13px gray;
+  box-shadow: 0 0 24px -10px gray;
   background-color: white;
   border-radius: 30px;
   min-width: 235px;
 }
 .modal .sales-modal-content .buy-recommendation {
   padding: 20px 10px;
-}
-.modal .sales-modal-content .modal-header {
-  border-bottom: 0;
 }
 .modal .sales-modal-content .envato-green {
   color: green;
