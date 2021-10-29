@@ -20,7 +20,7 @@
   }
 
   .primary-view {
-    min-height: 520px;
+    min-height: 490px;
   }
 
   .main-doc-field .main-doc-content {
@@ -198,6 +198,7 @@
   .primary-view .banner-details-area .illustration-area,
 .doc-header .banner-details-area .illustration-area {
     margin-bottom: 30px;
+    margin-top: 50px;
   }
 
   .top-offset {
@@ -206,7 +207,7 @@
 
   .highlights .about-theme {
     width: 90%;
-    padding-top: 70px;
+    padding-top: 20px;
   }
   .highlights .top-features .row .col {
     width: 85%;
