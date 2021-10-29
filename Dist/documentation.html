@@ -94,7 +94,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://chabodtheme.netlify.app"
-                  >Demo</a
+                  >Live Demo</a
                 >
               </li>
               <li class="nav-item">
@@ -158,6 +158,9 @@
           ><a href="#to-colours-section" class="custom-link">
             <li>Colours</li>
           </a>
+          <a href="#to-gmap-section" class="custom-link">
+            <li>Google Maps</li>
+          </a>
         </ul>
       </aside>
       <div class="main-doc-content">
@@ -175,6 +178,7 @@
                 class="custom-link"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
+                style="cursor: pointer"
               >
                 Buy Chabod Now
               </span>
@@ -186,11 +190,11 @@
           <div class="section-content">
             <p>
               Chabod is an amazing portfolio website template built with the
-              bootstrap framework. Chabod comes with 6 different sections to
-              help sellers show their professional profile, while remaining as
-              engaging as possible. Chabod is a simple, single page static
-              website, with pop-up features like: a project story pop-up for
-              sharing project stories, and a blog pop-up for displaying blog
+              bootstrap framework. It comes with 6 different sections to help
+              sellers show their professional profile with style, while
+              remaining as engaging as possible. Chabod is a simple, single page
+              static website, with pop-up features like: a project story pop-up
+              for sharing project stories, and a blog pop-up for displaying blog
               stories.
             </p>
           </div>
@@ -206,24 +210,28 @@
             </p>
             <p>
               Chabod is a straight forward portfolio website template. It's very
-              well built and thus, leaves out the stress of needing to know how
-              to use any of its components like paddings, margins, buttons and
-              etcetera. <br />
+              much pre-built and thus, leaves out the stress of needing to know
+              how to use any of its components like paddings, margins, buttons
+              and etcetera. <br />
               The only components that you might wish to know about, is the
               colour components. <br />
               Chabod comes with a black, white, and grey color build. This
               simple colour pallete adds greatly to it's simplicity.
               <br />
-              All color configurations can be found in the config partial of
+              All color configurations can be found in the config partials of
               both the light and dark modes - that is, the
-              <i>"light-mode-config.scss" </i> &nbsp; file and the
-              <i>"dark-mode-config.scss" </i>
-              &nbsp; file).
+              <i>light-mode-config.scss</i> file, the
+              <i>light-to-dark-mode-config.scss</i> file, the
+              <i>dark-mode-config.scss</i> file and the
+              <i>dark-to-light-mode-config.scss</i>
+              file.
             </p>
             <p>
               Refer to the
-              <a href="#" class="custom-link">colours section below</a> for more
-              on handling colours in Chabod.
+              <a href="#to-colours-section" class="custom-link"
+                >colours section below</a
+              >
+              for more on handling colours in Chabod.
             </p>
           </div>
         </div>
@@ -271,45 +279,46 @@
           <h3 class="doc-section-header">CSS and SASS.</h3>
           <div class="section-content">
             <p>
-              Chabod is built with SASS. SASS stand for "syntactically awesome
-              stylesheet". SASS is a CSS preprocessor - it is a tool that
-              provides a better and more cool way to write styles. SASS styles
-              cannot be understood by your browser, as a result, SASS styles are
-              processed into regular CSS which the browser understands. It is
-              the processed SASS styles(CSS files) that are linked to in all the
-              head section of the HTML files contained in Chabod.
+              Chabod is built with SASS. SASS is a CSS preprocessor - a tool
+              that provides a better and more cool way to write styles. SASS
+              styles are processed/compiled into regular CSS using different
+              tools. In Chabod, Gulp is the tool used in compiling SASS into
+              regular CSS. It is the compiled SASS styles(CSS files) that are
+              linked to in all the head section of the HTML files contained in
+              Chabod.
             </p>
             <p>
               The SASS styling in this template follows the component based
               styling system, this means each section of Chabod is styled
-              seperately thanks to SASS partials - all the 6 different sections
-              of Chabod are styled seperately in different files called
+              seperately thanks to SASS partials -that is, all the 6 different
+              sections of Chabod are styled seperately in different files called
               partials. These seperations make further development and
               maintenance to be much easier compared to working directly with
-              the jammed CSS files directly.
+              the jammed CSS files.
             </p>
             <p>
-              Feel free to work directly with the CSS files directly if you do
-              not know how to work with SASS yet. You can find all the CSS files
-              inside the "Styles" folder that is contained in the "Dist" folder
-              in Chabod.
+              Feel free to work directly with the CSS files if you do not know
+              how to work with SASS yet. You can find all the CSS files inside
+              the "Styles" folder that is contained in the "Dist" folder in
+              Chabod.
             </p>
             <p>
-              There are different ways to process SASS into CSS. But in this
-              template, SASS is processed into CSS using Gulp.Js. Refer to the
-              <a href="#" class="custom-link">Gulp.Js section</a> below for more
-              on SASS compilation/processing. You do not need to bother a bit
-              about SASS if Gulp is completely set up. So just set up Gulp, and
-              go on with writing SASS - Gulp will automatically do the
-              processing as configured in the "gulp.js" script.
+              In this template, SASS is processed into CSS using Gulp.Js. Refer
+              to the
+              <a href="#to-gulp-section" class="custom-link">Gulp.Js section</a>
+              below for more on SASS compilation. You do not need to bother a
+              bit about SASS if Gulp is completely set up. So just set up Gulp,
+              and go on with writing SASS - Gulp will automatically do the
+              compiling as configured in the "gulp.js" script.
             </p>
             <p>
               But please, always remember to run the
               <span class="code">"gulp watch"</span> command in your command
-              line interface or Terminal, to ensure that gulp is watching for
-              changes in any SASS files, so that it can process it into regular
-              CSS. If you fail to do so, SASS will not compile/process into CSS
-              and thus your changes will not be effected.
+              line interface or terminal during development, to ensure that gulp
+              is watching for changes in any SASS file, so that it can compile
+              it into regular CSS. If you fail to do so, SASS will not
+              compile/process into CSS and thus your changes will not be
+              effected.
             </p>
             <p>
               You can find all the main SASS files and SASS partials in the
@@ -334,13 +343,12 @@
             </p>
             <p>
               If you prefer working offline with local bootstrap files, then go
-              ahead and do the necessary downloads and linking to all the
+              ahead and do the necessary downloads and then link to all the
               necessary files locally. The
               <a href="#" class="custom-link">Bootstrap getting started</a> page
-              should have all the download links to the files that you can work
-              with locally. So feel free to refer to the Bootstrap getting
-              started page for all you will need to set up Bootstrap for local
-              development.
+              should help you out with downloading all the necessary files for
+              local development. So feel free to refer to it for all you will
+              need to set up Bootstrap for local development.
             </p>
           </div>
         </div>
@@ -373,8 +381,8 @@
           <div class="section-content">
             <p>
               Gulp is a popular javascript tool for automating different
-              development tasks like creating a live server, processing SASS,
-              CSS auto-prefixing, etc
+              development tasks like creating a live server, compiling SASS, CSS
+              auto-prefixing, and etcetera.
             </p>
             <p>
               In this template, Gulp is used in SASS compilation and CSS
@@ -382,7 +390,7 @@
             </p>
             <p>
               Chabod comes with a <i>gulpfile.js script</i>. That leaves you
-              with no special Gulp.js script to write. All you'll need to do in
+              with no special Gulp.js script to write. All you'll need to do, is
               to install gulp and all the required dependencies (gulp-sass,
               sass, and gulp auto-prefixer).
             </p>
@@ -392,27 +400,27 @@
             </p>
             <ul>
               <li>
-                Install gulp on your PC (You'll need to have node.js installed
-                first).
+                Install gulp in the Chabod folder (You'll need to have node.js
+                installed first).
               </li>
               <li>
-                Initialize NPM in you project folder (the Chabod folder) by
-                running the <span class="code">npm init</span> command in the
-                command line or terminal.
-              </li>
-              <li>
-                Then run the following command on the command line or Terminal
-                to install all the required dependencies to get gulp all set for
-                compiling SASS and auto prefixing CSS -
-                <span class="code"
-                  >npm install --save-dev gulp-sass gulp-autoprefixer sass</span
-                >
+                Then run <span class="code">npm install </span>
+                in the command line or terminal when inside the project folder
+                to install all the required dependencies and get gulp all set
+                for compiling SASS and auto prefixing CSS -
+                <br />
+                Chabod comes with a <i>package.json</i> file which contains a
+                list of all dependencies required to set up a complete workflow
+                for Chabod. Hence, simply running the
+                <span class="code">npm install </span> command, directly
+                installs all the listed dependencies in the
+                <i>package.json</i> file.
               </li>
             </ul>
             <p>
               With all of these all done, You are ready to start enjoying
               Gulp.Js on your workspace, and you are all set to start building
-              with SASS as well.
+              with SASS as well. Isn't it all simple?
             </p>
           </div>
         </div>
@@ -421,22 +429,76 @@
           <div class="section-content">
             <p>
               Chabod is built with a simple black, white and greyish color
-              pallette. The reason for using such simple colour combinations is
-              simply to avoid design complexities and also to ensure simplicity.
+              pallette. Using such simple colour combinations leaves out design
+              complexities and also helps to ensure simplicity.
             </p>
             <p>
               Both the dark and light modes of chabod are built with the same
               black, white and a greyish color combinations.
             </p>
             <p>
-              You can find all the color configurations in both the
-              light-mode-config.scss file and the dark-mode-config.scss file for
-              their respective modes.
+              You can find all the color configurations in the following SASS
+              partial files.
+              <li><i>The light-mode-config.scss file</i></li>
+              <li><i>The light-to-dark-mode-config.scss file</i></li>
+              <li><i>The dark-mode-config.scss file</i></li>
+              and the
+              <li><i>The dark-to-light-mode-config.scss file</i></li>
+              You can also find few color styling inside the Chabod media query
+              file - that is the <i>themequeries.scss file</i>.
+            </p>
+            <p>
+              Colour manipulation inside Chabod is done by using CSS variables
+              (custom properties) and regular SASS variables.
+              <br />
+              Checkout all the above listed files to see the colour codes of the
+              various colour variables.
             </p>
           </div>
         </div>
-        <div class="float-button mobile-only">
-          <span>L</span>
+        <div class="doc-section" id="to-gmap-section">
+          <h3 class="doc-section-header">Google Maps</h3>
+          <div class="section-content">
+            <p>
+              Chabod comes with a pre-built interface for embeeding Google maps.
+              However, Chabod(the sale package) does not come preinstalled with
+              Google maps. Here are some reasons why:
+            </p>
+            <p>
+              1. Every user needs to embeed a google map view of their unique
+              locations. This can only be done after purchase by the user.
+            </p>
+            <p>
+              2. Excluding Google maps from the purchased package, will prevent
+              any third party issue form arising. This simply means embeeding
+              Google maps on your Chabod website after purchase will only be an
+              agreement between you and Google. Without third any third party
+              (developer) issues.
+            </p>
+            <p>
+              Embeeding a Google map view of your location into the pre-built
+              interface is super easy.
+              <li>Add Your location to Google maps.</li>
+              <li>Copy out the "Embeed a map" code from Google maps</li>
+              <li>
+                Paste the copied embeed code into the
+                <span class="code">div</span> element with a
+                <span class="code">map-case</span> class attribute.
+              </li>
+              <li>
+                Remove every attribute from
+                <span class="code">iframe</span> element in the pasted code
+                leaving only the
+                <span class="code">src, allowfullscreen</span> and
+                <span class="code">loading</span> attributes.
+              </li>
+              <li>
+                Add a
+                <span class="code">map-responsive</span> class attribute to the
+                iframe element.
+              </li>
+            </p>
+          </div>
         </div>
       </div>
     </section>

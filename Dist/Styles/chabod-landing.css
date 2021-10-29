@@ -347,6 +347,9 @@ footer .buy-btn-case {
   padding: 20px;
   position: relative;
 }
+.main-doc-field .main-doc-content i {
+  color: var(--grey);
+}
 .main-doc-field .main-doc-content .doc-section-header {
   text-transform: capitalize;
   color: var(--grey);

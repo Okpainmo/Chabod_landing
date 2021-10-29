@@ -15,25 +15,6 @@
   }
 }
 .main-doc-field {
-  // .doc-banner {
-  //   width: 100%;
-  //   // background-image: url(../../Dist/Images/pix-2z.jpg);
-  // }
-  // .doc-banner-overlay {
-  //   background-image: linear-gradient(to right, black, grey);
-  //   padding: 10px 20px;
-  //   color: white;
-  //   text-align: center;
-  //   h2 {
-  //     margin: 0;
-  //   }
-  // }
-  // .shift-up {
-  //   top: 10px;
-  // }
-  // .normal-shift {
-  //   top: 80px;
-  // }
   .page-content {
     padding: 20px;
     min-width: 300px;
@@ -77,6 +58,9 @@
     margin: 0 auto 30px 70px;
     padding: 20px;
     position: relative;
+    i {
+      color: var(--grey);
+    }
     .doc-section-header {
       text-transform: capitalize;
       color: var(--grey);
