@@ -303,6 +303,11 @@ footer .buy-btn-case {
   height: inherit;
 }
 
+.main-doc-field .emphasized {
+  color: grey;
+  border-left: 5px solid;
+  padding-left: 15px;
+}
 .main-doc-field .page-content {
   padding: 20px;
   min-width: 300px;

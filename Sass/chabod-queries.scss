@@ -119,29 +119,17 @@
     }
   }
   .main-doc-field {
-    // .page-content {
-    //   right: 85px;
-    //   top: calc(100vh - 270px);
-    // }
     .mobile-display {
       width: 80%;
       margin: 10px auto;
       position: relative;
       top: 10px;
-      // margin: 10px 10px 30px;
-      // box-shadow: none;
       border-bottom: 0;
       right: 0;
     }
-    // .shift-up {
-    //   top: 10px;
-    // }
-    // .normal-shift {
-    //   top: 10px;
-    // }
     .main-doc-content {
       width: 80%;
-      margin: 20px auto 30px;
+      margin: 20px auto 0;
     }
   }
 }
