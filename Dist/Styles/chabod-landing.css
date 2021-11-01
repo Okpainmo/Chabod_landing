@@ -305,7 +305,7 @@ footer .buy-btn-case {
 
 .main-doc-field .emphasized {
   color: grey;
-  border-left: 5px solid;
+  border-left: 3px solid;
   padding-left: 15px;
 }
 .main-doc-field .page-content {
@@ -412,7 +412,7 @@ footer .buy-btn-case {
   color: green;
 }
 .modal .sales-modal-content .selar {
-  color: blue;
+  color: purple;
 }
 
 body {
