@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;700&family=Nunito:wght@300&display=swap"
       rel="stylesheet"
     />
 
@@ -440,6 +440,19 @@
               black, white and a greyish color combinations.
             </p>
             <p>
+              The color configurations are seperate inside the color
+              configuration sass partials. This seperations make handling
+              colours during development to be much easier. Considering the fact
+              that the template comes in two colour modes. That meant each mode
+              needed its colour configurations and hence the colour setup had to
+              be done seperately for both modes.
+              <br />
+              Just locate the colour cofiguration Sass file for the mode you
+              want to work on(dark or light), then search for the item class
+              attribute you want to work on, and fix things as you wish - its
+              that simple.
+            </p>
+            <p>
               You can find all the color configurations in the following SASS
               partial files.
             </p>
@@ -449,6 +462,7 @@
               <li><i>The dark-mode-config.scss file</i></li>
               and the
               <li><i>The dark-to-light-mode-config.scss file</i></li>
+              <br />
               You can also find few color styling inside the Chabod media query
               file - that is the
               <i>themequeries.scss file</i

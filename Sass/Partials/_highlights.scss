@@ -20,7 +20,7 @@ $highlight-custom: #267aa2;
     width: 55%;
     min-height: 100px;
     padding: 0 0 20px;
-    margin: 0 auto 35px;
+    margin: 0 auto 70px;
     color: var(--grey);
     font-size: 17px;
     text-align: center;
@@ -34,6 +34,8 @@ $highlight-custom: #267aa2;
   h3 {
     text-align: center;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     display: block;
   }
   h3.extra {
@@ -132,6 +134,8 @@ $highlight-custom: #267aa2;
       font-size: 30px;
       margin-bottom: 20px;
       margin-top: 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
     }
     .col-lg-6:first-child {
       background-size: cover;

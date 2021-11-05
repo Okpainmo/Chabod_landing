@@ -46,6 +46,7 @@
       list-style-type: none;
       li {
         padding: 3px 0;
+        font-size: 14px;
       }
       li::before {
         content: '';
@@ -69,6 +70,8 @@
     .doc-section-header {
       text-transform: capitalize;
       color: var(--grey);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
     }
     .section-content {
       margin-bottom: 40px;

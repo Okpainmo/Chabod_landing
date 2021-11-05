@@ -34,7 +34,7 @@ nav ul {
   margin-left: 15px;
 }
 nav ul li {
-  padding: 0 15px;
+  padding: 0;
   margin: 0 10px;
   border-radius: 5px;
 }
@@ -47,7 +47,7 @@ nav ul li:hover a {
 }
 nav ul li a {
   color: var(--grey) !important;
-  /* padding: 0 5px !important; */
+  font-size: 14px;
 }
 
 .primary-view {
@@ -115,7 +115,7 @@ nav ul li a {
   width: 55%;
   min-height: 100px;
   padding: 0 0 20px;
-  margin: 0 auto 35px;
+  margin: 0 auto 70px;
   color: var(--grey);
   font-size: 17px;
   text-align: center;
@@ -129,6 +129,8 @@ nav ul li a {
 .highlights h3 {
   text-align: center;
   margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   display: block;
 }
 .highlights h3.extra {
@@ -214,6 +216,8 @@ nav ul li a {
   font-size: 30px;
   margin-bottom: 20px;
   margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
 .highlights .carousel-array .col-lg-6:first-child {
   background-size: cover;
@@ -262,6 +266,9 @@ footer .row {
 footer .col-lg-6 {
   padding: 30px 50px;
 }
+footer .col-lg-6 h2 {
+  font-weight: 700;
+}
 footer .col-lg-3 {
   padding: 30px;
 }
@@ -273,7 +280,7 @@ footer ul li {
   padding: 3px 0;
 }
 footer .social-icons-case {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 footer .social-icons-case .icon {
   display: inline-block;
@@ -336,6 +343,7 @@ footer .buy-btn-case {
 }
 .main-doc-field .page-content ul li {
   padding: 3px 0;
+  font-size: 14px;
 }
 .main-doc-field .page-content ul li::before {
   content: "";
@@ -358,6 +366,8 @@ footer .buy-btn-case {
 .main-doc-field .main-doc-content .doc-section-header {
   text-transform: capitalize;
   color: var(--grey);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 .main-doc-field .main-doc-content .section-content {
   margin-bottom: 40px;
