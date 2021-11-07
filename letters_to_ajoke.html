@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/7d4093f05b.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Letters to Ajoke banner</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 100px 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* font-family: 'Ubuntu', sans-serif; */
+      }
+      .ball-case {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+      }
+      .ball {
+        width: 70px;
+        border: 2px solid gray;
+        height: 70px;
+        color: transparent;
+        border-radius: 100%;
+        background-color: transparent;
+      }
+      .one {
+        position: relative;
+        top: 20px;
+        left: 20px;
+      }
+      .two {
+        position: relative;
+        top: 50px;
+        left: -9px;
+      }
+      .three {
+        position: relative;
+        top: -4px;
+        left: -79px;
+      }
+      .three::after {
+        content: '';
+        width: 3px;
+        height: 3px;
+        border-radius: 100%;
+        background-color: grey;
+        display: block;
+        position: relative;
+        top: 42.4998888888888888888888px;
+        left: 15.588888888888889px;
+      }
+      .image-case {
+        display: block;
+        margin-top: 300px;
+        position: relative;
+        top: 30px;
+        left: -200px;
+      }
+      .text-case {
+        font-size: 60px;
+        font-weight: lighter;
+        color: grey;
+        display: inline-block;
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ball one">a</div>
+    <div class="ball two">b</div>
+    <div class="ball three">c</div>
+    <div class="image-case">
+      <img src="./Dist/Images/zoe-themes_logo-h (copy).png" alt="" />
+      <div class="text-case">zoe themes</div>
+    </div>
+  </body>
+</html>

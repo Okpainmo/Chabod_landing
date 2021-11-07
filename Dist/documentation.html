@@ -248,8 +248,8 @@
                 <li>SASS.</li>
                 <li>Bootstrap 5.</li>
                 <li>Ts Particles</li>
-                <li>Vanilla Javascript and</li>
-                <li>Gulp Js</li>
+                <li>Vanilla Javascript</li>
+                <li>Gulp Js and</li>
                 <li>Google Maps</li>
               </ul>
             </div>
@@ -407,7 +407,8 @@
                 installed first).
               </li>
               <li>
-                Then run <span class="code">npm install </span>
+                After installing Gulp, run
+                <span class="code">"npm install" </span>
                 in the command line or terminal when inside the project folder
                 to install all the required dependencies and get gulp all set
                 for compiling SASS and auto prefixing CSS.
@@ -415,7 +416,7 @@
                 Chabod comes with a <i>package.json</i> file which contains a
                 list of all dependencies required to set up a complete workflow.
                 Hence, simply running the
-                <span class="code">npm install </span> command, directly
+                <span class="code">"npm install" </span> command, directly
                 installs all the listed dependencies in the
                 <i>package.json</i> file.
               </li>
@@ -432,23 +433,23 @@
           <div class="section-content">
             <p>
               Chabod is built with a simple black, white and greyish color
-              pallette. Using such simple colour combinations leaves out design
+              pallette. Using such a simple colour combination leaves out design
               complexities and also helps to ensure simplicity.
             </p>
             <p>
-              Both the dark and light modes of chabod are built with the same
-              black, white and a greyish color combinations.
+              Both the dark and light modes of chabod are built with a black,
+              white and a greyish color combination.
             </p>
             <p>
-              The color configurations are seperate inside the color
-              configuration sass partials. This seperations make handling
+              The color configurations for Chabod are seperate inside the color
+              configuration Sass partials. This seperations make handling
               colours during development to be much easier. Considering the fact
-              that the template comes in two colour modes. That meant each mode
-              needed its colour configurations and hence the colour setup had to
-              be done seperately for both modes.
+              that the template comes in two colour modes, each mode needed its
+              colour configurations and hence the colour setup had to be done
+              seperately for both modes.
               <br />
               Just locate the colour cofiguration Sass file for the mode you
-              want to work on(dark or light), then search for the item class
+              want to work on(dark or light), then search for the item class or
               attribute you want to work on, and fix things as you wish - its
               that simple.
             </p>
@@ -466,7 +467,9 @@
               You can also find few color styling inside the Chabod media query
               file - that is the
               <i>themequeries.scss file</i
-              >.
+              >, and
+              <i>maybe</i>
+              in other files as well.
             </ul>
             <p>
               Colour manipulation inside Chabod is done by using CSS variables
@@ -477,7 +480,7 @@
             </p>
             <p>
               The <i>dark-mode-config.scss file</i> and the
-              <i>dark-mode-config.scss file</i> contain colour configurations
+              <i>light-mode-config.scss file</i> contain colour configurations
               for both the light and dark modes of Chabod respectively.
             </p>
             <p>
@@ -507,43 +510,64 @@
               (developer) issues.
             </p>
             <p>
+              Please note that Chabod was not built with an API key, and thus
+              does not require any complex development work to set up a user
+              location and have it show in Chabod. Chabod is built to simply
+              help its users show their locations to site visitors by a simple
+              embeeding process.
+            </p>
+            <p>
               Embeeding a Google map view of your location into the pre-built
               interface is super easy.
             </p>
             <ul>
-              <li>First add Your location to Google maps.</li>
               <li>
-                Open Google maps and select your location to have your location
-                details displayed by Google maps
+                First make a request to have your location added to Google maps.
+                And wait until it is added.
               </li>
               <li>
-                Click the menu on the top right corner of the Google map layout
+                Once your location is added to google maps, Open Google maps and
+                click on your location to have it's details displayed in the
+                interface.
               </li>
               <li>
-                Select Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nisi, sequi.
+                Click the menu icon on the top right corner of the Google map
+                layout
               </li>
-              <li>Copy out the "Embeed a map" code from Google maps</li>
+              <li>Select "Share or embeed map"</li>
+              <li>Select the "Embeed a map" option from the next pop-up.</li>
+              <li>
+                Copy out the "Embeed a map" code from Google maps. by clicking
+                the "COPY HTML" option provided.
+                <br />
+                <i
+                  >Do take time out to click the "terms and service" link
+                  provided underneath, and read through the provided terms and
+                  services.</i
+                >
+              </li>
+
               <li>
                 Paste the copied embeed code into the
-                <span class="code">div</span> element with a
-                <span class="code">map-case</span> class attribute.
+                <span class="code">"div"</span> element with a
+                <span class="code">"map-case"</span> class attribute inside
+                Chabod HTML.
               </li>
               <li>
-                Remove every attribute from
-                <span class="code">iframe</span> element in the pasted code
+                Remove every attribute from the
+                <span class="code">"iframe"</span> element in the pasted code
                 leaving only the
-                <span class="code">src, allowfullscreen</span> and
-                <span class="code">loading</span> attributes.
+                <span class="code">"src", "allowfullscreen"</span> and
+                <span class="code">"loading"</span> attributes.
               </li>
               <li>
                 Add a
-                <span class="code">map-responsive</span> class attribute to the
-                iframe element.
+                <span class="code">"map-responsive"</span> class attribute to
+                the iframe element.
               </li>
               <li>
-                Reload Chabod - and you'll see your google map location display
-                beautifully inside Chabod
+                Finally, Reload Chabod - and you'll see your google map location
+                display beautifully inside Chabod.
               </li>
             </ul>
           </div>
