@@ -155,6 +155,12 @@
           <a href="#to-bootstrap-section" class="custom-link">
             <li>Bootstrap</li>
           </a>
+          <a href="#to-fa-section" class="custom-link">
+            <li>Font Awesome Icons</li>
+          </a>
+          <a href="#to-bi-section" class="custom-link">
+            <li>Bootstrap Icons</li>
+          </a>
           <a href="#to-particles-section" class="custom-link">
             <li>Ts particles</li> </a
           ><a href="#to-gulp-section" class="custom-link"> <li>Gulp.js</li> </a
@@ -272,7 +278,7 @@
           <h3 class="doc-section-header">HTML.</h3>
           <div class="section-content">
             <p>
-              Chabod is built with regular Html5 markup and Bootstrap 5. This
+              Chabod is built with regular HTML5 markup and Bootstrap 5. This
               means a good knowledge of the Bootstrap framework will help
               greatly in handling and customizing Chabod HTML.
             </p>
@@ -285,7 +291,7 @@
               Chabod is built with SASS. SASS is a CSS preprocessor - a tool
               that provides a better and more cool way to write styles. SASS
               styles are processed/compiled into regular CSS using different
-              tools. In Chabod, Gulp JS is the tool used in compiling SASS into
+              tools. In Chabod, Gulp.Js is the tool used in compiling SASS into
               regular CSS. It is the compiled SASS styles(CSS files) that are
               linked-to in all the head sections of the HTML files contained in
               Chabod.
@@ -355,13 +361,63 @@
             </p>
           </div>
         </div>
+        <div class="doc-section" id="to-fa-section">
+          <h3 class="doc-section-header">Font Awesome Icons.</h3>
+          <div class="section-content">
+            <p>
+              For icons, two icon libraries were used in building Chabod. One of
+              which is font Awesome.
+              <br />
+              No setup is actually needed to get font awesome up and running
+              because a script link(just like CDN) was used in the build. Font
+              awesome icons will automatically load as long as there is an
+              internet connection.
+              <br />
+              The font Awesome script link can be found in the head sections of
+              both the dark and light modes of Chabod HTML files.
+            </p>
+            <p>
+              Font awesome icons can be simply recorgnized through the
+              <span class="code">"fa"</span> class attribute. Just locate the
+              icon and inspect using developer tools or by looking directly into
+              the codebase. If the icon contains a
+              <span class="code">"fa"</span> class attribute, then its a font
+              awesome icon.
+            </p>
+          </div>
+        </div>
+        <div class="doc-section" id="to-bi-section">
+          <h3 class="doc-section-header">Bootstrap Icons.</h3>
+          <div class="section-content">
+            <p>
+              The other icon library that was used in building Chabod is
+              bootstrap icons - another free and awesome life saver from
+              Bootstrap.
+              <br />
+              similarly, No setup is actually needed to get bootstrap icons up
+              and running because a CDN link was also used in the build. Just
+              have internet access, and you are good to go.
+              <br />
+              The bootstrap icons CDN link can be found in the head sections of
+              both the dark and light modes of Chabod HTML files.
+            </p>
+            <p>
+              Bootstrap icons can easily be recorgnized by the
+              <span class="code">"bi"</span> class attribute. Just locate the
+              icon and inspect using developer tools or by looking directly into
+              the codebase. If the icon contains a
+              <span class="code">"bi"</span> class attribute, then its a
+              bootstrap icon.
+            </p>
+          </div>
+        </div>
         <div class="doc-section" id="to-particles-section">
           <h3 class="doc-section-header">Ts Particles.</h3>
           <div class="section-content">
             <p>
               Ts particles is a Javascript tool for creating particle effects in
               websites. The moving particle effect on the home section of Chabod
-              is done by ts particles. Ts particles is a github fork of a
+              is done by Ts particles. Ts particles is a github fork of a
               similar javascript tool called Particles.js.
             </p>
             <p>
@@ -511,14 +567,14 @@
             </p>
             <p>
               Please note that Chabod was not built with an API key, and thus
-              does not require any complex development work to set up a user
+              does not require any complex development work, to set up a user
               location and have it show in Chabod. Chabod is built to simply
               help its users show their locations to site visitors by a simple
               embeeding process.
             </p>
             <p>
               Embeeding a Google map view of your location into the pre-built
-              interface is super easy.
+              interface in Chabod is super easy.
             </p>
             <ul>
               <li>
@@ -528,7 +584,7 @@
               <li>
                 Once your location is added to google maps, Open Google maps and
                 click on your location to have it's details displayed in the
-                interface.
+                Google maps interface.
               </li>
               <li>
                 Click the menu icon on the top right corner of the Google map
@@ -537,8 +593,8 @@
               <li>Select "Share or embeed map"</li>
               <li>Select the "Embeed a map" option from the next pop-up.</li>
               <li>
-                Copy out the "Embeed a map" code from Google maps. by clicking
-                the "COPY HTML" option provided.
+                Copy out the "Embeed a map" code. by clicking the "COPY HTML"
+                option provided.
                 <br />
                 <i
                   >Do take time out to click the "terms and service" link
@@ -549,9 +605,8 @@
 
               <li>
                 Paste the copied embeed code into the
-                <span class="code">"div"</span> element with a
-                <span class="code">"map-case"</span> class attribute inside
-                Chabod HTML.
+                <span class="code">"div"</span> element inside Chabod that has a
+                <span class="code">"map-case"</span> class attribute.
               </li>
               <li>
                 Remove every attribute from the
