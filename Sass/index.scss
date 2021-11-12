@@ -1,0 +1,106 @@
+// imported partial for colors only
+
+@use './Sass-Partials/light-mode-config';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+}
+.mont-font {
+  font-family: 'Montserrat', sans-serif;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.modes-display {
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  .light-side {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    .pseudo-nav {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      .brand-name {
+        font-size: 25px;
+      }
+    }
+    .mode-name {
+      color: var(--color-b);
+    }
+  }
+  .dark-side {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-b);
+    .mode-name {
+      color: var(--color-e);
+    }
+  }
+  a {
+    margin: 0 auto;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    &:hover {
+      img {
+        transform: scale(1.05);
+        transition: transform 0.75s ease;
+      }
+    }
+    .image-case {
+      min-width: 420px;
+      min-height: 200px;
+      font-size: 20px;
+      img {
+        width: 420px;
+        height: 200px;
+        box-shadow: 0 0 10px 2px rgb(129, 116, 116);
+      }
+    }
+  }
+}
+
+//media queries
+
+@media screen and (max-width: 1050px) {
+  .modes-display {
+    flex-direction: column;
+    .dark-side {
+      width: 100%;
+      min-height: 50vh;
+    }
+    .light-side {
+      width: 100%;
+      min-height: 50vh;
+      padding: 100px 0 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .modes-display {
+    a {
+      .image-case {
+        // padding: 10px;
+        min-width: 100%;
+        min-height: 100%;
+        img {
+          width: 92%;
+          height: 170px;
+        }
+      }
+    }
+  }
+}

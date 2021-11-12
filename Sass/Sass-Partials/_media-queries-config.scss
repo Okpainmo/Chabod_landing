@@ -1,0 +1,57 @@
+// media queries configuration - break points
+
+// XX-Large devices (larger desktops, 1400px and down)
+@mixin media-breakpoint-xxl {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and down)
+
+@mixin media-breakpoint-xl {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+/** additional breakpoint to solve viewport height issue of primary desktop design on 
+ long screen devices Like Ipads. **/
+
+@mixin media-breakpoint-ln {
+  @media (max-width: 1035px) {
+    @content;
+  }
+}
+
+// Large devices (desktops, 992px and down)
+
+@mixin media-breakpoint-lg {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+//  Medium devices (tablets, 768px and down)
+
+@mixin media-breakpoint-md {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+// Small devices (landscape phones, 576px and down)
+@mixin media-breakpoint-sm {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+// Small devices (landscape phones, 400px and down)
+// additional breakpoint to provide more comfortable views on smaller screen devices.
+
+@mixin media-breakpoint-xsm {
+  @media (max-width: 400px) {
+    @content;
+  }
+}

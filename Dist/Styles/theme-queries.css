@@ -1,0 +1,446 @@
+/** additional breakpoint to solve viewport height issue of primary desktop design on 
+ long screen devices Like Ipads. **/
+@media (max-width: 1200px) {
+  .contact .contact-form {
+    width: 65%;
+  }
+
+  .about-section .seller-banner img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .portfolio-section .projects {
+    padding: 0;
+  }
+
+  .testimonials .client-quote {
+    padding: 20px 120px;
+  }
+
+  .main-overlay .overlay-content-case {
+    width: 90%;
+  }
+  .main-overlay .overlay-content-case .close-main-overlay-btn {
+    top: 5px;
+    right: 8px;
+  }
+}
+@media (max-width: 1035px) {
+  .mobile-only {
+    display: none;
+  }
+
+  .dark-mode-activated .main-overlay .overlay-content-case .close-main-overlay-btn,
+.light-mode-activated .main-overlay .overlay-content-case .close-main-overlay-btn {
+    color: black;
+  }
+
+  .side-nav {
+    bottom: 0;
+    top: calc(100vh - 100px);
+    width: 100%;
+    padding: 20px;
+  }
+  .side-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .side-nav ul .side-nav-item {
+    display: inline-block;
+    padding: 0;
+    height: 100px;
+  }
+
+  .side-content {
+    width: 100%;
+    margin-left: 0;
+  }
+  .side-content .seller-content {
+    height: 650px;
+  }
+  .side-content .seller-content #particlesCase {
+    width: 100%;
+    height: 650px;
+  }
+  .side-content .float-chat-button {
+    bottom: 120px;
+  }
+  .side-content .about-section {
+    min-height: 300px;
+  }
+  .side-content .portfolio-section {
+    min-height: 300px;
+  }
+  .side-content .contact {
+    min-height: 300px;
+  }
+  .side-content .contact .contact-form {
+    width: 60%;
+  }
+  .side-content .testimonials {
+    min-height: 300px;
+  }
+  .side-content .blog-section {
+    min-height: 300px;
+  }
+  .side-content footer {
+    margin-bottom: 100px;
+  }
+
+  .main-overlay .overlay-content-case .close-main-overlay-btn {
+    position: relative;
+    color: var(--color-d);
+    box-shadow: none;
+    top: 0;
+    right: -10px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .side-content .seller-content #particlesCase {
+    height: 100%;
+  }
+  .side-content .portfolio-section .projects .row .card {
+    margin: 0 0 10px 0;
+  }
+  .side-content .contact .contact-details {
+    padding: 30px 0;
+  }
+  .side-content .testimonials .client-quote {
+    padding: 20px 90px;
+  }
+  .side-content .about-section .seller-area {
+    width: 98%;
+  }
+  .side-content .about-section .seller-area .seller-banner {
+    margin-right: 2%;
+    width: 38%;
+  }
+  .side-content .about-section .seller-area .about-text-case {
+    width: 60%;
+  }
+  .side-content .about-section .achievements p {
+    width: 80%;
+  }
+  .side-content .blog-section .blog-container .card .post-banner {
+    height: 150px;
+  }
+
+  .main-overlay .overlay-content-case {
+    width: 96%;
+  }
+  .main-overlay .overlay-content-case-content {
+    width: 75%;
+  }
+}
+@media (max-width: 767px) {
+  .side-nav {
+    top: calc(100vh - 70px);
+    padding: 10px;
+  }
+  .side-nav .side-nav-item .side-nav-link .side-icons {
+    font-size: 20px;
+  }
+  .side-nav .side-nav-item .side-nav-link .side-nav-text {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+  .side-nav .side-nav-item:nth-child(4) {
+    display: none;
+  }
+
+  .side-content .home .seller-intro {
+    padding: 14vh 15px 0;
+  }
+  .side-content .float-chat-button {
+    bottom: 100px;
+  }
+  .side-content .about-section .achievements {
+    width: 100%;
+  }
+  .side-content .about-section .seller-area {
+    flex-direction: column;
+  }
+  .side-content .about-section .seller-area .seller-banner {
+    width: 100%;
+    margin-right: 0;
+  }
+  .side-content .about-section .seller-area .seller-banner img {
+    height: 500px;
+  }
+  .side-content .about-section .seller-area .about-text-case {
+    width: 100%;
+  }
+  .side-content .about-section .seller-area .about-text-case .btn-case {
+    margin: 50px auto 0;
+  }
+  .side-content .portfolio-section .projects {
+    width: 100%;
+  }
+  .side-content .portfolio-section .projects .row {
+    margin: 0;
+  }
+  .side-content .portfolio-section .projects .filter-tags {
+    padding: 10px 0;
+    margin-bottom: 10px;
+  }
+  .side-content .portfolio-section .projects .filter-tags .tag {
+    background-color: transparent;
+    color: var(--color-c);
+    min-width: 50px;
+    font-style: italic;
+    margin: 0 5px;
+    padding: 10px;
+  }
+  .side-content .portfolio-section .projects .card .slide-overlay-case {
+    height: 350px;
+  }
+  .side-content .portfolio-section .projects .card .slide-overlay-case .card-image-case {
+    min-height: 350px;
+  }
+  .side-content .portfolio-section .projects .card .slide-overlay-case .slide-up-overlay {
+    min-height: 350px;
+  }
+  .side-content .portfolio-section .projects .card .slide-up-overlay_slideUp {
+    transform: translateY(-350px);
+    transition: transform 0.5s ease;
+  }
+  .side-content .portfolio-section .projects .card .slide-up-overlay_slideDown {
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+  }
+  .side-content .contact .contact-form {
+    width: 75%;
+  }
+  .side-content .contact .map-area .address-case {
+    width: 50%;
+  }
+  .side-content .contact .map-area .map-case {
+    width: 100%;
+  }
+  .side-content .testimonials .testimonials-case {
+    padding: 50px 20px;
+  }
+  .side-content .testimonials .testimonials-case .carousel-control-next,
+.side-content .testimonials .testimonials-case .carousel-control-prev {
+    display: none;
+  }
+  .side-content .blog-section .blog-container .card .post-banner {
+    height: 200px;
+  }
+  .side-content footer {
+    margin-bottom: 85px;
+  }
+
+  .main-overlay .overlay-content-case-content .story-banner {
+    height: 300px;
+  }
+  .main-overlay .overlay-content-case-content .main-story .col .card {
+    min-height: 300px;
+  }
+  .main-overlay .overlay-content-case-content .main-story .story-links {
+    flex-direction: column;
+  }
+  .main-overlay .overlay-content-case-content .main-story .story-links > * {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .main-overlay .overlay-content-case-content .main-story .story-links > * a {
+    width: inherit;
+  }
+}
+@media (max-width: 576px) {
+  .btn-case {
+    width: 100%;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .row {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .row > * {
+    padding: 0 7px;
+  }
+
+  .col-12,
+.col,
+.col-sm-6,
+.col-md-4 {
+    padding: 0 7px;
+    margin: 10px 0;
+  }
+
+  .side-nav {
+    top: calc(100vh - 55px);
+    padding: 5px 10px;
+  }
+  .side-nav .side-nav-item .side-nav-link .side-icons {
+    font-size: 18px;
+  }
+  .side-nav .side-nav-item .side-nav-link .side-nav-text {
+    font-size: 13px;
+  }
+
+  .side-content .seller-content #particles-case {
+    height: 100vh;
+  }
+  .side-content .seller-content .home-social {
+    left: 0;
+    top: 545px;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+  .side-content .seller-content .seller-intro .seller-brief {
+    padding: 0;
+  }
+  .side-content .float-chat-button {
+    bottom: 65px;
+  }
+  .side-content .home {
+    height: 100vh;
+  }
+  .side-content .home .seller-photo {
+    width: 220px;
+    height: 220px;
+  }
+  .side-content .portfolio-section .projects {
+    padding: 0px;
+  }
+  .side-content .portfolio-section .projects .tag {
+    padding: 10px 0;
+  }
+  .side-content .portfolio-section .projects .card .slide-overlay-case {
+    height: 300px;
+  }
+  .side-content .portfolio-section .projects .card .slide-overlay-case .card-image-case {
+    min-height: 300px;
+  }
+  .side-content .portfolio-section .projects .card .slide-overlay-case .slide-up-overlay {
+    min-height: 300px;
+  }
+  .side-content .portfolio-section .projects .card .slide-up-overlay_slideDown {
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+  }
+  .side-content .portfolio-section .projects .card .slide-up-overlay_slideUp {
+    transform: translateY(-300px);
+    transition: transform 0.5s ease;
+  }
+  .side-content .about-section .achievements .achievement-list {
+    flex-direction: column;
+  }
+  .side-content .about-section .achievements .achievement-item {
+    width: 80%;
+    margin: 35px auto 0;
+  }
+  .side-content .about-section .achievements p {
+    width: 90%;
+  }
+  .side-content .testimonials .client-quote {
+    padding: 20px 0;
+  }
+  .side-content .testimonials .testimonials-case {
+    padding: 50px 10px;
+  }
+  .side-content .about-section .about-text-case {
+    text-align: center;
+    padding: 15px 0;
+  }
+  .side-content .about-section .seller-area {
+    width: 100%;
+  }
+  .side-content .about-section .seller-area .seller-banner {
+    padding: 15px 0;
+  }
+  .side-content .contact .contact-details {
+    flex-direction: column;
+  }
+  .side-content .contact .map-area {
+    padding: 7px;
+  }
+  .side-content .contact .map-area .address-case {
+    width: 90%;
+  }
+  .side-content .contact .phone-case,
+.side-content .contact .mail-case,
+.side-content .contact .address-case {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .side-content .contact .contact-form {
+    width: 95%;
+    padding: 10px;
+  }
+  .side-content .blog-section .blog-container {
+    width: 100%;
+  }
+  .side-content .blog-section .blog-container .card {
+    margin: 0;
+  }
+  .side-content .blog-section .blog-container .card .post-banner {
+    height: 270px;
+  }
+  .side-content .blog-section .blog-container .card .card-body {
+    margin-bottom: 10px;
+  }
+  .side-content .blog-section .blog-container .btn-case {
+    padding: 0 7px;
+  }
+  .side-content footer {
+    flex-direction: column;
+    margin-bottom: 55px;
+  }
+  .side-content footer .footer-content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .side-content footer .footer-content .footer-link {
+    margin: 0 10px;
+  }
+  .side-content footer .footer-content .social-icons-case {
+    margin-bottom: 15px;
+  }
+
+  .section-header {
+    margin-left: 7px;
+  }
+
+  .main-overlay .overlay-content-case {
+    height: 98vh;
+    margin: 1vh auto;
+  }
+  .main-overlay .overlay-content-case-content {
+    width: 100%;
+    padding: 7px;
+  }
+  .main-overlay .overlay-content-case-content .main-story .col {
+    padding: 0;
+  }
+  .main-overlay .overlay-content-case-content .main-story .col .card {
+    min-height: 230px;
+  }
+  .main-overlay .overlay-content-case-content .main-story .story-links {
+    margin: 35px 0 0;
+  }
+}
+@media screen and (max-width: 400px) and (max-width: 400px) {
+  .main-overlay .overlay-content-case-content .story-banner {
+    height: 220px;
+  }
+  .main-overlay .overlay-content-case-content .main-story .col .card {
+    min-height: 220px;
+  }
+}

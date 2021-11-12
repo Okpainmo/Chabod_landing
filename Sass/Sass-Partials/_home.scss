@@ -1,0 +1,51 @@
+.seller-content {
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  .seller-intro-background {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    .seller-intro {
+      padding-top: 70px;
+      position: relative;
+      z-index: 1000;
+      height: 100%;
+      .seller-photo {
+        width: 240px;
+        height: 240px;
+        margin: 0 auto 30px;
+        border-radius: 100%;
+        background-size: cover;
+        filter: grayscale(1);
+      }
+    }
+    #particlesCase {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+    }
+    .home-social {
+      display: flex;
+      flex-direction: column;
+      min-height: 50px;
+      justify-content: space-evenly;
+      position: absolute;
+      right: 30px;
+      top: 200px;
+      z-index: 1600;
+      a {
+        span {
+          font-size: 22px;
+          margin-bottom: 20px;
+          &:hover {
+            transform: scale(1.15);
+            transition: transform 0.75s ease;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+// all dark mode color config styles stored in Sass variables.
+
+$dark-a: #161616;
+$dark-b: white;
+$dark-c: #6b6a6a;
+$dark-d: #b3b3b4;
+$dark-e: black;
+
+.dark-body {
+  color: $dark-b;
+  background-color: $dark-e;
+}
+
+.dark-mode-activated {
+  transition: all 1.05s ease;
+  .section-header {
+    color: $dark-b;
+    &::after {
+      background-color: $dark-b;
+    }
+  }
+  .side-nav {
+    background-color: $dark-a;
+    .side-nav-link {
+      .side-nav-text {
+        color: $dark-c;
+      }
+      .side-icons {
+        color: $dark-d;
+      }
+      &:hover {
+        .side-nav-text {
+          color: $dark-d;
+        }
+        .side-icons {
+          color: $dark-c;
+        }
+      }
+    }
+  }
+  .side-content {
+    .custom-btn {
+      color: $dark-e;
+      background-color: $dark-d;
+      &:hover {
+        background-color: $dark-c;
+        color: $dark-b;
+      }
+    }
+    .float-chat-button {
+      background-color: $dark-c;
+      color: $dark-e;
+    }
+    .portfolio-section {
+      .projects {
+        .tag {
+          color: $dark-e;
+          background-color: $dark-d;
+          &:hover {
+            background-color: $dark-c;
+            color: $dark-b;
+          }
+        }
+        .card {
+          .slide-overlay-case {
+            box-shadow: 0 25px 20px -20px rgb(255 255 255 / 30%),
+              0 0 15px rgb(255 255 255 / 6%);
+          }
+        }
+      }
+    }
+    .blog-section {
+      .post-banner {
+        box-shadow: 0 25px 20px -20px rgb(255 255 255 / 30%),
+          0 0 15px rgb(255 255 255 / 6%);
+      }
+    }
+    .testimonials {
+      .client-photo-case {
+        img {
+          border: 2px solid $dark-b;
+        }
+      }
+      .carousel-control-next-icon,
+      .carousel-control-prev-icon {
+        filter: none;
+      }
+      .carousel-dark .carousel-indicators [data-bs-target] {
+        background-color: $dark-b;
+      }
+    }
+    .seller-content {
+      .seller-intro {
+        background-color: rgba(0, 0, 0, 0.75);
+        .seller-photo {
+          border: 7px solid $dark-b;
+        }
+      }
+      .home-social a span {
+        color: $dark-d;
+      }
+    }
+    .contact {
+      .map-area {
+        .map-case {
+          background-color: $dark-b;
+        }
+      }
+      .form-control {
+        background-color: $dark-e;
+      }
+    }
+    footer {
+      color: $dark-e;
+      background-color: $dark-d;
+    }
+  }
+  .main-overlay {
+    .overlay-content-case {
+      color: $dark-a;
+      background-color: $dark-b;
+      &-header {
+        color: $dark-a;
+        box-shadow: 0 0 4px 0px $dark-c;
+      }
+      .photo-credit {
+        color: $dark-b;
+      }
+      .story-links {
+        a {
+          color: var($dark-b);
+          background-color: var($dark-d);
+          .bi {
+            color: var($dark-b);
+          }
+        }
+      }
+      .close-main-overlay-btn {
+        color: $dark-b;
+        box-shadow: 0 0 7px 2px $dark-b;
+      }
+    }
+  }
+}

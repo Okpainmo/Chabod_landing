@@ -2,24 +2,31 @@
 
 ## Project site
 
-This project is hosted live on netlify. Click on this link below to see it live -
-https://getchabod.netlify.app
+This project is hosted live on netlify. Click on the link below to see it live.
+https://chabodtheme.netlify.app
 
 ## About Chabod 7.0
 
-> Getchabod is the landing page of the chabod theme (Chabod 7.0).
-> It has a simple but very neat design - a cool UI.
+> Chabod 7.0 is an awesome potrfolio website template that is built to help makers show the world what they do
+> with style while ensuring an engaging user experience.
 
-> It's the launch site for Chabod. It contains the documentation and other important details about Chabod 7.0.
+> Chabod is built with a pop-up for telling project stories and an inbuilt blog.
+> It comes in both light and dark modes.
 
 ## Project Stack/Build Tools
 
 1. HTML5
 2. CSS3
 3. SASS
-4. Gulp.Js
-5. Bootstrap 5
+4. Vanilla Js
+5. Gulp.Js
+6. Bootstrap 5
+7. Ts particles.
 
-### Chabod landing banner
+### Chabod light mode
 
-![Github Logo](./Dist/Images/chabod-landing-banner.png)
+![Github Logo](./Dist/Images/light-home.png)
+
+### Chabod dark mode
+
+![Github Logo](./Dist/Images/dark-home.png)

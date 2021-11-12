@@ -1,0 +1,23 @@
+.sales-nav {
+  position: fixed;
+  top: 0;
+  z-index: 3000;
+  background-color: transparent;
+  width: 85%;
+  right: 0;
+  display: flex;
+  .container-fluid {
+    flex-direction: row-reverse;
+  }
+  button {
+    color: var(--color-b);
+    font-weight: bold;
+    border: 1px solid var(--color-b);
+    &:hover {
+      color: var(--color-a);
+      background-color: var(--color-b);
+      transform: scale(1.1);
+      transition: transform 0.75s ease;
+    }
+  }
+}

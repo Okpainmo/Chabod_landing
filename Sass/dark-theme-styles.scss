@@ -1,0 +1,94 @@
+// color configurations partial for dark mode.
+
+@use './Sass-Partials/dark-mode-config';
+
+// other sass partials
+
+@use './Sass-Partials/home';
+@use './Sass-Partials/about';
+@use './Sass-Partials/portfolio';
+@use './Sass-Partials/testimonials';
+@use './Sass-Partials/contact';
+@use './Sass-Partials/side-nav';
+@use './Sass-Partials/blog';
+@use './Sass-Partials/footer';
+@use './Sass-Partials/side-content';
+@use './Sass-Partials/main-overlay';
+@use './Sass-Partials/purchase-modal';
+@use './Sass-Partials/dark-to-light-mode-config';
+
+// basic page settings
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  body {
+    font-family: 'Nunito', sans-serif;
+  }
+  .mont-font {
+    font-family: 'Montserrat', sans-serif;
+  }
+  .custom-link {
+    color: var(--color-c);
+    &:hover {
+      color: inherit;
+    }
+  }
+}
+
+// section header styling
+
+.section-header {
+  margin-left: 20px;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  &::after {
+    content: '';
+    width: 100px;
+    margin-top: 10px;
+    height: 5px;
+    display: block;
+  }
+}
+
+// general parent container
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  .side-content {
+    .dark-mode-switch {
+      display: none;
+    }
+  }
+}
+
+// side(main page) content
+
+.btn-case {
+  width: 350px;
+  min-height: 55px;
+  margin-top: 10px;
+}
+.custom-btn {
+  padding: 10px 30px;
+  width: inherit;
+  font-size: 18px;
+  display: block;
+  &:hover {
+    transition: color 0.75s ease;
+  }
+}
+.mobile-only {
+  display: none;
+}

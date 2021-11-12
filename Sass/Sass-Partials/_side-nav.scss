@@ -1,0 +1,37 @@
+// Fixed side nav
+
+.side-nav {
+  width: 15%;
+  height: 100vh;
+  position: fixed;
+  z-index: 3000;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 20px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .side-nav-item {
+    padding: 7px 0;
+    height: 15vh;
+    .side-nav-link {
+      text-decoration: none;
+      .side-icons {
+        font-size: 25px;
+        display: block;
+      }
+      .side-nav-text {
+        font-size: 15px;
+        padding: 0 20px;
+      }
+    }
+  }
+}

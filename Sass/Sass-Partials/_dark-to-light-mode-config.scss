@@ -1,0 +1,136 @@
+// all light mode color config styles stored in Sass variables.
+
+$light-a: #f7f8f9;
+$light-b: black;
+$light-c: #757575;
+$light-d: #212529;
+$light-e: white;
+
+.light-body {
+  color: $light-b;
+  background-color: $light-e;
+}
+
+.light-mode-activated {
+  transition: all 1.05s ease;
+  .section-header {
+    color: $light-b;
+    &::after {
+      background-color: $light-b;
+    }
+  }
+  .side-nav {
+    background-color: $light-a;
+    .side-nav-link {
+      .side-nav-text {
+        color: $light-c;
+      }
+      .side-icons {
+        color: $light-d;
+      }
+      &:hover {
+        .side-nav-text {
+          color: $light-d;
+        }
+        .side-icons {
+          color: $light-c;
+        }
+      }
+    }
+  }
+  .side-content {
+    .custom-btn {
+      color: $light-e;
+      background-color: $light-d;
+      &:hover {
+        background-color: $light-c;
+        color: $light-a;
+      }
+    }
+    .float-chat-button {
+      background-color: $light-d;
+      color: $light-e;
+    }
+    .portfolio-section {
+      .projects {
+        .tag {
+          color: $light-e;
+          background-color: $light-d;
+          &:hover {
+            background-color: $light-c;
+            color: $light-e;
+          }
+        }
+        .card {
+          .slide-overlay-case {
+            box-shadow: 0 25px 20px -20px rgb(0 0 0 / 30%),
+              0 0 15px rgb(0 0 0 / 6%);
+          }
+        }
+      }
+    }
+    .blog-section {
+      .post-banner {
+        box-shadow: 0 25px 20px -20px rgb(0 0 0 / 30%), 0 0 15px rgb(0 0 0 / 6%);
+      }
+    }
+    .testimonials {
+      .client-photo-case {
+        img {
+          border: 2px solid $light-b;
+        }
+      }
+      .carousel-control-next-icon,
+      .carousel-control-prev-icon {
+        filter: invert(1) grayscale(100);
+      }
+      .carousel-dark .carousel-indicators [data-bs-target] {
+        background-color: $light-b;
+      }
+    }
+    .seller-content {
+      .seller-intro-background {
+        .seller-intro {
+          background-color: rgba(255, 255, 255, 0.75);
+          .seller-photo {
+            border: 7px solid $light-b;
+          }
+        }
+        .home-social a span {
+          color: $light-d;
+        }
+      }
+    }
+    .contact {
+      .map-area {
+        .map-case {
+          background-color: $light-b;
+        }
+      }
+      .form-control {
+        background-color: $light-e;
+      }
+    }
+    footer {
+      color: $light-e;
+      background-color: $light-d;
+    }
+  }
+  .main-overlay {
+    .overlay-content-case {
+      color: $light-d;
+      background-color: $light-e;
+      &-header {
+        color: $light-d;
+        box-shadow: 0 0 4px 0px $light-c;
+      }
+      .photo-credit {
+        color: $light-e;
+      }
+      .close-main-overlay-btn {
+        color: $light-e;
+        box-shadow: 0 0 7px 2px $light-e;
+      }
+    }
+  }
+}
