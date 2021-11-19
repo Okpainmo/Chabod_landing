@@ -206,11 +206,11 @@
   }
 
   .highlights .about-theme {
-    width: 90%;
+    width: 95%;
     padding-top: 20px;
   }
   .highlights .top-features .row .col {
-    width: 85%;
+    width: 95%;
   }
   .highlights .other-features .follow-up-text {
     width: 95%;
@@ -256,9 +256,6 @@
 @media screen and (max-width: 400px) {
   .highlights .about-theme {
     width: 80%;
-  }
-  .highlights .top-features .row .col {
-    width: 90%;
   }
   .highlights .carousel-array {
     padding: 0;

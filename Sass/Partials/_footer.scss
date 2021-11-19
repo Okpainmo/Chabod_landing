@@ -1,5 +1,5 @@
-@use "./custom-variables";
-@use "./highlights";
+@use './custom-variables';
+@use './highlights';
 
 $footer-color: #58485d;
 
@@ -27,6 +27,10 @@ footer {
     padding: 30px 50px;
     h2 {
       font-weight: 700;
+    }
+    p:nth-child(3),
+    p:nth-child(5) {
+      margin-bottom: 7px;
     }
   }
   .col-lg-3 {
