@@ -159,6 +159,9 @@
           <a href="#to-style-section" class="custom-link">
             <li>CSS And SASS</li>
           </a>
+          <a href="#to-colours-section" class="custom-link">
+            <li>Colours</li>
+          </a>
           <a href="#to-bootstrap-section" class="custom-link">
             <li>Bootstrap</li>
           </a>
@@ -167,10 +170,7 @@
           </a>
           <a href="#to-particles-section" class="custom-link">
             <li>Ts particles</li> </a
-          ><a href="#to-gulp-section" class="custom-link"> <li>Gulp.js</li> </a
-          ><a href="#to-colours-section" class="custom-link">
-            <li>Colours</li>
-          </a>
+          ><a href="#to-gulp-section" class="custom-link"> <li>Gulp.js</li> </a>
           <a href="#to-gmap-section" class="custom-link">
             <li>Google Maps</li>
           </a>
@@ -209,6 +209,26 @@
               for sharing project stories, and a blog pop-up for displaying blog
               stories.
             </p>
+            <div class="theme-feature-list">
+              <h3 class="doc-section-header">Chabod-features</h3>
+              <ul>
+                <li>Dark and light theme modes.</li>
+                <li>Superb responsiveness across different screen sizes.</li>
+                <li>Google fonts.</li>
+                <li>A simply amazing design.</li>
+                <li>Built with Bootstrap 5.</li>
+                <li>Built with Gulp Js.</li>
+                <li>Gulp.js script included.</li>
+                <li>An inbuilt blog.</li>
+                <li>Excellent user interactivity.</li>
+                <li>Top-notch customer support.</li>
+                <li>Light and dark mode switching.</li>
+                <li>Prebuit interface for embeeding Google maps.</li>
+                <li>Free set-up after purchase.</li>
+                <li>All develpment photos included.</li>
+                <li>No Jquery .......and more.</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="doc-section" id="to-getting-started-section">
@@ -256,6 +276,7 @@
                 <li>HTML.</li>
                 <li>CSS.</li>
                 <li>SASS.</li>
+                <li>Google fonts</li>
                 <li>Bootstrap 5.</li>
                 <li>Bootstrap Icons.</li>
                 <li>Ts Particles</li>
@@ -336,6 +357,68 @@
             <p>
               You can find all the main SASS files and SASS partials in the
               "Sass" folder that is inside Chabod.
+            </p>
+          </div>
+        </div>
+        <div class="doc-section" id="to-colours-section">
+          <h3 class="doc-section-header">Colours</h3>
+          <div class="section-content">
+            <p>
+              Chabod is built with a simple black, white and greyish color
+              pallette. Using such a simple colour combination leaves out design
+              complexities and also helps to ensure simplicity.
+            </p>
+            <p>
+              Both the dark and light modes of chabod are built with a black,
+              white and a greyish color combination.
+            </p>
+            <p>
+              The color configurations for Chabod are seperate inside the color
+              configuration Sass partials. This seperations make handling
+              colours during development to be much easier. Considering the fact
+              that the template comes in two colour modes, each mode needed its
+              colour configurations and hence the colour setup had to be done
+              seperately for both modes.
+              <br />
+              Just locate the colour cofiguration Sass file for the mode you
+              want to work on(dark or light), then search for the item 'class'
+              or 'id' attribute you want to work on, and fix things as you wish
+              - its that simple.
+            </p>
+            <p>
+              You can find all the color configurations in the following SASS
+              partial files.
+            </p>
+            <ul>
+              <li>The <i>_light-mode-config.scss file</i></li>
+              <li>The <i>_light-to-dark-mode-config.scss file</i></li>
+              <li>The <i>_dark-mode-config.scss file</i></li>
+              gulp and the
+              <li>The <i>_dark-to-light-mode-config.scss file</i></li>
+              <br />
+              You can also find few color styling inside the Chabod media query
+              file - that is the
+              <i>themequeries.scss file</i
+              >, and
+              <i>maybe</i>
+              in other files as well.
+            </ul>
+            <p>
+              Colour manipulation inside Chabod is done by using CSS variables
+              (custom properties) and regular SASS variables.
+              <br />
+              Checkout all the above listed files to see the colour codes of the
+              various colour variables.
+            </p>
+            <p>
+              The <i>_dark-mode-config.scss file</i> and the
+              <i>_light-mode-config.scss file</i> contain colour configurations
+              for both the light and dark modes of Chabod respectively.
+            </p>
+            <p>
+              While the <i>_dark-to-light-mode-config.scss file</i> and the
+              <i>_light-to-dark-mode-config.scss file</i> both contain colour
+              configurations for switching colour modes using Javascript.
             </p>
           </div>
         </div>
@@ -458,75 +541,13 @@
             </p>
           </div>
         </div>
-        <div class="doc-section" id="to-colours-section">
-          <h3 class="doc-section-header">Colours</h3>
-          <div class="section-content">
-            <p>
-              Chabod is built with a simple black, white and greyish color
-              pallette. Using such a simple colour combination leaves out design
-              complexities and also helps to ensure simplicity.
-            </p>
-            <p>
-              Both the dark and light modes of chabod are built with a black,
-              white and a greyish color combination.
-            </p>
-            <p>
-              The color configurations for Chabod are seperate inside the color
-              configuration Sass partials. This seperations make handling
-              colours during development to be much easier. Considering the fact
-              that the template comes in two colour modes, each mode needed its
-              colour configurations and hence the colour setup had to be done
-              seperately for both modes.
-              <br />
-              Just locate the colour cofiguration Sass file for the mode you
-              want to work on(dark or light), then search for the item 'class'
-              or 'id' attribute you want to work on, and fix things as you wish
-              - its that simple.
-            </p>
-            <p>
-              You can find all the color configurations in the following SASS
-              partial files.
-            </p>
-            <ul>
-              <li>The <i>_light-mode-config.scss file</i></li>
-              <li>The <i>_light-to-dark-mode-config.scss file</i></li>
-              <li>The <i>_dark-mode-config.scss file</i></li>
-              gulp and the
-              <li>The <i>_dark-to-light-mode-config.scss file</i></li>
-              <br />
-              You can also find few color styling inside the Chabod media query
-              file - that is the
-              <i>themequeries.scss file</i
-              >, and
-              <i>maybe</i>
-              in other files as well.
-            </ul>
-            <p>
-              Colour manipulation inside Chabod is done by using CSS variables
-              (custom properties) and regular SASS variables.
-              <br />
-              Checkout all the above listed files to see the colour codes of the
-              various colour variables.
-            </p>
-            <p>
-              The <i>_dark-mode-config.scss file</i> and the
-              <i>_light-mode-config.scss file</i> contain colour configurations
-              for both the light and dark modes of Chabod respectively.
-            </p>
-            <p>
-              While the <i>_dark-to-light-mode-config.scss file</i> and the
-              <i>_light-to-dark-mode-config.scss file</i> both contain colour
-              configurations for switching colour modes using Javascript.
-            </p>
-          </div>
-        </div>
         <div class="doc-section" id="to-gmap-section">
           <h3 class="doc-section-header">Google Maps</h3>
           <div class="section-content">
             <p>
-              Chabod has pre-built interface for embeeding Google maps. However,
-              Chabod(the sales package) does not come preinstalled with Google
-              maps. Here are some reasons why:
+              The Chabod theme is pre-built with an interface for embeeding
+              Google maps. However, The sales package(Your purchased pack) does
+              not come preinstalled with Google maps. Here are some reasons why:
             </p>
             <p>
               1. Every user needs to embeed a google map view of their unique
@@ -576,7 +597,6 @@
                   services.</span
                 >
               </li>
-
               <li>
                 Paste the copied embeed code into the
                 <span class="code">"div"</span> element inside Chabod that has a
