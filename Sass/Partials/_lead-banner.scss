@@ -1,4 +1,4 @@
-@use "./custom-variables";
+@use './custom-variables';
 .primary-view {
   min-height: 100vh;
 }
@@ -19,7 +19,8 @@
     color: var(--grey);
     font-size: 18px;
   }
-  .dta-buttons a {
+  .dta-buttons a,
+  .dta-buttons button {
     margin-top: 20px;
     padding: 13px 25px;
     border-radius: 5px;
@@ -32,7 +33,7 @@
     background-color: var(--custom-color);
     color: white;
   }
-  .dta-buttons a:last-child {
+  .dta-buttons button {
     background-color: var(--custom-shade);
     color: var(--custom-color);
     margin-left: 20px;

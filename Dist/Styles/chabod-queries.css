@@ -65,7 +65,8 @@
   .description-text-area h1 {
     font-size: 40px;
   }
-  .description-text-area .dta-buttons a {
+  .description-text-area .dta-buttons a,
+.description-text-area .dta-buttons button {
     padding: 10px 15px;
   }
 
@@ -280,10 +281,13 @@
     margin: 15px auto 0px;
   }
 
-  .banner-details-area .description-text-area .dta-buttons a {
+  .banner-details-area .description-text-area .dta-buttons a,
+.banner-details-area .description-text-area .dta-buttons button {
     display: block;
+    width: 100%;
   }
-  .banner-details-area .description-text-area .dta-buttons a:last-child {
+  .banner-details-area .description-text-area .dta-buttons a:last-child,
+.banner-details-area .description-text-area .dta-buttons button:last-child {
     margin-left: 0;
   }
 }

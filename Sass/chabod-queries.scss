@@ -65,7 +65,8 @@
     h1 {
       font-size: 40px;
     }
-    .dta-buttons a {
+    .dta-buttons a,
+    .dta-buttons button {
       padding: 10px 15px;
     }
   }
@@ -313,8 +314,10 @@
   }
   .banner-details-area {
     .description-text-area {
-      .dta-buttons a {
+      .dta-buttons a,
+      .dta-buttons button {
         display: block;
+        width: 100%;
         &:last-child {
           margin-left: 0;
         }

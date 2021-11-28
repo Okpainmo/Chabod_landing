@@ -72,12 +72,14 @@ nav ul li a {
   color: var(--grey);
   font-size: 18px;
 }
-.description-text-area .dta-buttons a {
+.description-text-area .dta-buttons a,
+.description-text-area .dta-buttons button {
   margin-top: 20px;
   padding: 13px 25px;
   border-radius: 5px;
 }
-.description-text-area .dta-buttons a:hover {
+.description-text-area .dta-buttons a:hover,
+.description-text-area .dta-buttons button:hover {
   transform: scale(1.09);
   transition: transform 0.7s ease;
 }
@@ -85,7 +87,7 @@ nav ul li a {
   background-color: var(--custom-color);
   color: white;
 }
-.description-text-area .dta-buttons a:last-child {
+.description-text-area .dta-buttons button {
   background-color: var(--custom-shade);
   color: var(--custom-color);
   margin-left: 20px;
@@ -412,14 +414,22 @@ footer .buy-btn-case {
 .modal .sales-modal-content h4 {
   color: gray;
 }
-.modal .sales-modal-content .sales-platform {
+.modal .sales-modal-content a {
+  text-decoration: none;
+  color: inherit;
   margin: 20px auto;
+  width: 235px;
+}
+.modal .sales-modal-content a .sales-platform {
   font-size: 18px;
   padding: 12px 15px;
   box-shadow: 0 0 24px -10px gray;
   background-color: white;
   border-radius: 30px;
-  min-width: 235px;
+}
+.modal .sales-modal-content a .sales-platform:hover {
+  transform: scale(1.1);
+  transition: transform 0.75s ease;
 }
 .modal .sales-modal-content .buy-recommendation {
   padding: 20px 10px;

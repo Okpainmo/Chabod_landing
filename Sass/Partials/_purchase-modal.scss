@@ -13,14 +13,22 @@
     h4 {
       color: gray;
     }
-    .sales-platform {
+    a {
+      text-decoration: none;
+      color: inherit;
       margin: 20px auto;
-      font-size: 18px;
-      padding: 12px 15px;
-      box-shadow: 0 0 24px -10px gray;
-      background-color: white;
-      border-radius: 30px;
-      min-width: 235px;
+      width: 235px;
+      .sales-platform {
+        font-size: 18px;
+        padding: 12px 15px;
+        box-shadow: 0 0 24px -10px gray;
+        background-color: white;
+        border-radius: 30px;
+        &:hover {
+          transform: scale(1.1);
+          transition: transform 0.75s ease;
+        }
+      }
     }
     .buy-recommendation {
       padding: 20px 10px;
