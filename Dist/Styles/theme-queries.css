@@ -26,6 +26,16 @@
     right: 8px;
   }
 }
+/** This media query breakpoint corrects the animation effect of the larger screens view overlay 
+close button that happens because of the slide-in animation effect that 
+was added to the main-overlay pop-ups**/
+@media screen and (min-width: 1035px) {
+  .main-overlay .overlay-content-case .close-main-overlay-btn {
+    animation-name: animate-overlay-content-case;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+  }
+}
 @media (max-width: 1035px) {
   .mobile-only {
     display: none;
@@ -282,7 +292,7 @@
   }
 
   .side-nav {
-    top: calc(100vh - 55px);
+    top: calc(100vh - 65px);
     padding: 5px 10px;
   }
   .side-nav .side-nav-item .side-nav-link .side-icons {
@@ -292,28 +302,24 @@
     font-size: 13px;
   }
 
-  .side-content .seller-content #particles-case {
+  .side-content .seller-content {
     height: 100vh;
   }
-  .side-content .seller-content .home-social {
+  .side-content .seller-content .seller-intro-background #particles-case {
+    height: 100vh;
+  }
+  .side-content .seller-content .seller-intro-background .home-social {
     left: 0;
-    top: 545px;
+    top: 520px;
     width: 100%;
     margin: 0 auto;
     flex-direction: row;
   }
-  .side-content .seller-content .seller-intro .seller-brief {
+  .side-content .seller-content .seller-intro-background .seller-intro .seller-brief {
     padding: 0;
   }
   .side-content .float-chat-button {
-    bottom: 65px;
-  }
-  .side-content .home {
-    height: 100vh;
-  }
-  .side-content .home .seller-photo {
-    width: 220px;
-    height: 220px;
+    bottom: 70px;
   }
   .side-content .portfolio-section .projects {
     padding: 0px;
@@ -424,7 +430,7 @@
   }
   .main-overlay .overlay-content-case-content {
     width: 100%;
-    padding: 7px;
+    padding: 10px;
   }
   .main-overlay .overlay-content-case-content .main-story .col {
     padding: 0;
@@ -436,7 +442,39 @@
     margin: 35px 0 0;
   }
 }
-@media screen and (max-width: 400px) and (max-width: 400px) {
+@media (max-width: 400px) {
+  .side-nav {
+    top: calc(100vh - 57px);
+  }
+
+  .side-content .seller-content .seller-intro-background .home-social {
+    top: 505px;
+  }
+  .side-content .seller-content .seller-intro-background .seller-intro .seller-photo {
+    width: 220px;
+    height: 220px;
+  }
+  .side-content .portfolio-section .projects .card .slide-overlay-case {
+    height: 270px;
+  }
+  .side-content .portfolio-section .projects .card .slide-overlay-case .card-image-case {
+    min-height: 270px;
+  }
+  .side-content .portfolio-section .projects .card .slide-overlay-case .slide-up-overlay {
+    min-height: 270px;
+  }
+  .side-content .portfolio-section .projects .card .slide-up-overlay_slideDown {
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+  }
+  .side-content .portfolio-section .projects .card .slide-up-overlay_slideUp {
+    transform: translateY(-270px);
+    transition: transform 0.5s ease;
+  }
+  .side-content .blog-section .blog-container .card .post-banner {
+    height: 250px;
+  }
+
   .main-overlay .overlay-content-case-content .story-banner {
     height: 220px;
   }

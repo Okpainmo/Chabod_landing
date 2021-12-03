@@ -73,8 +73,16 @@ body {
         }
       }
       .home-social {
-        a span {
-          color: var(--color-d);
+        a {
+          &:hover {
+            span {
+              color: var(--color-c);
+              transition: color 0.75s ease;
+            }
+          }
+          span {
+            color: var(--color-d);
+          }
         }
       }
     }
@@ -162,7 +170,10 @@ body {
       .phone-case {
         .social-icons-case {
           .social-icons {
-            color: var(--color-c);
+            color: var(--color-d);
+            &:hover {
+              color: var(--color-c);
+            }
           }
         }
       }
@@ -189,7 +200,10 @@ body {
     color: var(--color-e);
     .social-icons-case {
       .social-icons {
-        color: var(--color-c);
+        color: var(--color-a);
+        &:hover {
+          color: var(--color-c);
+        }
       }
     }
   }

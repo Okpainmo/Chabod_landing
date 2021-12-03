@@ -25,6 +25,17 @@
     />
 
     <title>Hello, I'm Chabod</title>
+    <script>
+      function slideInModePics() {
+        document
+          .querySelector('.light-case')
+          .classList.add('light-case-slide-in');
+        document
+          .querySelector('.dark-case')
+          .classList.add('dark-case-slide-in');
+      }
+      window.addEventListener('load', slideInModePics);
+    </script>
   </head>
 
   <body>
@@ -33,20 +44,24 @@
         <div class="pseudo-nav">
           <div class="brand-name mont-font">Chabod</div>
         </div>
-        <a href="./Dist/light-dark_theme.html">
-          <div class="image-case">
-            <img src="./Dist/Images/light-home.png" alt="light-mode-image" />
-            <div class="mode-name mt-20">Light - Dark Mode</div>
-          </div>
-        </a>
+        <div class="light-case">
+          <a href="./Dist/light-dark_theme.html">
+            <div class="image-case">
+              <img src="./Dist/Images/light-home.png" alt="light-mode-image" />
+              <div class="mode-name mt-20">Light - Dark Mode</div>
+            </div>
+          </a>
+        </div>
       </section>
       <section class="dark-side">
-        <a href="./Dist/dark-light_theme.html">
-          <div class="image-case">
-            <img src="./Dist/Images/dark-home.png" alt="dark-mode-image" />
-            <div class="mode-name mt-20">Dark - Light Mode</div>
-          </div>
-        </a>
+        <div class="dark-case">
+          <a href="./Dist/dark-light_theme.html">
+            <div class="image-case">
+              <img src="./Dist/Images/dark-home.png" alt="dark-mode-image" />
+              <div class="mode-name mt-20">Dark - Light Mode</div>
+            </div>
+          </a>
+        </div>
       </section>
     </section>
   </body>

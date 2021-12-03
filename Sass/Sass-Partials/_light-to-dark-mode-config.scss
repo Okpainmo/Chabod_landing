@@ -96,11 +96,33 @@ $dark-e: black;
           border: 7px solid $dark-b;
         }
       }
-      .home-social a span {
-        color: $dark-d;
+      .home-social {
+        a {
+          &:hover {
+            span {
+              color: $dark-c;
+              transition: color 0.75s ease;
+            }
+          }
+          span {
+            color: $dark-d;
+          }
+        }
       }
     }
     .contact {
+      .contact-details {
+        .phone-case {
+          .social-icons-case {
+            .social-icons {
+              color: $dark-d;
+              &:hover {
+                color: $dark-c;
+              }
+            }
+          }
+        }
+      }
       .map-area {
         .map-case {
           background-color: $dark-b;
@@ -113,6 +135,14 @@ $dark-e: black;
     footer {
       color: $dark-e;
       background-color: $dark-d;
+      .social-icons-case {
+        .social-icons {
+          color: $dark-a;
+          &:hover {
+            color: $dark-c;
+          }
+        }
+      }
     }
   }
   .main-overlay {

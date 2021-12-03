@@ -1,4 +1,4 @@
-@use "./Sass-Partials/media-queries-config.scss" as config;
+@use './Sass-Partials/media-queries-config.scss' as config;
 
 @include config.media-breakpoint-xl {
   .contact {
@@ -34,6 +34,34 @@
     }
   }
 }
+
+/** This media query breakpoint corrects the animation effect of the larger screens view overlay 
+close button that happens because of the slide-in animation effect that 
+was added to the main-overlay pop-ups**/
+
+// Start
+
+@media screen and (min-width: 1035px) {
+  // @keyframes hide-until-overlay-slides-in {
+  //   from {
+  //     opacity: 0;
+  //   }
+  //   to {
+  //     opacity: 1;
+  //   }
+  // }
+  .main-overlay {
+    .overlay-content-case {
+      .close-main-overlay-btn {
+        animation-name: animate-overlay-content-case;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+      }
+    }
+  }
+}
+
+// End
 
 @include config.media-breakpoint-ln {
   .mobile-only {
@@ -350,7 +378,7 @@
     margin: 10px 0;
   }
   .side-nav {
-    top: calc(100vh - 55px);
+    top: calc(100vh - 65px);
     padding: 5px 10px;
     .side-nav-item {
       .side-nav-link {
@@ -365,32 +393,29 @@
   }
   .side-content {
     .seller-content {
-      #particles-case {
-        height: 100vh;
-      }
-      .home-social {
-        left: 0;
-        top: 545px;
-        width: 100%;
-        margin: 0 auto;
-        flex-direction: row;
-      }
-      .seller-intro {
-        .seller-brief {
-          padding: 0;
+      height: 100vh;
+      .seller-intro-background {
+        #particles-case {
+          height: 100vh;
+        }
+        .home-social {
+          left: 0;
+          top: 520px;
+          width: 100%;
+          margin: 0 auto;
+          flex-direction: row;
+        }
+        .seller-intro {
+          .seller-brief {
+            padding: 0;
+          }
         }
       }
     }
     .float-chat-button {
-      bottom: 65px;
+      bottom: 70px;
     }
-    .home {
-      height: 100vh;
-      .seller-photo {
-        width: 220px;
-        height: 220px;
-      }
-    }
+
     .portfolio-section {
       .projects {
         padding: 0px;
@@ -515,7 +540,7 @@
       margin: 1vh auto;
       &-content {
         width: 100%;
-        padding: 7px;
+        padding: 10px;
         .main-story {
           .col {
             padding: 0;
@@ -532,18 +557,66 @@
   }
 }
 @include config.media-breakpoint-xsm {
-  @media screen and (max-width: 400px) {
-    .main-overlay {
-      .overlay-content-case {
-        &-content {
-          .story-banner {
+  .side-nav {
+    top: calc(100vh - 57px);
+  }
+  .side-content {
+    .seller-content {
+      .seller-intro-background {
+        .home-social {
+          top: 505px;
+        }
+        .seller-intro {
+          .seller-photo {
+            width: 220px;
             height: 220px;
           }
-          .main-story {
-            .col {
-              .card {
-                min-height: 220px;
-              }
+        }
+      }
+    }
+    .portfolio-section {
+      .projects {
+        .card {
+          .slide-overlay-case {
+            height: 270px;
+            .card-image-case {
+              min-height: 270px;
+            }
+            .slide-up-overlay {
+              min-height: 270px;
+            }
+          }
+          .slide-up-overlay_slideDown {
+            transform: translateY(0);
+            transition: transform 0.5s ease;
+          }
+          .slide-up-overlay_slideUp {
+            transform: translateY(-270px);
+            transition: transform 0.5s ease;
+          }
+        }
+      }
+    }
+    .blog-section {
+      .blog-container {
+        .card {
+          .post-banner {
+            height: 250px;
+          }
+        }
+      }
+    }
+  }
+  .main-overlay {
+    .overlay-content-case {
+      &-content {
+        .story-banner {
+          height: 220px;
+        }
+        .main-story {
+          .col {
+            .card {
+              min-height: 220px;
             }
           }
         }

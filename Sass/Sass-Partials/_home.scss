@@ -36,14 +36,13 @@
       right: 30px;
       top: 200px;
       z-index: 1600;
+      .home-social-icon {
+        margin: 7px 0;
+      }
       a {
         span {
-          font-size: 22px;
+          font-size: 20px;
           margin-bottom: 20px;
-          &:hover {
-            transform: scale(1.15);
-            transition: transform 0.75s ease;
-          }
         }
       }
     }

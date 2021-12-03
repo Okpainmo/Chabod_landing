@@ -12,6 +12,9 @@
     .mail-case,
     .address-case {
       width: 30%;
+      .icon {
+        margin-bottom: 10px;
+      }
       i {
         font-size: 25px;
         margin-bottom: 15px;
@@ -57,10 +60,13 @@
       @extend .form-header;
     }
     .address-case {
-      margin: 0 auto;
-      i {
-        font-size: 25px;
-        margin: 15px 0;
+      margin: 20px auto 0;
+      .icon {
+        margin-bottom: 5px;
+        i {
+          font-size: 25px;
+          margin: 15px 0;
+        }
       }
     }
     .map-case {

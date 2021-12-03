@@ -2,6 +2,10 @@
 
 @use './Sass-Partials/light-mode-config';
 
+// color configurations partial for switching modes.
+
+@use './Sass-Partials/light-to-dark-mode-config';
+
 // other sass partials
 
 @use './Sass-Partials/home';
@@ -15,7 +19,6 @@
 @use './Sass-Partials/side-content';
 @use './Sass-Partials/main-overlay';
 @use './Sass-Partials/purchase-modal';
-@use './Sass-Partials/light-to-dark-mode-config';
 
 // basic page settings
 
