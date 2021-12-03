@@ -61,7 +61,7 @@
             ></button>
           </div>
           <div class="modal-body">
-           <div class="sales-modal-content">
+            <div class="sales-modal-content">
               <h3 class="sales-header mont-font">Buy Chabod on</h3>
               <a href="#">
                 <div class="sales-platform envato">
@@ -215,6 +215,7 @@
             </p>
             <div class="theme-feature-list">
               <h3 class="doc-section-header">Chabod-features</h3>
+              Chabod comes with cool features which includes;
               <ul>
                 <li>Dark and light theme modes.</li>
                 <li>Superb responsiveness across different screen sizes.</li>
@@ -265,9 +266,9 @@
             <p>
               Refer to the
               <a href="#to-colours-section" class="custom-link"
-                >colours section below</a
-              >
-              for more on handling colours in Chabod.
+                >colours section
+              </a>
+              below for more on handling colours in Chabod.
             </p>
           </div>
         </div>
@@ -280,13 +281,13 @@
                 <li>HTML.</li>
                 <li>CSS.</li>
                 <li>SASS.</li>
-                <li>Google fonts</li>
+                <li>Google fonts.</li>
                 <li>Bootstrap 5.</li>
                 <li>Bootstrap Icons.</li>
-                <li>Ts Particles</li>
-                <li>Vanilla Javascript</li>
+                <li>Ts Particles.</li>
+                <li>Vanilla Javascript.</li>
                 <li>Gulp Js and</li>
-                <li>Google Maps</li>
+                <li>Google Maps.</li>
               </ul>
             </div>
           </div>
@@ -301,6 +302,10 @@
               simple. Just lay a hand on any IDE(code editor) of you choice like
               VS Code or Atom, open up the Chabod folder in the code editor, and
               you are good to go.
+            </p>
+            <p>
+              But please ensure that you make a back up copy of the template
+              folder before beginnning any develpment process.
             </p>
           </div>
         </div>
@@ -354,7 +359,7 @@
               <span class="code">"gulp watch"</span> command in your command
               line interface or terminal during development, to ensure that gulp
               is watching for changes in any SASS file, so that it can compile
-              it into regular CSS. If you fail to do so, SASS will not
+              the changes into regular CSS. If you fail to do so, SASS will not
               compile/process into CSS and thus your changes will not be
               effected.
             </p>
@@ -379,15 +384,16 @@
             <p>
               The color configurations for Chabod are seperate inside the color
               configuration Sass partials. This seperations make handling
-              colours during development to be much easier. Considering the fact
-              that the template comes in two colour modes, each mode needed its
-              colour configurations and hence the colour setup had to be done
-              seperately for both modes.
+              colours during development to be much easier.
+              <br />
+              Considering the fact that the template comes in two colour modes,
+              each mode needed its colour configurations and hence the colour
+              setup had to be done seperately for both modes.
               <br />
               Just locate the colour cofiguration Sass file for the mode you
-              want to work on(dark or light), then search for the item 'class'
-              or 'id' attribute you want to work on, and fix things as you wish
-              - its that simple.
+              want to work on(dark or light), then search for the item selector
+              attribute('class', 'id' or any other type) that you want to work
+              on, and fix things as you wish - its that simple.
             </p>
             <p>
               You can find all the color configurations in the following SASS
@@ -445,10 +451,14 @@
               If you prefer working offline with local bootstrap files, go ahead
               and do the necessary downloads and then link to all the necessary
               files locally. The
-              <a href="#" class="custom-link">Bootstrap getting started</a> page
-              should help you out with downloading all the necessary files for
-              local development. So feel free to refer to it for all you will
-              need to set up Bootstrap for local development.
+              <a
+                href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"
+                class="custom-link"
+                >Bootstrap getting started</a
+              >
+              page should help you out with downloading all the necessary files
+              for local development. So feel free to refer to it for all you
+              will need to set up Bootstrap for local development.
             </p>
           </div>
         </div>
@@ -469,8 +479,8 @@
             <p>
               Bootstrap icons can easily be recorgnized by the
               <span class="code">"bi"</span> class attribute. Just locate the
-              icon and inspect using the browser developer tools or by looking
-              directly into the codebase. If the icon contains a
+              icon and inspect it using the browser developer tools or by
+              looking directly into the codebase. If the icon contains a
               <span class="code">"bi"</span> class attribute, then its a
               bootstrap icon.
             </p>
@@ -493,10 +503,10 @@
             <p>
               The particles effect on Chabod can be changed and customized to
               produce different ones as desired by users. Refer to the
-              <a href="#" class="custom-link">Ts particles website</a> for how
-              to go about that.
-              <a href="#" class="custom-link">This tutorial</a> might also be of
-              great help.
+              <a href="https://particles.js.org/" class="custom-link"
+                >Ts particles website</a
+              >
+              for how to go about that.
             </p>
           </div>
         </div>
@@ -508,10 +518,7 @@
               development tasks like creating a live server, compiling SASS, CSS
               auto-prefixing, and etcetera.
             </p>
-            <p>
-              In this template, Gulp is used in SASS compilation and is also
-              configured to do CSS auto-prefixing.
-            </p>
+            <p>In this template, Gulp is the tool used for SASS compilation.</p>
             <p>
               Chabod comes with a <i>gulpfile.js script</i>. That leaves you
               with no special Gulp.js script to write. All you'll need to do, is
@@ -528,7 +535,7 @@
                 <span class="code">"npm install" </span>
                 in the command line or terminal when inside the project folder,
                 to install all the required dependencies and get gulp all set
-                for compiling SASS and auto prefixing CSS.
+                for compiling SASS.
                 <br />
                 Chabod comes with a <i>package.json</i> file which contains a
                 list of all dependencies required to set up a complete workflow.
@@ -566,8 +573,8 @@
             </p>
             <p>
               Please note that Chabod was not built with an API key, and hence
-              does not require any complex development work, to set up a user
-              location and have it show in. Chabod is built to simply help users
+              does not require any complex development work to set up a user
+              location and have it show. Chabod is built to simply help users
               show their locations to site visitors by a simple embeeding
               process.
             </p>
