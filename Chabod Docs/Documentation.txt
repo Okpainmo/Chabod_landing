@@ -1,0 +1,240 @@
+* Introduction.
+
+Thanks for purchasing the awesome Chabod portfolio website template.
+Please note, that you can also find the Chabod documentation online 
+just visit https://getchabod.com/dist/documentation.html .
+
+This document contains the the documentation for the chabod portfolio website template.
+
+* About Chabod.
+
+Chabod is an amazing portfolio website template built with the bootstrap framework. It comes with 6 different sections to help sellers show their professional profile with style, while remaining as engaging as possible. Chabod is a simple, single page static website, with pop-up features like: a project story pop-up for sharing project stories, and a blog pop-up for displaying blog stories.
+
+* Chabod-Features
+
+Chabod comes with cool features which includes;
+
+1. Dark and light theme modes.
+2. Superb responsiveness across different screen sizes.
+3. Google fonts.
+4. A simply amazing design.
+5. Built with Bootstrap 5.
+6. Built with Gulp Js.
+7. Gulp.js script included.
+8. An inbuilt blog.
+9. Excellent user interactivity.
+10. Top-notch customer support.
+11. Light and dark mode switching.
+12. Prebuit interface for embeeding Google maps.
+13. Free set-up after purchase.
+14. All develpment photos included.
+15. No Jquery .......and more.
+
+* Getting Started.
+
+Chabod is built with different front end web development tools and this documentation guides you 
+through as much as is needed to get a hand an them and customize Chabod into the portfolio website of 
+your dream.
+
+Chabod is a straight forward portfolio website template. It's very much pre-built and thus, leaves out 
+the stress of needing to know how to use any of its components like paddings, margins, buttons and 
+etcetera.
+
+The only components that might be necessary for users to know about, is the colour components.
+Chabod comes with a black, white, and greyish color build. This simple colour pallete adds greatly 
+to it's simplicity.
+All color configurations can be found in the config partials of both the light and dark modes - 
+that is, the _light-mode-config.scss file, the _light-to-dark-mode-config.scss file, the _dark-mode-config.scss file and the _dark-to-light-mode-config.scss file.
+
+Refer to the colours section below for more on handling colours in Chabod.
+
+* Chabod Build Tools/Stack.
+
+Chabod is built with the following tools:
+
+1. HTML.
+2. CSS.
+3. SASS.
+4. Google fonts.
+5. Bootstrap 5.
+6. Bootstrap Icons.
+7. Ts Particles.
+8. Vanilla Javascript.
+9. Gulp Js and
+10. Google Maps.
+
+* Setting Up Your Development Environment.
+
+Setting up your development environment to handle Chabod is pretty simple. Just lay a hand on any 
+IDE(code editor) of you choice like VS Code or Atom, open up the Chabod folder in the code editor, 
+and you are good to go.
+
+But please ensure that you make a back-up copy of the template folder before beginnning any develpment 
+process.
+
+* HTML.
+
+Chabod is built with regular HTML5 markup and Bootstrap 5. This means a good knowledge of the 
+Bootstrap framework will help greatly in handling and customizing Chabod HTML.
+
+* CSS And SASS.
+
+Chabod is built with SASS. SASS is a CSS preprocessor - a tool that provides a better and more cool 
+way to write styles. SASS styles are processed/compiled into regular CSS using different tools. 
+In Chabod, Gulp.Js is the tool used in compiling SASS into regular CSS. It is the compiled SASS 
+styles(CSS files) that are linked-to in all the head sections of the HTML files contained in Chabod.
+
+The SASS styling in this template follows the component based styling system, this means all the 6 
+different sections of Chabod are styled seperately in different files called partials. Apart from 
+these 6 sections, other partials were created as well. These seperations make further development 
+and maintenance to be much easier compared to working directly with the jammed CSS files.
+
+Feel free to work directly with the CSS files if you do not know how to work with SASS yet. 
+You can find all the CSS files inside the "Styles" folder that is contained in the "Dist" folder in 
+Chabod.
+
+In this template, SASS is processed into CSS using Gulp.Js. You can refer to the Gulp.Js section 
+below for more on SASS compilation. You do not need to bother a bit about SASS if Gulp is completely 
+set up. So just set up Gulp, and go on with writing SASS - Gulp will automatically do the compiling 
+as configured in the "gulp.js" script.
+
+But please, always remember to run the "gulp watch" command in your command line interface or 
+terminal during development, to ensure that gulp is watching for changes in any SASS file, so 
+that it can compile the changes into regular CSS. If you fail to do so, SASS will not compile/process 
+into CSS and thus your changes will not be effected.
+
+You can find all the main SASS files and SASS partials in the "Sass" folder that is inside Chabod.
+
+* Colours
+Chabod is built with a simple black, white and greyish color pallette. Using such a simple colour 
+combination leaves out design complexities and also helps to ensure simplicity.
+
+Both the dark and light modes of chabod are built with a black, white and a greyish color combination.
+
+The color configurations for Chabod are seperate inside the color configuration Sass partials. 
+This seperations make handling colours during development to be much easier.
+Considering the fact that the template comes in two colour modes, each mode needed its colour 
+configurations and hence the colour setup had to be done seperately for both modes.
+Just locate the colour cofiguration Sass file for the mode you want to work on(dark or light), 
+then search for the item selector attribute('class', 'id' or any other type) that you want to work on, 
+and fix things as you wish - its that simple.
+
+You can find all the color configurations in the following SASS partial files.
+
+The _light-mode-config.scss file
+The _light-to-dark-mode-config.scss file
+The _dark-mode-config.scss file
+gulp and the
+The _dark-to-light-mode-config.scss file
+
+You can also find few color styling inside the Chabod media query file - that is 
+the themequeries.scss file, and maybe in other files as well.
+Colour manipulation inside Chabod is done by using CSS variables (custom properties) 
+and regular SASS variables.
+Checkout all the above listed files to see the colour codes of the various colour variables.
+
+The _dark-mode-config.scss file and the _light-mode-config.scss file contain colour 
+configurations for both the light and dark modes of Chabod respectively.
+
+While the _dark-to-light-mode-config.scss file and the _light-to-dark-mode-config.scss 
+file both contain colour configurations for switching colour modes using Javascript.
+
+* Bootstrap.
+
+Chabod is built with the Bootstrap 5 framework. Bootstrap is a very popular HTML, CSS and 
+Javascript framework. All the HTML files in Chabod contains CDN links to the Bootstrap framework 
+for Bootstrap styles and all relevant scripts to get Bootstrap running.
+
+This means that, as long as you are connected to the internet, you can just go ahead with customizing 
+Chabod without needing any setup for Bootstrap.
+
+If you prefer working offline with local bootstrap files, go ahead and do the necessary downloads and 
+then link to all the necessary files locally. The Bootstrap getting started page should help you out 
+with downloading all the necessary files for local development. So feel free to refer to it for all 
+you will need to set up Bootstrap for local development.
+
+* Bootstrap Icons.
+
+The icon library that was used in building Chabod is bootstrap icons - another free and awesome life 
+saver from Bootstrap.
+similarly, No setup is actually needed to get bootstrap icons up and running because a CDN link was 
+also used in the build. Just have internet access, and you are good to go.
+The bootstrap icons CDN link can be found in the head sections of both the dark and light modes of 
+Chabod HTML files.
+
+Bootstrap icons can easily be recorgnized by the "bi" class attribute. Just locate the icon and 
+inspect it using the browser developer tools or by looking directly into the codebase. If the icon 
+contains a "bi" class attribute, then its a bootstrap icon.
+
+* Ts Particles.
+
+Ts particles is a Javascript tool for creating particle effects in websites. The moving particle 
+effect on the home section of Chabod is done by Ts particles. Ts particles is a github fork of a 
+similar javascript tool called Particles.js.
+
+With Chabod, you do not need any set up for ts particles. it's all set up already. Both the light 
+and dark modes of Chabod contains customized configurations for ts particles.
+
+The particles effect on Chabod can be changed and customized to produce different ones as 
+desired by users. Refer to the Ts particles website(https://particles.js.org/) for how to go about that.
+
+* Gulp.Js.
+
+Gulp is a popular javascript tool for automating different development tasks like creating a 
+live server, compiling SASS, CSS auto-prefixing, and etcetera.
+
+In this template, Gulp is the tool used for SASS compilation.
+
+Chabod comes with a gulpfile.js script. That leaves you with no special Gulp.js script to write. All 
+you'll need to do, is to install gulp and all the required dependencies (gulp-sass, sass, and gulp 
+auto-prefixer).
+
+Installing all the above listed dependencies only require a single command.
+
+Simply run "npm install" in the command line or terminal when inside the project folder, to install 
+all the required dependencies and get gulp all set for compiling SASS.
+Chabod comes with a package.json file which contains a list of all dependencies required to set up a 
+complete workflow. Hence, simply running the "npm install" command, directly installs all the 
+dependencies listed in the package.json file.
+With all of these all done, You are ready to start enjoying Gulp.Js on your workspace, and you 
+are all set to start building with SASS as well. Isn't it all simple?
+
+* Google Maps
+
+The Chabod theme is pre-built with an interface for embeeding Google maps. However, The sales 
+package(Your purchased pack) does not come preinstalled with Google maps. Here are some reasons why:
+
+1. Every user needs to embeed a google map view of their unique locations. This can only be done 
+after purchase by the user.
+
+2. Excluding Google maps from the purchased package, prevents third party issues. This simply 
+means embeeding Google maps on your Chabod website after purchase will only be an agreement between 
+you and Google. Without any third party (developer) issues.
+
+Please note that Chabod was not built with an API key, and hence does not require any complex 
+development work to set up a user location and have it show. Chabod is built to simply help users 
+show their locations to site visitors by a simple embeeding process.
+
+Embeeding a Google map view of your location into the pre-built interface in Chabod is super easy.
+
+1. First make a request to have your location added to Google maps. And wait until it is added.
+2. Once your location is added to google maps, Open Google maps and click on your location to 
+have it's details displayed in the Google maps layout.
+3. Click the menu icon on the top right corner of the Google map interface.
+4. Select "Share or embeed map"
+5. Select the "Embeed a map" option from the next pop-up.
+6. Copy out the "Embeed a map" code. by clicking the "COPY HTML" option provided.
+Do take time out to click the "terms and service" link provided underneath, and read through the 
+provided terms and services.
+7. Paste the copied embeed code into the "div" element inside Chabod that has a "map-case" class 
+attribute. 
+The element with the "map-case" class attribute is in the contact section of the two main 
+html files of the template.
+8. Remove every attribute from the "iframe" element in the pasted code leaving only the "src", 
+"allowfullscreen" and "loading" attributes.
+9. Add a "map-responsive" class attribute to the iframe element. 
+The "map-responsive" class attribute
+a css class that adds responsiveness to the prebuilt interface for embeeding the map.
+
+Finally, Reload Chabod - and you'll see your google map location display beautifully and responsively 
+inside Chabod.

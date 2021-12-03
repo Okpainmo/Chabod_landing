@@ -1,0 +1,60 @@
+* Chabod Extra Package.
+
+Thanks for purchasing the awesome Chabod portfolio website template.
+Please note, that you can also find details of the Chabod extra package online, 
+just visit https://getchabod.com/dist/extra-offer .
+
+The Chabod theme comes with an awesome extra offer on every purchase.
+
+** Every purchase of the Chabod portfolio website template, gives buyers Developer services for no extra 
+charge.
+
+Please note however, that the extra services excludes any backend web developmemt task(like setting 
+up the contact form). Netlify provides free automated form handling, so users do not have to worry 
+about form handling - if they choose to host their Chabod website on Netlify.
+
+Secondly, the customization and setup service will be on an "as is" basis. This means setup and 
+customization will only be on the features currently present on the template. Addition of any extra 
+feature wil attract payment.
+
+Finally, Users will purchase the domain and hosting plan of their choice. Only customization and 
+setup of the front end aspect of the template will be handled.
+
+* Can't Afford A Domain? - No Problem.
+
+In case you can't afford to buy a custom domain and a hosting plan, there are a number of cool 
+ways to host a portfolio website for absolutely free.
+
+Awesome platforms like Netlify and Vercel offers super quick ways to host a website for 
+absolutely free.
+For Zoe Themes, Netlify wins.
+
+* Why Netlify?
+Netlify is one awesome platform that offers free website hosting services. Hosting 
+a website on netlify is very easy. Netlify provides a free hosting service that attaches a 
+".netlify.app" suffix to whatever website name you choose. Users can add up a custom domain for free 
+too - if they have or wish to buy one.
+
+Thats not all, Netlify provides automated form handling. This means even with only the static 
+build of Chabod, Netlify helps you handle form submissions without a single line of backend code.
+Another thing is that Netlify offers secure hosting(with "https") even though its free.
+
+So Here's a list of some goodies that users will get if their website is hosted on Netlify starter plan.
+
+1. Free website hosting
+2. A free ".netlify.app" subdomain - Users can add a custom domain for free as well.
+3. Free form handling (100 forms per month)
+4. Secure hosting with "https".
+5. Free automatic email notifications when site visitors contact you through forms on your website.
+
+* In a summary, this simply means that, you can go ahead to get the Chabod template + the Chabod extra 
+package + all the Netlify goodies, for just 15$ - if you choose.
+
+* How To Claim The Extra Package
+
+Claiming your Chabod extra offer is simple.
+
+** Just purchase Chabod, then send an email to hello.zoethemes@gmail.com.
+
+In the email, Kindly attach any prove of your purchase, and in no time, you'll be connected with 
+a developer, who'll work with you to set up your new portfolio website - for absolutely no extra charge.
