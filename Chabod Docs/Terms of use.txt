@@ -15,7 +15,8 @@ website with it.
 
 2. Users must not claim ownership of the Chabod template. Ownership of the Chabod Template is fully 
 reserved to Zoe Themes. Every purchase of the template only gives users a license, to own and setup 
-only a single portfolio website with the template.
+only a single portfolio website with the template. Every new portfolio website to be set up with this
+template requires a fresh purchase.
 
 3. The Chabod template must not be resold by users. Every purchase only gives users a single use 
 license and not total ownership of the template or a right to resell it.

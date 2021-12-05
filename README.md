@@ -2,7 +2,7 @@
 
 ## Project site
 
-This project is a commercial project. The Chabod portfolio template sells for 15 US dollars. FInd out more about the project on its official website- https://getchabod.com
+This project is an awesome commercial project. The Chabod portfolio template sells for 15 US dollars. Find out more about the project on its official website- https://getchabod.com
 
 ## About Chabod 7.0
 

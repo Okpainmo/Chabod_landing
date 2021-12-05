@@ -3,14 +3,30 @@
 Thanks for purchasing the awesome Chabod portfolio website template.
 Please note, that you can also find the Chabod license online 
 just visit https://getchabod.com/dist/license .
-This document contains the license declarations for the chabod portfolio website template.
+This document contains the license declarations for the Chabod portfolio website template.
 
 * How Template Licensing Works.
 
 Your purchase of the Chabod portfolio template is not a complete purchase of the 
 product(the Chabod portfolio website template) - 15$ just can't pay for such an awesome product.
-Your purchase of Chabod is simply a purchase of a license to own and make use of only a single copy of 
+Your purchase of Chabod is simply a purchase of a license to own and make use of ONLY a single copy of 
 the template. Hence the need for all the declarations in the license below.
+
+*Please note that:
+
+The other licence documents contained in this same folder that contains this Chabod licences, 
+are not licence declarations for Chabod. They are licence declarations for some web development 
+tools(Bootstrap icons, the Bootstrap framework and Ts particles) that were used in building Chabod.
+
+One condition for using those tools to build any product is that their licences will be included in that
+product when finally built and shipped. That is why those licences were included in this 
+product (Chabod).
+
+This implies that all the permissions listed in those license documents are for those web development 
+tools(Bootstrap icons, the Bootstrap framework and Ts particles) and not for Chabod. 
+
+It is only this licence(Chabod licence) that contains the licence declarations and permissions for the 
+Chabod portfolio website template. So please read it carefully and understand it.
 
 * Chabod License.
 
@@ -18,9 +34,10 @@ the template. Hence the need for all the declarations in the license below.
 single copy of this portfolio website template.
 
 2. This license does not support multiple uses and does not support reselling by users. Every new 
-portfolio website to be setup by any user, requires a new purchase.
+portfolio website to be setup by any user requires a new purchase.
 
-If you do not agree with the above declarations of this license, then please, you may not buy or 
+3. If you do not agree with the declarations of this license, then please, you may not buy or 
 use Chabod.
+
 Failure to abide by the declarations of this License document amounts to copyright infringement. 
 And hence exposes offending users to appropriate legal action.

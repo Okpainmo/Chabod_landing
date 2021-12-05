@@ -7,7 +7,7 @@ just visit https://getchabod.com/dist/extra-offer .
 The Chabod theme comes with an awesome extra offer on every purchase.
 
 ** Every purchase of the Chabod portfolio website template, gives buyers Developer services for no extra 
-charge.
+charge!!!
 
 Please note however, that the extra services excludes any backend web developmemt task(like setting 
 up the contact form). Netlify provides free automated form handling, so users do not have to worry 
@@ -27,9 +27,11 @@ ways to host a portfolio website for absolutely free.
 
 Awesome platforms like Netlify and Vercel offers super quick ways to host a website for 
 absolutely free.
+
 For Zoe Themes, Netlify wins.
 
 * Why Netlify?
+
 Netlify is one awesome platform that offers free website hosting services. Hosting 
 a website on netlify is very easy. Netlify provides a free hosting service that attaches a 
 ".netlify.app" suffix to whatever website name you choose. Users can add up a custom domain for free 
