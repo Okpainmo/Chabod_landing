@@ -87,7 +87,8 @@ nav ul li a {
   background-color: var(--custom-color);
   color: white;
 }
-.description-text-area .dta-buttons button {
+.description-text-area .dta-buttons button,
+.description-text-area .dta-buttons a:last-child {
   background-color: var(--custom-shade);
   color: var(--custom-color);
   margin-left: 20px;
@@ -301,7 +302,7 @@ footer .social-icons-case .icon .fab:hover {
   transition: transform 0.7s ease;
 }
 footer .buy-btn-case {
-  margin: 15px 0;
+  margin: 30px 0;
 }
 
 .top-offset {
@@ -369,6 +370,12 @@ footer .buy-btn-case {
   position: relative;
 }
 .main-doc-field .main-doc-content i {
+  color: var(--grey);
+}
+.main-doc-field .main-doc-content a {
+  text-decoration: none;
+}
+.main-doc-field .main-doc-content a:hover {
   color: var(--grey);
 }
 .main-doc-field .main-doc-content .doc-section-header {
@@ -505,14 +512,17 @@ body {
 .buy-btn-case {
   margin-right: 30px;
 }
-.buy-btn-case button {
-  padding: 8px 25px;
+.buy-btn-case button,
+.buy-btn-case a {
+  padding: 10px 25px;
   border-radius: 5px;
   background-color: var(--custom-color);
   color: white;
+  text-decoration: none;
 }
-.buy-btn-case button:hover {
-  transform: scale(1.09);
-  transition: transform 0.7s ease;
+.buy-btn-case button:hover,
+.buy-btn-case a:hover {
   color: white;
+  letter-spacing: 1px;
+  transition: all 0.7s ease;
 }

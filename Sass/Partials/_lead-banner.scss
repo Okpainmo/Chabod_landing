@@ -33,7 +33,8 @@
     background-color: var(--custom-color);
     color: white;
   }
-  .dta-buttons button {
+  .dta-buttons button,
+  .dta-buttons a:last-child {
     background-color: var(--custom-shade);
     color: var(--custom-color);
     margin-left: 20px;

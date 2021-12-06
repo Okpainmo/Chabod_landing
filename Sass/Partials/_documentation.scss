@@ -1,4 +1,4 @@
-@use "./custom-variables";
+@use './custom-variables';
 
 .top-offset {
   margin-top: 60px;
@@ -66,6 +66,12 @@
     position: relative;
     i {
       color: var(--grey);
+    }
+    a {
+      text-decoration: none;
+      &:hover {
+        color: var(--grey);
+      }
     }
     .doc-section-header {
       text-transform: capitalize;
