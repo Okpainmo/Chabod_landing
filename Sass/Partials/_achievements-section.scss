@@ -1,0 +1,33 @@
+.achievements-section {
+  min-height: 300px;
+  margin-top: 250px;
+  border-radius: 40px;
+  background-color: #f8f7f7;
+  padding-bottom: 50px;
+  .achievement-illustration {
+    width: 200px;
+    margin: 0 auto;
+    transform: translateY(-100px);
+    img {
+      margin: 0 auto;
+      width: 200px;
+      height: 180px;
+    }
+  }
+  .achievement-header {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    transform: translateY(-70px);
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 50px;
+    }
+  }
+  .product-hunt_embed {
+    margin: 0 auto;
+    width: 400px;
+    transform: translateY(-30px);
+  }
+}

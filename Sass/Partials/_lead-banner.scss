@@ -1,49 +1,68 @@
 @use './custom-variables';
-.primary-view {
-  min-height: 100vh;
-}
-.banner-details-area {
-  display: flex;
-  padding-top: 100px;
-}
-.description-text-area {
-  width: 45%;
-  h1 {
-    // margin-top: 20px;
-    font-size: 55px;
-    span {
-      color: var(--custom-color);
-    }
-  }
-  p {
-    color: var(--grey);
-    font-size: 18px;
-  }
-  .dta-buttons a,
-  .dta-buttons button {
-    margin-top: 20px;
-    padding: 13px 25px;
-    border-radius: 5px;
-    &:hover {
-      transform: scale(1.09);
-      transition: transform 0.7s ease;
-    }
-  }
-  .dta-buttons a:first-child {
-    background-color: var(--custom-color);
-    color: white;
-  }
-  .dta-buttons button,
-  .dta-buttons a:last-child {
-    background-color: var(--custom-shade);
-    color: var(--custom-color);
-    margin-left: 20px;
-  }
-}
-.illustration-area {
-  width: 55%;
-  margin-top: 20px;
-  img {
+
+.lead-banner {
+  width: 100%;
+  height: calc(100vh - 62px);
+  background-image: url(../../Dist/Images/lead-banner.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 62px;
+  .lead-banner-background {
     width: 100%;
+    height: inherit;
+    background-color: rgba(255, 255, 255, 0.96);
+    padding-top: 85px;
+    .lead-text {
+      width: 80%;
+      text-align: center;
+      margin: 0 auto;
+      .lead-list {
+        width: 100%;
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-evenly;
+        .lead-list-item {
+          padding: 5px 10px;
+          &::before {
+            content: '';
+            width: 6px;
+            background-color: var(--regular-font-color);
+            height: 6px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 100%;
+          }
+        }
+      }
+      h1 {
+        font-size: 55px;
+        font-weight: 700;
+      }
+      .lead-buttons {
+        margin-top: 30px;
+        a,
+        button {
+          margin-top: 20px;
+          font-size: 18px;
+          padding: 15px 50px;
+          border-radius: 5px;
+          font-weight: bold;
+          &:hover {
+            transform: scale(1.09);
+            transition: transform 0.7s ease;
+          }
+        }
+        a:first-child {
+          background-color: var(--custom-color);
+          color: white;
+        }
+        button,
+        a:last-child {
+          background-color: var(--custom-shade);
+          color: var(--custom-color);
+          margin-left: 20px;
+        }
+      }
+    }
   }
 }

@@ -1,4 +1,4 @@
-@use "./custom-variables";
+@use './custom-variables';
 
 .doc-nav {
   padding: 10px 0 !important;
@@ -9,6 +9,7 @@
 }
 nav {
   background-color: rgba(255, 255, 255, 0.95);
+  font-family: 'Montserrat', sans-serif;
   .top-offset {
     margin-top: 50px;
   }

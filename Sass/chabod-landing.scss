@@ -1,11 +1,14 @@
 @use './Partials/nav';
 @use './Partials/lead-banner';
+@use './Partials/features-container';
 @use './Partials/footer';
 @use './Partials/custom-variables';
 @use './Partials/highlights';
 @use './Partials/documentation';
 @use './Partials/chabod-gallery';
 @use './Partials/purchase-modal';
+@use './Partials/testimonials';
+@use './Partials/achievements-section';
 
 body {
   padding: 0;
@@ -18,8 +21,11 @@ body {
 .custom-color {
   color: var(--custom-color);
 }
+.primary-view {
+  min-height: 100vh;
+}
 .custom-link {
-  color: var(--custom-color);
+  color: #595b91;
   text-decoration: none;
   &:hover {
     color: var(--grey);

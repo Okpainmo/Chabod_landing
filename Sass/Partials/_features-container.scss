@@ -1,0 +1,33 @@
+@use './custom-variables';
+
+.feature-details-area {
+  width: 90%;
+  margin: 200px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+.description-text-area {
+  width: 38%;
+  margin-right: 50px;
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+  }
+  p {
+    margin: 20px 0 30px;
+    color: var(--grey);
+    font-size: 18px;
+  }
+}
+.illustration-area {
+  width: 55%;
+  margin-top: 20px;
+  img {
+    width: 100%;
+  }
+}
