@@ -116,8 +116,8 @@
   .highlights .feature-details-area .description-text-area h1 {
     font-size: 30px;
   }
-  .highlights .feature-details-area .description-text-area .dta-buttons a,
-.highlights .feature-details-area .description-text-area .dta-buttons button {
+  .highlights .feature-details-area .description-text-area .lead-buttons a,
+.highlights .feature-details-area .description-text-area .lead-buttons button {
     padding: 10px 15px;
   }
   .highlights .testimonials-container .testimonials-header {
@@ -172,58 +172,48 @@
   }
 }
 @media screen and (max-width: 811px) {
-  .banner-details-area {
-    display: flex;
-    flex-direction: column-reverse;
-    padding-top: 60px;
-  }
-  .banner-details-area .description-text-area {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 50px;
-  }
-  .banner-details-area .illustration-area {
-    width: 100%;
-    margin-bottom: 50px;
-  }
-
   .highlights .top-features {
     margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 767px) {
-  .primary-view .lead-banner .lead-list {
+  .lead-banner .lead-list {
     flex-direction: column;
   }
-  .primary-view .lead-banner .lead-list .lead-list-item {
+  .lead-banner .lead-list .lead-list-item {
     margin: 5px 0;
   }
-  .primary-view .highlights .about-theme {
+
+  .highlights .about-theme {
     width: 70%;
   }
-  .primary-view .highlights .top-features .row .col {
+  .highlights .top-features .row .col {
     width: 75%;
   }
-  .primary-view .highlights .col {
+  .highlights .achievements-section {
+    margin: 200px auto 70px;
+  }
+  .highlights .col {
     margin-top: 0;
   }
-  .primary-view .highlights .card-body {
+  .highlights .card-body {
     padding: 0 1rem;
   }
-  .primary-view .highlights .card-title {
+  .highlights .card-title {
     margin-top: 10px;
   }
-  .primary-view .highlights .mb-50 {
+  .highlights .mb-50 {
     margin-bottom: 50px;
   }
-  .primary-view .highlights .carousel-array .card-title {
+  .highlights .carousel-array .card-title {
     font-size: 26px;
     margin-bottom: 10px;
   }
-  .primary-view .main-doc-field .main-doc-content {
+
+  .main-doc-field .main-doc-content {
     width: 75%;
   }
-  .primary-view .main-doc-field .page-content {
+  .main-doc-field .page-content {
     width: 75%;
   }
 }
@@ -266,15 +256,6 @@
     font-size: 30px;
     line-height: 40px;
   }
-  .primary-view .banner-details-area,
-.doc-header .banner-details-area {
-    padding-top: 20px;
-  }
-  .primary-view .banner-details-area .illustration-area,
-.doc-header .banner-details-area .illustration-area {
-    margin-bottom: 30px;
-    margin-top: 50px;
-  }
 
   .top-offset {
     margin-top: 48.4px;
@@ -286,6 +267,39 @@
   }
   .highlights .top-features .row .col {
     width: 95%;
+  }
+  .highlights .feature-details-area {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 120px 0;
+  }
+  .highlights .feature-details-area .description-text-area {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    margin: 0;
+  }
+  .highlights .feature-details-area .illustration-area {
+    width: 100%;
+    padding: 10px;
+  }
+  .highlights .feature-details-area .buy-btn-case {
+    margin: 0;
+  }
+  .highlights .testimonials-container {
+    width: 100%;
+  }
+  .highlights .testimonials-container .testimonials-header {
+    width: 100%;
+    margin: 15px 0;
+  }
+  .highlights .testimonials-container .testimonials-header h1 {
+    font-size: 30px;
+  }
+  .highlights .testimonials-container .testimonials-row .testimonials-item {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px 0 30px;
   }
   .highlights .other-features .follow-up-text {
     width: 95%;
@@ -306,25 +320,35 @@
   .highlights .carousel-array .my-container .carousel-item .card-text {
     font-size: 17px;
   }
-
-  footer {
+  .highlights .achievements-section .achievement-header {
+    width: 100%;
+  }
+  .highlights .achievements-section .achievement-header h1 {
+    font-size: 35px;
+  }
+  .highlights .achievements-section .product-hunt_embed {
+    width: 100%;
+  }
+  .highlights .achievements-section .product-hunt_embed img {
+    width: 100%;
+    height: 100px;
+  }
+  .highlights footer {
     padding: 20px 0;
     text-align: center;
   }
-  footer .col-lg-6 {
+  .highlights footer .col-lg-6 {
     padding: 30px 30px 0;
   }
-
-  .main-doc-field .page-content {
+  .highlights .main-doc-field .page-content {
     width: calc(100% - 20px);
   }
-  .main-doc-field .main-doc-content {
+  .highlights .main-doc-field .main-doc-content {
     width: 100%;
     margin-top: 10px;
     padding: 10px;
   }
-
-  .bonus-package .bonus-banner {
+  .highlights .bonus-package .bonus-banner {
     margin: 15px auto 30px;
   }
 }
@@ -355,13 +379,13 @@
     margin: 15px auto 0px;
   }
 
-  .banner-details-area .description-text-area .dta-buttons a,
-.banner-details-area .description-text-area .dta-buttons button {
+  .lead-banner .description-text-area .lead-buttons a,
+.lead-banner .description-text-area .lead-buttons button {
     display: block;
     width: 100%;
   }
-  .banner-details-area .description-text-area .dta-buttons a:last-child,
-.banner-details-area .description-text-area .dta-buttons button:last-child {
+  .lead-banner .description-text-area .lead-buttons a:last-child,
+.lead-banner .description-text-area .lead-buttons button:last-child {
     margin-left: 0;
   }
 }

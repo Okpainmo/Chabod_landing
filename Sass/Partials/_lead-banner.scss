@@ -38,30 +38,32 @@
         font-size: 55px;
         font-weight: 700;
       }
-      .lead-buttons {
-        margin-top: 30px;
-        a,
-        button {
-          margin-top: 20px;
-          font-size: 18px;
-          padding: 15px 50px;
-          border-radius: 5px;
-          font-weight: bold;
-          &:hover {
-            transform: scale(1.09);
-            transition: transform 0.7s ease;
-          }
+    }
+    .lead-buttons {
+      margin-top: 30px;
+      // display: flex;
+      text-align: center;
+      a,
+      button {
+        margin-top: 20px;
+        font-size: 18px;
+        padding: 15px 50px;
+        border-radius: 5px;
+        font-weight: bold;
+        &:hover {
+          transform: scale(1.09);
+          transition: transform 0.7s ease;
         }
-        a:first-child {
-          background-color: var(--custom-color);
-          color: white;
-        }
-        button,
-        a:last-child {
-          background-color: var(--custom-shade);
-          color: var(--custom-color);
-          margin-left: 20px;
-        }
+      }
+      a:first-child {
+        background-color: var(--custom-color);
+        color: white;
+      }
+      button,
+      a:last-child {
+        background-color: var(--custom-shade);
+        color: var(--custom-color);
+        margin-left: 20px;
       }
     }
   }

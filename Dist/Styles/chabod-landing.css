@@ -93,28 +93,29 @@ nav ul li a {
   font-size: 55px;
   font-weight: 700;
 }
-.lead-banner .lead-banner-background .lead-text .lead-buttons {
+.lead-banner .lead-banner-background .lead-buttons {
   margin-top: 30px;
+  text-align: center;
 }
-.lead-banner .lead-banner-background .lead-text .lead-buttons a,
-.lead-banner .lead-banner-background .lead-text .lead-buttons button {
+.lead-banner .lead-banner-background .lead-buttons a,
+.lead-banner .lead-banner-background .lead-buttons button {
   margin-top: 20px;
   font-size: 18px;
   padding: 15px 50px;
   border-radius: 5px;
   font-weight: bold;
 }
-.lead-banner .lead-banner-background .lead-text .lead-buttons a:hover,
-.lead-banner .lead-banner-background .lead-text .lead-buttons button:hover {
+.lead-banner .lead-banner-background .lead-buttons a:hover,
+.lead-banner .lead-banner-background .lead-buttons button:hover {
   transform: scale(1.09);
   transition: transform 0.7s ease;
 }
-.lead-banner .lead-banner-background .lead-text .lead-buttons a:first-child {
+.lead-banner .lead-banner-background .lead-buttons a:first-child {
   background-color: var(--custom-color);
   color: white;
 }
-.lead-banner .lead-banner-background .lead-text .lead-buttons button,
-.lead-banner .lead-banner-background .lead-text .lead-buttons a:last-child {
+.lead-banner .lead-banner-background .lead-buttons button,
+.lead-banner .lead-banner-background .lead-buttons a:last-child {
   background-color: var(--custom-shade);
   color: var(--custom-color);
   margin-left: 20px;
@@ -125,6 +126,7 @@ nav ul li a {
   min-height: 100px;
   margin: 150px 10px 150px auto;
   display: flex;
+  text-align: left;
   justify-content: space-between;
   align-items: center;
 }
@@ -142,7 +144,6 @@ nav ul li a {
 .feature-details-area .description-text-area h1 {
   font-size: 50px;
   font-weight: bold;
-  text-align: left;
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
