@@ -8,10 +8,21 @@
     margin-right: 20px;
   }
 
+  .lead-banner {
+    height: 700px;
+  }
+
   .description-text-area h1 {
     font-size: 45px;
   }
 
+  .highlights .top-features .row {
+    flex-direction: column;
+  }
+  .highlights .top-features .row .col {
+    margin: 40px auto;
+    width: 70%;
+  }
   .highlights .other-features {
     padding: 60px 20px;
   }
@@ -65,14 +76,6 @@
     font-size: 40px;
   }
 
-  .description-text-area h1 {
-    font-size: 40px;
-  }
-  .description-text-area .dta-buttons a,
-.description-text-area .dta-buttons button {
-    padding: 10px 15px;
-  }
-
   .highlights .about-theme {
     margin-top: 100px;
     width: 85%;
@@ -104,11 +107,38 @@
     height: 250px;
     box-shadow: 0 0 15px 1px #e4e2e2 !important;
   }
-  .highlights .feature-details-area:nth-child(even) {
-    margin-left: 50px;
+  .highlights .feature-details-area {
+    margin: 140px 10px 140px auto;
+  }
+  .highlights .feature-details-area .description-text-area {
+    width: 45%;
   }
   .highlights .feature-details-area .description-text-area h1 {
+    font-size: 30px;
+  }
+  .highlights .feature-details-area .description-text-area .dta-buttons a,
+.highlights .feature-details-area .description-text-area .dta-buttons button {
+    padding: 10px 15px;
+  }
+  .highlights .testimonials-container .testimonials-header {
+    width: 90%;
+  }
+  .highlights .testimonials-container .testimonials-header h1 {
     font-size: 35px;
+  }
+  .highlights .testimonials-container .testimonials-row {
+    flex-direction: column;
+  }
+  .highlights .testimonials-container .testimonials-row .testimonials-item {
+    width: 80%;
+    padding: 30px;
+    margin: 40px auto;
+  }
+  .highlights .achievements-section .achievement-header {
+    width: 90%;
+  }
+  .highlights .achievements-section .achievement-header h1 {
+    font-size: 40px;
   }
 
   footer {
@@ -162,33 +192,38 @@
   }
 }
 @media screen and (max-width: 767px) {
-  .highlights .about-theme {
+  .primary-view .lead-banner .lead-list {
+    flex-direction: column;
+  }
+  .primary-view .lead-banner .lead-list .lead-list-item {
+    margin: 5px 0;
+  }
+  .primary-view .highlights .about-theme {
     width: 70%;
   }
-  .highlights .top-features .row .col {
+  .primary-view .highlights .top-features .row .col {
     width: 75%;
   }
-  .highlights .col {
+  .primary-view .highlights .col {
     margin-top: 0;
   }
-  .highlights .card-body {
+  .primary-view .highlights .card-body {
     padding: 0 1rem;
   }
-  .highlights .card-title {
+  .primary-view .highlights .card-title {
     margin-top: 10px;
   }
-  .highlights .mb-50 {
+  .primary-view .highlights .mb-50 {
     margin-bottom: 50px;
   }
-  .highlights .carousel-array .card-title {
+  .primary-view .highlights .carousel-array .card-title {
     font-size: 26px;
     margin-bottom: 10px;
   }
-
-  .main-doc-field .main-doc-content {
+  .primary-view .main-doc-field .main-doc-content {
     width: 75%;
   }
-  .main-doc-field .page-content {
+  .primary-view .main-doc-field .page-content {
     width: 75%;
   }
 }
@@ -204,6 +239,32 @@
   .primary-view nav .navbar-toggler,
 .doc-header nav .navbar-toggler {
     padding-right: 0;
+  }
+  .primary-view .lead-banner,
+.doc-header .lead-banner {
+    height: 100vh;
+  }
+  .primary-view .lead-banner .lead-list,
+.doc-header .lead-banner .lead-list {
+    flex-direction: column;
+  }
+  .primary-view .lead-banner .lead-list .lead-list-item,
+.doc-header .lead-banner .lead-list .lead-list-item {
+    margin: 5px 0;
+  }
+  .primary-view .lead-banner .lead-banner-background,
+.doc-header .lead-banner .lead-banner-background {
+    padding-top: 60px;
+  }
+  .primary-view .lead-banner .lead-banner-background .lead-text,
+.doc-header .lead-banner .lead-banner-background .lead-text {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .primary-view .lead-banner .lead-banner-background .lead-text h1,
+.doc-header .lead-banner .lead-banner-background .lead-text h1 {
+    font-size: 30px;
+    line-height: 40px;
   }
   .primary-view .banner-details-area,
 .doc-header .banner-details-area {

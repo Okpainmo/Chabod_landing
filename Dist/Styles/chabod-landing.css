@@ -63,7 +63,7 @@ nav ul li a {
 .lead-banner .lead-banner-background {
   width: 100%;
   height: inherit;
-  background-color: rgba(255, 255, 255, 0.96);
+  background-color: rgba(255, 255, 255, 0.92);
   padding-top: 85px;
 }
 .lead-banner .lead-banner-background .lead-text {
@@ -86,7 +86,7 @@ nav ul li a {
   background-color: var(--regular-font-color);
   height: 6px;
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
   border-radius: 100%;
 }
 .lead-banner .lead-banner-background .lead-text h1 {
@@ -121,19 +121,19 @@ nav ul li a {
 }
 
 .feature-details-area {
-  width: 90%;
-  margin: 200px auto;
+  width: 92%;
+  min-height: 100px;
+  margin: 150px 10px 150px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.feature-details-area:hover .illustration-area {
+  overflow: hidden;
+}
 .feature-details-area:hover .illustration-area img {
   transform: scale(1.05);
   transition: transform 2.5s ease;
-}
-.feature-details-area:nth-child(even) {
-  flex-direction: row-reverse;
-  margin-right: 0;
 }
 .feature-details-area .description-text-area {
   width: 38%;
@@ -554,7 +554,7 @@ footer .buy-btn-case {
   background-color: black;
   border-radius: 10px;
   width: 30%;
-  padding: 20px 0;
+  padding: 30px 10px;
   min-height: 150px;
 }
 .testimonials-container .testimonials-row .testimonials-item:hover {
@@ -573,7 +573,7 @@ footer .buy-btn-case {
 .testimonials-container .testimonials-row .testimonials-item .testimonial-text {
   width: 100%;
   padding: 10px 15px 30px;
-  font-size: 20px;
+  font-size: 18px;
 }
 .testimonials-container .testimonials-row .testimonials-item .about-author {
   width: 100%;
