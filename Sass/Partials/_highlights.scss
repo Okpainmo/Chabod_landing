@@ -31,8 +31,8 @@ $highlight-custom: #267aa2;
     width: 55%;
     min-height: 100px;
     padding: 0 0 20px;
-    margin: 0 auto 90px;
     color: var(--grey);
+    margin: 0 auto 90px;
     font-size: 22px;
     text-align: center;
     span {
@@ -44,23 +44,26 @@ $highlight-custom: #267aa2;
     min-height: 225px;
     width: 90%;
   }
-  h3 {
-    text-align: center;
+  h1 {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: bold;
     display: block;
     padding-left: 10px;
     padding-right: 10px;
   }
-  h3.extra {
+  h1.extra {
     color: $highlight-custom;
     margin-bottom: 20px;
+    font-weight: bold;
   }
   .other-features {
+    h1 {
+      text-align: center;
+    }
     .follow-up-text {
       color: var(--grey);
-      font-size: 18px;
+      font-size: 20px;
       text-align: center;
       width: 75%;
       margin: 20px auto 40px auto;
@@ -97,9 +100,15 @@ $highlight-custom: #267aa2;
     // color: var(--custom-color);
   }
   .carousel-array {
+    h1 {
+      text-align: center;
+    }
     min-height: 300px;
     margin-top: 50px;
     padding: 60px;
+    .carousel {
+      margin-top: 70px;
+    }
     .carousel-icon {
       font-size: 35px;
     }
@@ -123,7 +132,7 @@ $highlight-custom: #267aa2;
       .my-carousel-content {
         .carousel-icon,
         .card-title {
-          color: var(--custom-color);
+          color: #7d7e91;
         }
       }
     }
@@ -148,9 +157,8 @@ $highlight-custom: #267aa2;
       color: green;
       font-size: 30px;
       margin-bottom: 20px;
+      font-weight: 400px;
       margin-top: 10px;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 300;
     }
     .col-lg-6:first-child {
       background-size: cover;
@@ -159,13 +167,14 @@ $highlight-custom: #267aa2;
       border-bottom-left-radius: 10px;
     }
     .col-lg-6:last-child {
-      // border-left: 1px solid var(--grey);
       box-shadow: 0 0 15px 1px hsl(0, 2%, 89%) !important;
     }
   }
-  .last-preview-btn {
+  .last-preview-btn,
+  .last-body-purchase-btn {
     text-align: center;
     margin: 20px 0 30px;
+    font-family: 'Montserrat', sans-serif;
     a {
       padding: 12px 30px;
       background-color: var(--custom-color);

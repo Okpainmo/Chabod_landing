@@ -21,6 +21,10 @@
       width: 30%;
       padding: 20px 0;
       min-height: 150px;
+      &:hover {
+        transform: translateY(-8px);
+        transition: transform 0.75s ease;
+      }
       &:first-child {
         background-color: pink;
       }
@@ -48,6 +52,7 @@
         }
         .author-details {
           font-family: 'Montserrat', sans-serif;
+          padding: 0 10px;
           span {
             display: block;
           }

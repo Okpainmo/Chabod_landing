@@ -49,7 +49,7 @@ nav ul li:hover a {
 }
 nav ul li a {
   color: var(--grey) !important;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .lead-banner {
@@ -127,30 +127,35 @@ nav ul li a {
   justify-content: space-between;
   align-items: center;
 }
+.feature-details-area:hover .illustration-area img {
+  transform: scale(1.05);
+  transition: transform 2.5s ease;
+}
 .feature-details-area:nth-child(even) {
   flex-direction: row-reverse;
+  margin-right: 0;
 }
-
-.description-text-area {
+.feature-details-area .description-text-area {
   width: 38%;
   margin-right: 50px;
 }
-.description-text-area h1 {
+.feature-details-area .description-text-area h1 {
   font-size: 50px;
   font-weight: bold;
+  text-align: left;
+  padding: 0;
   font-family: "Montserrat", sans-serif;
 }
-.description-text-area p {
+.feature-details-area .description-text-area p {
   margin: 20px 0 30px;
   color: var(--grey);
   font-size: 18px;
 }
-
-.illustration-area {
+.feature-details-area .illustration-area {
   width: 55%;
   margin-top: 20px;
 }
-.illustration-area img {
+.feature-details-area .illustration-area img {
   width: 100%;
 }
 
@@ -183,8 +188,8 @@ nav ul li a {
   width: 55%;
   min-height: 100px;
   padding: 0 0 20px;
-  margin: 0 auto 90px;
   color: var(--grey);
+  margin: 0 auto 90px;
   font-size: 22px;
   text-align: center;
 }
@@ -196,27 +201,30 @@ nav ul li a {
   min-height: 225px;
   width: 90%;
 }
-.highlights h3 {
-  text-align: center;
+.highlights h1 {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: bold;
   display: block;
   padding-left: 10px;
   padding-right: 10px;
 }
-.highlights h3.extra {
+.highlights h1.extra {
   color: #267aa2;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 .highlights .other-features {
   min-height: 300px;
   background-color: #f3f3f7;
   padding: 60px;
 }
+.highlights .other-features h1 {
+  text-align: center;
+}
 .highlights .other-features .follow-up-text {
   color: var(--grey);
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   width: 75%;
   margin: 20px auto 40px auto;
@@ -250,6 +258,12 @@ nav ul li a {
   margin-top: 50px;
   padding: 60px;
 }
+.highlights .carousel-array h1 {
+  text-align: center;
+}
+.highlights .carousel-array .carousel {
+  margin-top: 70px;
+}
 .highlights .carousel-array .carousel-icon {
   font-size: 35px;
 }
@@ -263,7 +277,7 @@ nav ul li a {
 }
 .highlights .carousel-array .carousel-item:nth-child(3) .my-carousel-content .carousel-icon,
 .highlights .carousel-array .carousel-item:nth-child(3) .my-carousel-content .card-title {
-  color: var(--custom-color);
+  color: #7d7e91;
 }
 .highlights .carousel-array .my-container {
   height: 320px;
@@ -286,9 +300,8 @@ nav ul li a {
   color: green;
   font-size: 30px;
   margin-bottom: 20px;
+  font-weight: 400px;
   margin-top: 10px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
 }
 .highlights .carousel-array .col-lg-6:first-child {
   background-size: cover;
@@ -299,18 +312,22 @@ nav ul li a {
 .highlights .carousel-array .col-lg-6:last-child {
   box-shadow: 0 0 15px 1px #e4e2e2 !important;
 }
-.highlights .last-preview-btn {
+.highlights .last-preview-btn,
+.highlights .last-body-purchase-btn {
   text-align: center;
   margin: 20px 0 30px;
+  font-family: "Montserrat", sans-serif;
 }
-.highlights .last-preview-btn a {
+.highlights .last-preview-btn a,
+.highlights .last-body-purchase-btn a {
   padding: 12px 30px;
   background-color: var(--custom-color);
   color: white;
   border-radius: 5px;
   font-size: 18px;
 }
-.highlights .last-preview-btn a:hover {
+.highlights .last-preview-btn a:hover,
+.highlights .last-body-purchase-btn a:hover {
   transform: scale(1.09);
   transition: transform 0.7s ease;
 }
@@ -318,7 +335,7 @@ nav ul li a {
 footer {
   min-height: 250px;
   background-color: #f3f3f7;
-  color: #58485d;
+  color: #5c6a7f;
   position: relative;
   z-index: 5000;
   padding: 30px 0;
@@ -329,7 +346,7 @@ footer a {
   text-decoration: none;
 }
 footer a:hover {
-  color: #58485d;
+  color: #5c6a7f;
 }
 footer .row {
   justify-content: space-between;
@@ -540,6 +557,10 @@ footer .buy-btn-case {
   padding: 20px 0;
   min-height: 150px;
 }
+.testimonials-container .testimonials-row .testimonials-item:hover {
+  transform: translateY(-8px);
+  transition: transform 0.75s ease;
+}
 .testimonials-container .testimonials-row .testimonials-item:first-child {
   background-color: pink;
 }
@@ -567,6 +588,7 @@ footer .buy-btn-case {
 }
 .testimonials-container .testimonials-row .testimonials-item .about-author .author-details {
   font-family: "Montserrat", sans-serif;
+  padding: 0 10px;
 }
 .testimonials-container .testimonials-row .testimonials-item .about-author .author-details span {
   display: block;
@@ -580,7 +602,7 @@ footer .buy-btn-case {
 
 .achievements-section {
   min-height: 300px;
-  margin-top: 250px;
+  margin: 250px auto 100px;
   border-radius: 40px;
   background-color: #f8f7f7;
   padding-bottom: 50px;
@@ -679,6 +701,7 @@ body {
 
 .buy-btn-case {
   margin-right: 30px;
+  font-family: "Montserrat", sans-serif;
 }
 .buy-btn-case button,
 .buy-btn-case a {

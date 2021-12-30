@@ -18,6 +18,9 @@
   .highlights .about-theme {
     width: 65%;
   }
+  .highlights .feature-details-area .description-text-area h1 {
+    font-size: 40px;
+  }
 
   .primary-view {
     min-height: 490px;
@@ -58,8 +61,8 @@
     padding: 8px 20px;
   }
 
-  .banner-details-area {
-    max-width: 90%;
+  .lead-banner .lead-banner-background .lead-text h1 {
+    font-size: 40px;
   }
 
   .description-text-area h1 {
@@ -70,12 +73,16 @@
     padding: 10px 15px;
   }
 
+  .highlights .about-theme {
+    margin-top: 100px;
+    width: 85%;
+  }
   .highlights .top-features .row {
     display: flex;
     flex-direction: column;
   }
   .highlights .top-features .row .col {
-    margin: 0 auto 30px;
+    margin: 0 auto 75px;
     width: 60%;
   }
   .highlights .carousel-array .my-container {
@@ -96,6 +103,12 @@
   .highlights .carousel-array .my-container .col-lg-6:last-child {
     height: 250px;
     box-shadow: 0 0 15px 1px #e4e2e2 !important;
+  }
+  .highlights .feature-details-area:nth-child(even) {
+    margin-left: 50px;
+  }
+  .highlights .feature-details-area .description-text-area h1 {
+    font-size: 35px;
   }
 
   footer {
