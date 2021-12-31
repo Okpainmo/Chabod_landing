@@ -107,7 +107,7 @@ nav ul li a {
 }
 .lead-banner .lead-banner-background .lead-buttons a:hover,
 .lead-banner .lead-banner-background .lead-buttons button:hover {
-  transform: scale(1.09);
+  transform: scale(1.03);
   transition: transform 0.7s ease;
 }
 .lead-banner .lead-banner-background .lead-buttons a:first-child {

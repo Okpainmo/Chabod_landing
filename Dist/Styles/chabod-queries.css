@@ -77,7 +77,6 @@
   }
 
   .highlights .about-theme {
-    margin-top: 100px;
     width: 85%;
   }
   .highlights .top-features .row {
@@ -177,16 +176,18 @@
   }
 }
 @media screen and (max-width: 767px) {
-  .lead-banner .lead-list {
+  .lead-banner .lead-banner-background .lead-list {
     flex-direction: column;
   }
-  .lead-banner .lead-list .lead-list-item {
+  .lead-banner .lead-banner-background .lead-list .lead-list-item {
     margin: 5px 0;
   }
-
-  .highlights .about-theme {
-    width: 70%;
+  .lead-banner .lead-banner-background .lead-buttons a,
+.lead-banner .lead-banner-background .lead-buttons button {
+    padding: 15px 35px;
+    font-size: 15px;
   }
+
   .highlights .top-features .row .col {
     width: 75%;
   }
@@ -261,17 +262,48 @@
     margin-top: 48.4px;
   }
 
+  .main-doc-field .page-content {
+    width: calc(100% - 20px);
+  }
+  .main-doc-field .main-doc-content {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .lead-banner .lead-banner-background .lead-buttons a,
+.lead-banner .lead-banner-background .lead-buttons button {
+    padding: 12px 25px;
+    font-size: 12px;
+  }
+
   .highlights .about-theme {
     width: 95%;
+    margin-bottom: 70px;
+    font-size: 18px;
     padding-top: 20px;
   }
+  .highlights .about-theme span {
+    font-size: 20px;
+  }
+  .highlights .top-features {
+    margin: 0;
+    width: 100%;
+  }
   .highlights .top-features .row .col {
-    width: 95%;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .highlights .top-features .row .col .mb-50 {
+    padding: 0;
+  }
+  .highlights .fda-custom-margin {
+    margin-top: 30px !important;
   }
   .highlights .feature-details-area {
     flex-direction: column-reverse;
     width: 100%;
-    margin: 120px 0;
+    margin: 80px 0;
   }
   .highlights .feature-details-area .description-text-area {
     width: 100%;
@@ -286,6 +318,9 @@
   .highlights .feature-details-area .buy-btn-case {
     margin: 0;
   }
+  .highlights .feature-details-area .buy-btn-case a {
+    display: block;
+  }
   .highlights .testimonials-container {
     width: 100%;
   }
@@ -298,8 +333,11 @@
   }
   .highlights .testimonials-container .testimonials-row .testimonials-item {
     width: 100%;
-    margin: 20px 0;
+    margin: 30px 0;
     padding: 20px 0 30px;
+  }
+  .highlights .other-features {
+    padding: 60px 0;
   }
   .highlights .other-features .follow-up-text {
     width: 95%;
@@ -333,28 +371,34 @@
     width: 100%;
     height: 100px;
   }
-  .highlights footer {
+
+  .bonus-package .bonus-banner {
+    margin: 15px auto 30px;
+  }
+
+  footer {
     padding: 20px 0;
     text-align: center;
   }
-  .highlights footer .col-lg-6 {
+  footer .col-lg-6 {
     padding: 30px 30px 0;
-  }
-  .highlights .main-doc-field .page-content {
-    width: calc(100% - 20px);
-  }
-  .highlights .main-doc-field .main-doc-content {
-    width: 100%;
-    margin-top: 10px;
-    padding: 10px;
-  }
-  .highlights .bonus-package .bonus-banner {
-    margin: 15px auto 30px;
   }
 }
 @media screen and (max-width: 400px) {
+  .lead-banner .lead-banner-background .lead-buttons {
+    padding: 0 10px;
+  }
+  .lead-banner .lead-banner-background .lead-buttons a,
+.lead-banner .lead-banner-background .lead-buttons button {
+    display: block;
+  }
+  .lead-banner .lead-banner-background .lead-buttons a:last-child,
+.lead-banner .lead-banner-background .lead-buttons button:last-child {
+    margin-left: 0;
+  }
+
   .highlights .about-theme {
-    width: 80%;
+    width: 95%;
   }
   .highlights .carousel-array {
     padding: 0;
@@ -377,15 +421,5 @@
 
   .bonus-package .bonus-banner {
     margin: 15px auto 0px;
-  }
-
-  .lead-banner .description-text-area .lead-buttons a,
-.lead-banner .description-text-area .lead-buttons button {
-    display: block;
-    width: 100%;
-  }
-  .lead-banner .description-text-area .lead-buttons a:last-child,
-.lead-banner .description-text-area .lead-buttons button:last-child {
-    margin-left: 0;
   }
 }

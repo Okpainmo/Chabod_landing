@@ -89,7 +89,6 @@
   }
   .highlights {
     .about-theme {
-      margin-top: 100px;
       width: 85%;
     }
     .top-features {
@@ -220,17 +219,21 @@
 
 @media screen and (max-width: 767px) {
   .lead-banner {
-    .lead-list {
-      flex-direction: column;
-      .lead-list-item {
-        margin: 5px 0;
+    .lead-banner-background {
+      .lead-list {
+        flex-direction: column;
+        .lead-list-item {
+          margin: 5px 0;
+        }
+      }
+      .lead-buttons a,
+      .lead-buttons button {
+        padding: 15px 35px;
+        font-size: 15px;
       }
     }
   }
   .highlights {
-    .about-theme {
-      width: 70%;
-    }
     .top-features {
       .row {
         .col {
@@ -314,22 +317,55 @@
   .top-offset {
     margin-top: 48.4px;
   }
+  .main-doc-field {
+    .page-content {
+      width: calc(100% - 20px);
+    }
+    .main-doc-content {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+    }
+  }
+  .lead-banner {
+    .lead-banner-background {
+      .lead-buttons a,
+      .lead-buttons button {
+        padding: 12px 25px;
+        font-size: 12px;
+      }
+    }
+  }
   .highlights {
     .about-theme {
       width: 95%;
+      margin-bottom: 70px;
+      font-size: 18px;
       padding-top: 20px;
+      span {
+        font-size: 20px;
+      }
     }
     .top-features {
+      margin: 0;
+      width: 100%;
       .row {
         .col {
-          width: 95%;
+          width: 100%;
+          margin-bottom: 40px;
+          .mb-50 {
+            padding: 0;
+          }
         }
       }
+    }
+    .fda-custom-margin {
+      margin-top: 30px !important;
     }
     .feature-details-area {
       flex-direction: column-reverse;
       width: 100%;
-      margin: 120px 0;
+      margin: 80px 0;
       .description-text-area {
         width: 100%;
         padding: 15px;
@@ -342,6 +378,9 @@
       }
       .buy-btn-case {
         margin: 0;
+        a {
+          display: block;
+        }
       }
     }
     .testimonials-container {
@@ -356,12 +395,13 @@
       .testimonials-row {
         .testimonials-item {
           width: 100%;
-          margin: 20px 0;
+          margin: 30px 0;
           padding: 20px 0 30px;
         }
       }
     }
     .other-features {
+      padding: 60px 0;
       .follow-up-text {
         width: 95%;
       }
@@ -402,35 +442,39 @@
         }
       }
     }
-    footer {
-      padding: 20px 0;
-      text-align: center;
-      .col-lg-6 {
-        padding: 30px 30px 0;
-      }
+  }
+  .bonus-package {
+    .bonus-banner {
+      margin: 15px auto 30px;
     }
-    .main-doc-field {
-      .page-content {
-        width: calc(100% - 20px);
-      }
-      .main-doc-content {
-        width: 100%;
-        margin-top: 10px;
-        padding: 10px;
-      }
-    }
-    .bonus-package {
-      .bonus-banner {
-        margin: 15px auto 30px;
-      }
+  }
+  footer {
+    padding: 20px 0;
+    text-align: center;
+    .col-lg-6 {
+      padding: 30px 30px 0;
     }
   }
 }
 
 @media screen and (max-width: 400px) {
+  .lead-banner {
+    .lead-banner-background {
+      .lead-buttons {
+        padding: 0 10px;
+        a,
+        button {
+          display: block;
+          &:last-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
   .highlights {
     .about-theme {
-      width: 80%;
+      width: 95%;
     }
     .carousel-array {
       padding: 0;
@@ -454,18 +498,6 @@
   .bonus-package {
     .bonus-banner {
       margin: 15px auto 0px;
-    }
-  }
-  .lead-banner {
-    .description-text-area {
-      .lead-buttons a,
-      .lead-buttons button {
-        display: block;
-        width: 100%;
-        &:last-child {
-          margin-left: 0;
-        }
-      }
     }
   }
 }
