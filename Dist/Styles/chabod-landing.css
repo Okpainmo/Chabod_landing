@@ -15,13 +15,17 @@
   z-index: 7000 !important;
 }
 
+.top-offset {
+  margin-top: 50px;
+}
+
 nav {
   background-color: rgba(255, 255, 255, 0.95);
   font-family: "Montserrat", sans-serif;
   padding: 0.8rem 0 !important;
 }
-nav .top-offset {
-  margin-top: 50px;
+nav .sm-buy-btn {
+  display: none;
 }
 nav .active {
   color: var(--custom-color) !important;
@@ -252,7 +256,7 @@ nav ul li a {
   color: #267aa2;
 }
 .highlights .highlight-icon {
-  font-size: 35px;
+  font-size: 50px;
 }
 .highlights .carousel-array {
   min-height: 300px;

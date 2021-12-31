@@ -56,8 +56,18 @@
 @media screen and (max-width: 991px) {
   nav,
   .doc-nav {
+    .buy-btn-case {
+      margin: 0 10px 0 auto;
+    }
+    .lg-buy-btn {
+      display: none;
+    }
+    .sm-buy-btn {
+      display: inline;
+    }
     ul {
       margin-left: 0;
+      padding-top: 20px;
     }
     .navbar-toggler {
       border: none;
@@ -67,14 +77,14 @@
     }
     .navbar-collapse {
       text-align: center;
-      .buy-btn-case {
-        margin-right: 0;
-        margin-bottom: 30px;
-        a {
-          min-width: 300px;
-          padding: 8px 20px;
-        }
-      }
+      // .buy-btn-case {
+      //   margin-right: 0;
+      //   margin-bottom: 30px;
+      //   a {
+      //     min-width: 300px;
+      //     padding: 8px 20px;
+      //   }
+      // }
     }
   }
   .lead-banner {
@@ -195,28 +205,6 @@
   }
 }
 
-@media screen and (max-width: 811px) {
-  // .banner-details-area {
-  //   display: flex;
-  //   flex-direction: column-reverse;
-  //   padding-top: 60px;
-  //   .description-text-area {
-  //     width: 100%;
-  //     text-align: center;
-  //     margin-bottom: 50px;
-  //   }
-  //   .illustration-area {
-  //     width: 100%;
-  //     margin-bottom: 50px;
-  //   }
-  // }
-  .highlights {
-    .top-features {
-      margin-bottom: 30px;
-    }
-  }
-}
-
 @media screen and (max-width: 767px) {
   .lead-banner {
     .lead-banner-background {
@@ -241,6 +229,27 @@
         }
       }
     }
+    .feature-details-area {
+      flex-direction: column-reverse;
+      width: 80%;
+      margin: 100px auto;
+      .description-text-area {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        margin: 0;
+      }
+      .illustration-area {
+        width: 100%;
+        padding: 10px;
+      }
+      .buy-btn-case {
+        margin: 0;
+        a {
+          display: block;
+        }
+      }
+    }
     .achievements-section {
       margin: 200px auto 70px;
     }
@@ -256,9 +265,6 @@
     .mb-50 {
       margin-bottom: 50px;
     }
-    // ul {
-    //   margin-bottom: 0;
-    // }
     .carousel-array .card-title {
       font-size: 26px;
       margin-bottom: 10px;
@@ -278,7 +284,7 @@
   .primary-view,
   .doc-header {
     nav {
-      padding: 0.3rem 0 !important;
+      padding: 0.5rem 0 !important;
       .navbar-brand {
         margin-left: 0;
       }
@@ -304,15 +310,13 @@
             line-height: 40px;
           }
         }
+        .lead-buttons a,
+        .lead-buttons button {
+          padding: 12px 20px;
+          font-size: 14px;
+        }
       }
     }
-    // .banner-details-area {
-    //   padding-top: 20px;
-    //   .illustration-area {
-    //     margin-bottom: 30px;
-    //     margin-top: 50px;
-    //   }
-    // }
   }
   .top-offset {
     margin-top: 48.4px;
@@ -325,15 +329,6 @@
       width: 100%;
       margin-top: 10px;
       padding: 10px;
-    }
-  }
-  .lead-banner {
-    .lead-banner-background {
-      .lead-buttons a,
-      .lead-buttons button {
-        padding: 12px 25px;
-        font-size: 12px;
-      }
     }
   }
   .highlights {
@@ -363,25 +358,8 @@
       margin-top: 30px !important;
     }
     .feature-details-area {
-      flex-direction: column-reverse;
       width: 100%;
       margin: 80px 0;
-      .description-text-area {
-        width: 100%;
-        padding: 15px;
-        text-align: center;
-        margin: 0;
-      }
-      .illustration-area {
-        width: 100%;
-        padding: 10px;
-      }
-      .buy-btn-case {
-        margin: 0;
-        a {
-          display: block;
-        }
-      }
     }
     .testimonials-container {
       width: 100%;
@@ -407,7 +385,7 @@
       }
     }
     .carousel-array {
-      padding: 30px 0;
+      padding: 30px 0 80px 0;
       .my-container {
         height: 480px;
         width: 95%;
@@ -445,7 +423,7 @@
   }
   .bonus-package {
     .bonus-banner {
-      margin: 15px auto 30px;
+      margin: 35px auto 50px;
     }
   }
   footer {

@@ -7,13 +7,16 @@
 .fixed-top {
   z-index: 7000 !important;
 }
+.top-offset {
+  margin-top: 50px;
+}
 nav {
   background-color: rgba(255, 255, 255, 0.95);
   font-family: 'Montserrat', sans-serif;
-  .top-offset {
-    margin-top: 50px;
-  }
   padding: 0.8rem 0 !important;
+  .sm-buy-btn {
+    display: none;
+  }
   .active {
     color: var(--custom-color) !important;
   }
