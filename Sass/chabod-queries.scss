@@ -67,7 +67,7 @@
     }
     ul {
       margin-left: 0;
-      padding-top: 20px;
+      padding: 20px 0;
     }
     .navbar-toggler {
       border: none;
@@ -301,7 +301,7 @@
       }
       height: 100vh;
       .lead-banner-background {
-        padding-top: 60px;
+        // padding-top: 60px;
         .lead-text {
           width: 100%;
           padding: 0 15px;
@@ -383,6 +383,12 @@
       .follow-up-text {
         width: 95%;
       }
+      .features-listing {
+        .row {
+          margin-right: 0;
+          margin-left: 0;
+        }
+      }
     }
     .carousel-array {
       padding: 30px 0 80px 0;
@@ -436,6 +442,15 @@
 }
 
 @media screen and (max-width: 400px) {
+  nav,
+  .doc-nav {
+    .sm-buy-btn {
+      a {
+        font-size: 12px;
+        padding: 8px 15px;
+      }
+    }
+  }
   .lead-banner {
     .lead-banner-background {
       .lead-buttons {

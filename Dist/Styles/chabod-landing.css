@@ -635,6 +635,10 @@ footer .buy-btn-case {
 }
 .achievements-section .product-hunt_embed {
   margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+.achievements-section .product-hunt_embed img {
   width: 400px;
   transform: translateY(-30px);
 }

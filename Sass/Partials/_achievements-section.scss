@@ -27,7 +27,11 @@
   }
   .product-hunt_embed {
     margin: 0 auto;
-    width: 400px;
-    transform: translateY(-30px);
+    width: 100%;
+    text-align: center;
+    img {
+      width: 400px;
+      transform: translateY(-30px);
+    }
   }
 }

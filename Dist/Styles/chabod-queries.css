@@ -60,7 +60,7 @@
   nav ul,
 .doc-nav ul {
     margin-left: 0;
-    padding-top: 20px;
+    padding: 20px 0;
   }
   nav .navbar-toggler,
 .doc-nav .navbar-toggler {
@@ -262,10 +262,6 @@
 .doc-header .lead-banner .lead-list .lead-list-item {
     margin: 5px 0;
   }
-  .primary-view .lead-banner .lead-banner-background,
-.doc-header .lead-banner .lead-banner-background {
-    padding-top: 60px;
-  }
   .primary-view .lead-banner .lead-banner-background .lead-text,
 .doc-header .lead-banner .lead-banner-background .lead-text {
     width: 100%;
@@ -345,6 +341,10 @@
   .highlights .other-features .follow-up-text {
     width: 95%;
   }
+  .highlights .other-features .features-listing .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
   .highlights .carousel-array {
     padding: 30px 0 80px 0;
   }
@@ -388,6 +388,12 @@
   }
 }
 @media screen and (max-width: 400px) {
+  nav .sm-buy-btn a,
+.doc-nav .sm-buy-btn a {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+
   .lead-banner .lead-banner-background .lead-buttons {
     padding: 0 10px;
   }
