@@ -1,4 +1,4 @@
-# Chabod_landing/GetChabod
+# get_chabod
 
 ## Project site
 
