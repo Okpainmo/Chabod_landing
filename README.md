@@ -7,7 +7,7 @@ https://getchabod.com
 
 ## About
 
-> getchabod.com is a portfolio website template project. This repository contains everything about the project, especially the sales/launch website whcih contains important details like the product documentation.
+> getchabod.com is a portfolio website template project. The repository contains everything about the project, especially the sales/launch website whcih contains important details like the product documentation.
 > This project is currently live and on sale.
 
 ## Project Stack/Build Tools
