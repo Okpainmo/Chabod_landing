@@ -3,867 +3,253 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      property="og:image"
-      content="https://getchabod.com/Dist/Images/c:og.png/"
-    />
-    <meta property="twitter:card" content="summary_large_image" />
+    <title>Andrew Okpainmo</title>
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;700&family=Nunito:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <!-- Font awesome -->
 
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="Dist/Styles/chabod-landing.css" />
-    <link rel="stylesheet" href="Dist/Styles/chabod-queries.css" />
-
-    <!-- Font awesome link -->
     <script
       src="https://kit.fontawesome.com/7d4093f05b.js"
       crossorigin="anonymous"
     ></script>
 
-    <!-- Product icon to be displayed in browsers -->
+    <!-- App style -->
+    <link rel="stylesheet" href="./Styles/my-resume-app.css" />
+
+    <!-- App media query -->
+    <link rel="stylesheet" href="./Styles/my-resume-media-queries.css" />
+
     <link
       rel="icon"
       type="image/png"
-      sizes="32x32"
-      href="Dist/Images/blue-fav-icon.png"
+      sizes="25x40"
+      href="./Images/a.j-logo.png"
     />
-
-    <title>Chabod - An awesome portfolio website template</title>
   </head>
   <body>
-    <!--Sales modal -->
-    <!-- <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel"></h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="sales-modal-content">
-              <h3 class="sales-header mont-font">Buy Chabod on</h3>
-              <a href="#">
-                <div class="sales-platform envato">
-                  Envato <span class="envato-green">(Theme Forest)</span>
-                </div>
-              </a>
-              <h4>Or</h4>
-              <a href="#">
-                <div class="sales-platform selar">Selar</div>
-              </a>
-              <div class="buy-recommendation">
-                <p>
-                  Recommendation: Use Selar if you are buying from Nigeria or
-                  any other African country
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <header class="primary-view">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand mont-font" href="https://getchabod.netlify.app"
-            >Chabod</a
-          >
-          <div class="buy-btn-case sm-buy-btn">
-            <a href="https://selar.co/a7o5" class="custom-color">
-              <span>Buy Now</span>
-              <i
-                class="fas fa-shopping-cart animate"
-                style="padding-left: 10px"
-              ></i>
-            </a>
-            <!-- Button trigger modal -->
-            <!-- <button
-                type="button"
-                class="btn custom-color"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <span>Buy Now</span>
-                <i class="fas fa-shopping-cart" style="padding-left: 10px"></i>
-              </button> -->
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://chabodtheme.getchabod.com"
-                  >Live Demo</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Dist/documentation.html"
-                  >Documentation</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Dist/terms.html">Terms Of Use</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Dist/license.html">License</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Dist/extra-offer.html"
-                  >Extra Package</a
-                >
-              </li>
-            </ul>
-            <div class="buy-btn-case lg-buy-btn">
-              <a href="https://selar.co/a7o5" class="custom-color">
-                <span>Buy Now</span>
-                <i
-                  class="fas fa-shopping-cart animate"
-                  style="padding-left: 10px"
-                ></i>
-              </a>
-              <!-- Button trigger modal -->
-              <!-- <button
-                type="button"
-                class="btn custom-color"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <span>Buy Now</span>
-                <i class="fas fa-shopping-cart" style="padding-left: 10px"></i>
-              </button> -->
-            </div>
-          </div>
+    <main>
+      <nav>
+        <div class="applicant-logo">
+          <a href="https://ajokpainmo.getchabod.com">
+            <img src="./Images/a.j-logo.png" alt="applicant-logo" />
+          </a>
         </div>
       </nav>
-      <section class="lead-banner mont-font top-offset">
-        <div class="lead-banner-background">
-          <div class="lead-text">
-            <h1>
-              Create that awesome portfolio website you've always wanted with
-              Chabod.
-            </h1>
-            <div class="lead-list">
-              <div class="lead-list-item">Free customization and setup</div>
-              <div class="lead-list-item">Superb Customer Support</div>
-              <div class="lead-list-item">An amazing design</div>
-            </div>
+      <section class="applicant-intro">
+        <div class="applicant-intro-text">
+          <div class="intro-text-bold">
+            Hello, my name is <br />
+            <span style="text-decoration: underline"
+              >Andrew James Okpainmo</span
+            >
           </div>
-          <div class="lead-buttons">
+          <div class="intro-text-extra">
+            I am a frontend web developer with an eye for design, and an
+            interest in solving challenging tasks.
+          </div>
+          <div class="intro-buttons">
             <a
-              href="https://chabodtheme.getchabod.com/"
+              href="/Images/Okpainmo-Resume (1).png"
               role="button"
-              class="btn"
-              ><span>Explore Chabod</span>
-              <i
-                style="padding-left: 10px"
-                class="fas fa-arrow-right animate"
-              ></i
-            ></a>
-            <a href="https://selar.co/a7o5" role="button" class="btn"
-              >Buy Chabod Now</a
+              class="resume-btn"
+              style="display: none"
+              download
+              >Download My Resume</a
             >
-            <!-- <button
-            type="button"
-            class="btn"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          >
-            Buy Chabod Now
-          </button> -->
+            <a href="#to-form" class="contact-btn"> Let's Connect</a>
+          </div>
+        </div>
+        <div class="applicant-photo-case">
+          <div class="applicant-photo">
+            <img
+              class="applicant-photo"
+              src="./Images/a.j okpainmo.jpg"
+              alt="applicant-photo"
+            />
           </div>
         </div>
       </section>
-    </header>
-    <section class="highlights">
-      <div class="about-theme">
-        <p>
-          <span class="mont-font">Chabod</span>
-          is an impressive portfolio website template that is built to help
-          makers show the world what they do with simplicity and in grand style.
-        </p>
-        <p>
-          Whatever you do, find a way to show it to the world with
-          <span class="mont-font">Chabod</span>
-        </p>
-      </div>
-      <section class="container-fluid top-features">
-        <div class="row row-cols-1 row-cols-md-3">
-          <div class="col">
-            <div class="card h-100">
-              <div class="card-body mb-50">
-                <span
-                  class="highlight-icon fas fa-heart"
-                  style="color: #4ca6e7"
-                ></span>
-                <h3 class="card-title mont-font">A beautiful design</h3>
-                <p class="card-text">
-                  <span class="mont-font">Chabod</span>
-                  is an awesome portfolio website template that comes with a
-                  beautiful and impressive user interface design.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <div class="card-body mb-50">
-                <span
-                  class="highlight-icon fas fas fa-clipboard-list"
-                  style="color: #88a4ab"
-                ></span>
-                <h3 class="card-title mont-font">An online documentation</h3>
-                <p class="card-text">
-                  Customize
-                  <span class="mont-font">Chabod</span> into the portfolio
-                  website of your dream with ease, thanks to a detailed and well
-                  written online documentation.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <div class="card-body mb-50">
-                <span
-                  class="highlight-icon fas fa-users"
-                  style="color: #cb7a88"
-                ></span>
-                <h3 class="card-title mont-font">A great choice for geeks</h3>
-                <p class="card-text">
-                  <span class="mont-font">Chabod</span>
-                  will definitely be an awesome choice for geeks like web
-                  developers, UI/UX designers, and graphic designers.
-                </p>
-              </div>
-            </div>
-          </div>
+      <section class="more-content">
+        <div class="resume-header">About Me</div>
+        <div class="more-text">
+          Passion for technology, and a great fascination over the power of
+          programming, are two reasons why I landed in web development.
+          <br />
+          <br />
+          I am a front end web developer, a start-up enthusiast, a super
+          productive introvert, and a gifted writer. I share my technical
+          expertice, by writing articles on my
+          <a href="https://zhacks.hashnode.dev" target="_blank">Hashnode blog</a
+          >. <br />
+          I am a big fan of hardwork, and I love God a lot.
+          <br />
+          <br />
+          I am passionate about my career growth in tech, and hence I continue
+          to remain an avid learner just so I can keep up. <br />
+          <br />
+          I have some experience working with clients, and leading a number of
+          small development teams, hence I've been able to develop some very
+          important leaderships traits and some necessary softskills. <br />
+          Leading teams have helped me a lot by adding to my current arsenal of
+          softskills. It has enabled me to taste the life of a developer from
+          both the leading and followership end. Hence has made me better.
+          <br /><br />
+          For now, I Build web products to cutting edge standards with different
+          web development tools. <br />
+          I have an eye for design, and whenever I build, I do so with a strong
+          interest in obtaining high pixel-perfection levels and superb
+          responsiveness.
+          <br />
+          <br />
+          Some web development technologies that I use or am familiar with
+          include:
+          <span style="color: purple">
+            HTML, CSS, SCSS, React Js, Next Js, Redux-toolkit, Firebase, Gulp
+            Js, Bootstrap, tailwind CSS, Git and Github, Vanilla Javascript and
+            Jquery. I also use ESlint, Husky, commit-lint and prettier for
+            efficient workflow management during development. <br />
+            <br />
+            I use Netlify and Vercel for hosting projects during development to
+            make the development process to be more seamless and properly
+            monitored.
+          </span>
+          <br /><br />
+          Even though I am not a fan of building clones, I love building side
+          projects a lot. You will most likely find me building a side project
+          whenever am not learning something new or working on a client project.
+          <br />
+          <br />
+          I love building real life side projects that can generate a user base
+          and of course, some income. <br />
+          <br />
+          I've worked on some cool projects like:
+          <a href="https://tilo-project.vercel.app" target="_blank">tilo</a>,
+          <a href="https://trh-website-project.vercel.app" target="_blank"
+            >The TRH organizational website/blog</a
+          >(still in progress),
+          <a href="https://getchabod.com/" target="_blank"
+            >The sales/marketing website of the Chabod project</a
+          >, the
+          <a href="https://chabodtheme.getchabod.com/" target="_blank"
+            >Chabod project</a
+          >, and other client projects which I would not want to list out here.
+          <br />
+          <br />
+          I am current knee-deep in building
+          <a href="https://tilo-project.vercel.app" target="_blank">tilo</a>.
+          Tilo for me, is the best side project that I've ever worked on. It's a
+          super-amazing crypto app that will help crypto traders do their trade
+          with more comfort and ease. It's built on NextJs, with tailwind CSS
+          for styling.
+          <br />
+          I plan to use Redux toolkit for state management, and Firebase for
+          backend data management. <br />
+          <br />
+          Thanks so much for checking into my site today. <br /><br />
+          I am currently open to jobs, and I'll be glad to work with you on any
+          front-end web project. Please check my contact details below. <br />
+          <br />
+          You can also use the contact form below. It's configured to send me an
+          email alert once filled out and submitted.<br />
+          <br />
+          Cheers!!!
         </div>
-      </section>
-      <section class="feature-details-area fda-custom-margin">
-        <div class="description-text-area">
-          <h1>Enjoy Free setup and customization after purchase</h1>
-          <p class="follow-up-text">
-            When you buy Chabod, You'll get connected to a developer on our team
-            who'll help you customize and setup your website for absolutely
-            free.
-            <a href="https://getchabod.com/extra-offer" class="custom-link bold"
-              >Learn more</a
+        <div class="contact-case">
+          <div class="contact-case-item">
+            <span class="fas fa-map-marked-alt"></span>
+            <span
+              >Ungwan Doma, Gonin-Gora <br />
+              Kaduna, Nigeria</span
             >
-          </p>
-          <div class="buy-btn-case">
-            <a href="https://selar.co/a7o5" class="custom-color">
-              <span class="mont-font">Buy Now</span>
-              <i
-                class="fas fa-shopping-cart animate"
-                style="padding-left: 10px"
-              ></i>
-            </a>
-            <!-- Button trigger modal -->
-            <!-- <button
-                type="button"
-                class="btn custom-color"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <span>Buy Now</span>
-                <i class="fas fa-shopping-cart" style="padding-left: 10px"></i>
-              </button> -->
+          </div>
+          <div class="contact-case-item">
+            <span class="fas fa-envelope"></span>
+            <span>okpainmoandrew@gmail.com</span>
+          </div>
+          <div class="contact-case-item">
+            <span class="fas fa-mobile-alt"></span>
+            <span
+              >+234 81 8976 4364, <br />
+              +234 70 8721 2060
+            </span>
           </div>
         </div>
-        <div class="illustration-area">
-          <img src="./Dist/Images/setup.svg" alt="feature-illustration" />
-        </div>
-      </section>
-      <section class="feature-details-area">
-        <div class="description-text-area">
-          <h1>Enjoy superb customer support and free updates</h1>
-          <p class="follow-up-text">
-            Enjoy great customer support after purchasing Chabod. Plus, You'll
-            get free updates on Chabod for up to 1 year after purchase.
-          </p>
-        </div>
-        <div class="illustration-area">
-          <img src="./Dist/Images/support.svg" alt="feature-illustration" />
-        </div>
-      </section>
-      <section class="feature-details-area">
-        <div class="description-text-area">
-          <h1>Enjoy Blazing fast Interactivity.</h1>
-          <p class="follow-up-text">
-            Chabod is a single page portfolio website template that is loaded
-            with awesome underlying features. No extra page loading, just a
-            smooth and blazing fast interactiveness with cool functionalities
-            powered by Javascript.
-          </p>
-        </div>
-        <div class="illustration-area">
-          <img src="./Dist/Images/speed.svg" alt="feature-illustration" />
-        </div>
-      </section>
-      <section class="feature-details-area">
-        <div class="description-text-area">
-          <h1>Chabod is a perfect choice for geeks</h1>
-          <p class="follow-up-text">
-            Chabod will make a great portfolio website for anyone. Especially
-            for geeks like web developers, SEO experts and UI/UX designers.
-          </p>
-          <div class="buy-btn-case">
-            <a href="https://selar.co/a7o5" class="custom-color">
-              <span class="mont-font">Buy Now</span>
-              <i
-                class="fas fa-shopping-cart animate"
-                style="padding-left: 10px"
-              ></i>
-            </a>
-            <!-- Button trigger modal -->
-            <!-- <button
-                type="button"
-                class="btn custom-color"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <span>Buy Now</span>
-                <i class="fas fa-shopping-cart" style="padding-left: 10px"></i>
-              </button> -->
-          </div>
-        </div>
-        <div class="illustration-area">
-          <img src="./Dist/Images/geek.svg" alt="feature-illustration" />
-        </div>
-      </section>
-      <section class="carousel-array container-fluid">
-        <h1>Loaded with so much awesomeness</h1>
-        <h1 class="extra">to bring your clients right to your door step.</h1>
-        <div
-          id="carouselExampleIndicators"
-          class="carousel carousel-dark slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="my-carousel-content">
-                <div class="my-container">
-                  <div class="row">
-                    <div
-                      class="col-lg-6"
-                      style="background-image: url(./Dist/Images/chabod-2.png)"
-                    ></div>
-                    <div class="col-lg-6">
-                      <div class="card h-100">
-                        <div class="card-body">
-                          <span
-                            class="carousel-icon fas fa-map-marked-alt"
-                          ></span>
-                          <h5 class="card-title">Google Maps</h5>
-                          <p class="card-text">
-                            Convert your site visitors into real life clients by
-                            helping them find your location with ease - Thanks
-                            to Google maps.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="my-carousel-content">
-                <div class="my-container">
-                  <div class="row">
-                    <div
-                      class="col-lg-6"
-                      style="background-image: url(./Dist/Images/chabod-3.png)"
-                    ></div>
-                    <div class="col-lg-6">
-                      <div class="card h-100">
-                        <div class="card-body">
-                          <span class="carousel-icon fas fa-book-reader"></span>
-                          <h5 class="card-title">Share project stories</h5>
-                          <p class="card-text">
-                            Go beyond just showing a single project shot -
-                            impress site visitors with stories of how you built
-                            it from start to finish.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="my-carousel-content">
-                <div class="my-container">
-                  <div class="row">
-                    <div
-                      class="col-lg-6"
-                      style="background-image: url(./Dist/Images/chabod-6.png)"
-                    ></div>
-                    <div class="col-lg-6">
-                      <div class="card h-100">
-                        <div class="card-body">
-                          <span class="carousel-icon fas fa-newspaper"></span>
-                          <h5 class="card-title">An in-built blog</h5>
-                          <p class="card-text">
-                            Tell the world more on how pro you are, by sharing
-                            blog stories on topics in your niche - right inside
-                            <span class="custom-color">Chabod</span>.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
-      <section
-        class="testimonials-container container-fluid"
-        style="display: none"
-      >
-        <div class="testimonials-header">
-          <h1>See what people are saying about Chabod.</h1>
-        </div>
-        <div class="testimonials-row">
-          <div class="testimonials-item">
-            <div class="testimonial-text">
-              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
-              fugiat distinctio ea dicta exercitationem. Est odio adipisci
-              expedita modi earum aliquid consectetur, quibusdam sunt id ullam
-              dolorum, nisi aspernatur rerum"
-            </div>
-            <div class="about-author">
-              <div class="author-photo">
-                <img
-                  src="./Dist/Images/chabod-10.png"
-                  alt="testimonial-author-pic"
-                />
-              </div>
-              <div class="author-details">
-                <span class="author-name"
-                  >Samuel Adebayo (<a href="#" class="custom-link"
-                    >@UncleBigBay</a
-                  >)</span
-                >
-                <span class="author-extra">Full stack web developer. </span>
-                <span class="author-extra"
-                  >Two time
-                  <a href="#" class="custom-link">Hashnode</a> Hackathon
-                  winner</span
-                >
-              </div>
-            </div>
-          </div>
-          <div class="testimonials-item">
-            <div class="testimonial-text">
-              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
-              fugiat distinctio ea dicta exercitationem. Est odio adipisci
-              expedita modi earum aliquid consectetur, quibusdam sunt id ullam
-              dolorum, nisi aspernatur rerum"
-            </div>
-            <div class="about-author">
-              <div class="author-photo">
-                <img
-                  src="./Dist/Images/chabod-10.png"
-                  alt="testimonial-author-pic"
-                />
-              </div>
-              <div class="author-details">
-                <span class="author-name"
-                  >Samuel Adebayo (<a href="#" class="custom-link"
-                    >@UncleBigBay</a
-                  >)</span
-                >
-                <span class="author-extra">Full stack web developer. </span>
-              </div>
-            </div>
-          </div>
-          <div class="testimonials-item">
-            <div class="testimonial-text">
-              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
-              fugiat distinctio ea dicta exercitationem. Est odio adipisci
-              expedita modi earum aliquid consectetur, quibusdam sunt id ullam
-              dolorum, nisi aspernatur rerum"
-            </div>
-            <div class="about-author">
-              <div class="author-photo">
-                <img
-                  src="./Dist/Images/chabod-10.png"
-                  alt="testimonial-author-pic"
-                />
-              </div>
-              <div class="author-details">
-                <span class="author-name"
-                  >Samuel Adebayo (<a href="#" class="custom-link"
-                    >@UncleBigBay</a
-                  >)</span
-                >
-                <span class="author-extra">Full stack web developer. </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="achievements-section container">
-        <div class="achievement-illustration">
-          <img src="./Dist/Images/win.svg" alt="achievement-illustration" />
-        </div>
-        <div class="achievement-header">
-          <h1>Over 35 product hunt Upvotes in Just about 72 hours.</h1>
-        </div>
-        <div class="product-hunt_embed">
+        <div class="socials-case">
+          <a href="https://mobile.twitter.com/AJ_Okpainmo/">
+            <span class="fab fa-twitter-square"></span>
+          </a>
+          <a href="https://github.com/Okpainmo">
+            <span class="fab fa-github-square"></span>
+          </a>
+          <a href="https://www.instagram.com/a.j_okpainmo/">
+            <span class="fab fa-instagram-square"></span>
+          </a>
           <a
-            href="https://www.producthunt.com/posts/chabod?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-chabod"
-            target="_blank"
-            ><img
-              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=322206&theme=light"
-              alt="Chabod - An awesome portfolio website template | Product Hunt"
-          /></a>
+            href="https://www.linkedin.com/mwlite/in/okpainmo-andrew-ba259617a/"
+          >
+            <span class="fab fab fa-linkedin"></span>
+          </a>
         </div>
-      </section>
-      <section class="container-fluid other-features">
-        <h1>A great tool built with all these cool features</h1>
-        <h1 class="extra">to help you sell better.</h1>
-        <div class="follow-up-text">
-          <span class="mont-font">Chabod</span>
-          is built to complement your skill level and all you have to show in
-          it, with it's supercool features that will definitely impress your
-          site visitors.
+        <div class="resume-header" style="margin-top: 100px" id="to-form">
+          Drop A Message
         </div>
-        <div class="features-listing">
-          <div class="row row-cols-1 row-cols-md-3">
-            <div class="col">
-              <div class="card h-100">
-                <div class="card-body">
-                  <ul>
-                    <li>
-                      <span class="far fa-check-circle"></span>
-                      <span>Dark and light theme modes.</span>
-                    </li>
-                    <li>
-                      <span class="far fa-check-circle"></span>
-                      <span
-                        >Superb responsiveness across different screen
-                        sizes.</span
-                      >
-                    </li>
-                    <li>
-                      <span class="far fa-check-circle"></span>
-                      <span>Built with Google fonts.</span>
-                    </li>
-                    <li>
-                      <span class="far fa-check-circle"></span>
-                      <span>A simply amazing design.</span>
-                    </li>
-                    <li>
-                      <span class="far fa-check-circle"></span>
-                      <span>Built with Bootstrap 5.</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+        <div class="contact-form-container">
+          <form
+            data-netlify="true"
+            action="./form-action-page.html"
+            name="My portfolio website contact form"
+            class="contact-form"
+            onsubmit="validateForm()"
+          >
+            <label for="visitor's name">Full Name</label>
+            <input type="text" name="visitor's-name" class="input-1" required />
+            <label for="visitor's email">Email</label>
+            <input
+              type="text"
+              name="visitor's-email"
+              class="input-2"
+              required
+            />
+            <div
+              class="mail-assure"
+              style="color: grey; text-align: center; margin-bottom: 5px"
+            >
+              Your email is safe with me
             </div>
-            <div class="col">
-              <div class="card h-100">
-                <div class="card-body">
-                  <ul>
-                    <li>
-                      <span class="far fa-check-circle"></span>
-                      <span>Built with Gulp Js.</span>
-                    </li>
-                    <li>
-                      <span class="far fa-check-circle"></span>
-                      <span>Gulp.js script included.</span>
-                    </li>
-                    <li>
-                      <span class="far fa-check-circle"></span>
-                      <span>Comes with an inbuilt blog.</span>
-                    </li>
-                    <li>
-                      <span class="far fa-check-circle"></span>
-                      <span>super-fast user interactivity.</span>
-                    </li>
-                    <li>
-                      <span class="far fa-check-circle"></span>
-                      <span>Top-notch customer support.</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <div class="card-body">
-                  <ul>
-                    <li>
-                      <span class="far fa-check-circle"></span>
-                      <span>Live Light and dark mode switching.</span>
-                    </li>
-                    <li>
-                      <span class="far fa-check-circle"></span>
-                      <span>Prebuit interface for embeeding Google maps.</span>
-                    </li>
-                    <li>
-                      <span class="far fa-check-circle"></span>
-                      <span>Free set-up after purchase.</span>
-                    </li>
-                    <li>
-                      <span class="far fa-check-circle"></span>
-                      <span>All develpment photos included.</span>
-                    </li>
-                    <li>
-                      <span class="far fa-check-circle"></span>
-                      <span>No Jquery.</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            <br />
+            <label for="visitor's message">Drop your message here</label>
+            <textarea
+              name="visitor's message"
+              cols="20"
+              rows="5"
+              class="message-field"
+              required
+            ></textarea>
+            <button type="submit">Submit message</button>
+          </form>
+        </div>
+        <div class="end-text">
+          <div>
+            Built with so much <span class="fas fa-heart"></span> by me.
+          </div>
+          <span>&copy; 2021, All rights reserved, A.J Okpainmo.</span> <br />
+          <div style="padding-top: 7px">
+            icons by
+            <a href="https://fontawesome.com/" style="color: purple"
+              >font awesome</a
+            >.
           </div>
         </div>
       </section>
-      <section class="chabod-gallery">
-        <div class="container">
-          <div class="row">
-            <div class="col-md col-lg-4">
-              <div class="card">
-                <img
-                  src="./Dist/Images/chabod-1.png"
-                  alt="Chabod-advert-photo"
-                />
-              </div>
-            </div>
-            <div class="col-md col-lg-4">
-              <div class="card">
-                <img
-                  src="./Dist/Images/chabod-8.png"
-                  alt="Chabod-advert-photo"
-                />
-              </div>
-            </div>
-            <div class="col-md col-lg-4">
-              <div class="card">
-                <img
-                  src="./Dist/Images/chabod-4.png"
-                  alt="Chabod-advert-photo"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md col-lg-4">
-              <div class="card">
-                <img
-                  src="./Dist/Images/chabod-5.png"
-                  alt="Chabod-advert-photo"
-                />
-              </div>
-            </div>
-            <div class="col-md col-lg-4">
-              <div class="card">
-                <img
-                  src="./Dist/Images/chabod-10.png"
-                  alt="Chabod-advert-photo"
-                />
-              </div>
-            </div>
-            <div class="col-md col-lg-4">
-              <div class="card">
-                <img
-                  src="./Dist/Images/chabod-11.png"
-                  alt="Chabod-advert-photo"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="last-preview-btn">
-        <a href="https://chabodtheme.getchabod.com" class="btn">
-          <span>Launch a live demo</span>
-          <i class="fas fa-arrow-right animate" style="padding-left: 10px"></i>
-        </a>
-      </section>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h2 class="mont-font">Chabod</h2>
-            <p>
-              Chabod is an amazing portfolio website template built with the
-              bootstrap framework. It comes with 6 different sections to help
-              sellers show...
-              <a href="./Dist/documentation.html">Read more</a>
-            </p>
-            <p>
-              Built with so much <span class="fas fa-heart"></span> by
-              <a href="https://ajokpainmo.netlify.app">A.J Okpainmo.</a>
-            </p>
-            <div class="social-icons-case">
-              <div class="icon">
-                <a href="https://mobile.twitter.com/AJ_Okpainmo/">
-                  <span class="fab fa-twitter"></span>
-                </a>
-              </div>
-              <div class="icon">
-                <a href="https://www.instagram.com/a.j_okpainmo/">
-                  <span class="fab fa-instagram"></span>
-                </a>
-              </div>
-              <div class="icon">
-                <a
-                  href="https://www.linkedin.com/mwlite/in/okpainmo-andrew-ba259617a/"
-                >
-                  <span class="fab fa-linkedin"></span>
-                </a>
-              </div>
-            </div>
-            <p>
-              For
-              <a href="https://web.facebook.com/profile.php?id=100074891040038"
-                >Zoe-themes.</a
-              >
-            </p>
-            <div class="social-icons-case" style="display: none">
-              <div class="icon">
-                <a href="https://web.facebook.com/Zthemes">
-                  <span class="fab fa-facebook"></span>
-                </a>
-              </div>
-              <div class="icon">
-                <a href="https://www.instagram.com/zthemes_official/">
-                  <span class="fab fa-instagram"></span>
-                </a>
-              </div>
-            </div>
-            <div class="buy-btn-case">
-              <a href="https://selar.co/a7o5" class="custom-color">
-                <span>Buy Now</span>
-                <i class="fas fa-shopping-cart" style="padding-left: 10px"></i>
-              </a>
-              <!-- <button
-                type="button"
-                class="btn custom-color"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <span>Buy Now</span>
-                <i class="fas fa-shopping-cart" style="padding-left: 10px"></i>
-              </button> -->
-            </div>
-          </div>
-          <div class="col-lg-3 text-center">
-            <ul>
-              <li><a href="./Dist/documentation.html">Docs And Guides</a></li>
-              <li><a href="./Dist/terms.html">Terms Of Use</a></li>
-              <li><a href="./Dist/license.html">License</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 text-center">
-            <ul>
-              <li>
-                <a href="https://ajokpainmo.netlify.app">Developer Site</a>
-              </li>
-              <li><a href="./Dist/extra-offer.html">Extra Package</a></li>
-              <li><a href="https://chabodtheme.getchabod.com">Live Demo</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+    </main>
 
-    <!-- Scripts for Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
+    <script src="./Scripts/resume-script.js"></script>
   </body>
 </html>
